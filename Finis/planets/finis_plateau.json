@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Finis Plateau",
+  "starSystem": "Jam3",
+  "Base": {
+    //"groundSize": 100,
+    "surfaceSize": 401,
+    "surfaceGravity": 12,
+    "hasMapMarker": true
+  },
+  "Orbit": {
+    "semiMajorAxis": 3000,
+    "primaryBody": "Jam 3 Sun"
+  },
+  "AmbientLights": [
+    {
+      "outerRadius": 700,
+      "innerRadius": 1,
+      "intensity": 1.4
+    }
+  ],
+  "Atmosphere": {
+    "size": 700,
+    "atmosphereTint": {
+      "r": 151,
+      "g": 21,
+      "b": 120,
+      "a": 0
+    },
+    "fogDensity": 0.2,
+    "useAtmosphereShader": true
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/finis",
+        "path": "Assets/Finis/Prefabs/finis_plateau.prefab",
+        "scale": 200,
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket",
+        "removeChildren": [ "broken_swirlback" ],
+        "position": {
+          "x": -160,
+          "y": 100,
+          "z": 320
+        },
+        "rotation": {
+          "x": 320,
+          "y": 150,
+          "z": 0
+        },
+        "keepLoaded": true
+      }
+    ]
+  }
+}
