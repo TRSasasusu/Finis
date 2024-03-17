@@ -40,16 +40,22 @@
       },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket",
-        "removeChildren": [ "broken_swirlback" ],
+        "removeChildren": [ "Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback" ],
         "position": {
-          "x": -160,
-          "y": 100,
-          "z": 320
+          "x": -165,
+          "y": 122,
+          "z": 300 //-165 122 300
+          //"x": -160,
+          //"y": 100,
+          //"z": 320 //-160 110 310
         },
         "rotation": {
           "x": 320,
           "y": 150,
-          "z": 0
+          "z": 300
+          //"x": 320,
+          //"y": 150,
+          //"z": 0 //320 150 300
         },
         "keepLoaded": true
       }
