@@ -39,6 +39,10 @@
         "keepLoaded": true
       },
       {
+        "assetBundle": "planets/assetbundles/finis",
+        "path": "Assets/Finis/Prefabs/crystal1.prefab"
+      },
+      {
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket",
         "removeChildren": [ "Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback" ],
         "position": {
@@ -58,6 +62,39 @@
           //"z": 0 //320 150 300
         },
         "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BrokenPlatform"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_NorthFragment/Interactables_NorthFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Lamp_EscapePodFlare"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Torch"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_Whiteboard (1)"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Table_Geo" // there is no collider
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1" // there is no collider
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)" // there is no collider
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_Shelf (3)/Strucutre_NOM_Shelf" // there is no collider
       }
     ]
   }
