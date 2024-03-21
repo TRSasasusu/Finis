@@ -51,6 +51,15 @@
     <None Update="planets\finis_plateau.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="planets\finis_plateau_core.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="planets\texts\finis_pod_cave.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="planets\texts\finis_pod_crash.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="translations\japanese.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

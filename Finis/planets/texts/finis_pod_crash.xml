@@ -1,0 +1,26 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>MENTH: Cumin, Sacco! Are you all right?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>CUMIN: I'm okay!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>SACCO: Alright. What happens to us? The warp of this pod is failed, and we're crashed. Why?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>CUMIN: We collided twice! It tipped at the beginning and fell straight down!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>MENTH: There might be a connection between the pod's warp failure and our <![CDATA[<Color=orange>]]>Vessel<![CDATA[</Color>]]> coming here. In any case, we have no choice but to go outside first.</Text>
+  </TextBlock>
+</NomaiObject>

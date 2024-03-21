@@ -6,7 +6,8 @@
     //"groundSize": 100,
     "surfaceSize": 401,
     "surfaceGravity": 12,
-    "hasMapMarker": true
+    "hasMapMarker": true,
+    "gravityVolumePriority": 0
   },
   "Orbit": {
     "semiMajorAxis": 3000,
@@ -15,7 +16,7 @@
   "AmbientLights": [
     {
       "outerRadius": 700,
-      "innerRadius": 1,
+      "innerRadius": 200,
       "intensity": 1.4
     }
   ],
@@ -35,7 +36,7 @@
       {
         "assetBundle": "planets/assetbundles/finis",
         "path": "Assets/Finis/Prefabs/finis_plateau.prefab",
-        "scale": 200,
+        "scale": 1,
         "keepLoaded": true
       },
       {
@@ -73,14 +74,50 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_NorthFragment/Interactables_NorthFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Lamp_EscapePodFlare"
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16"
+        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+        "position": {
+          "x": -153.915,
+          "y": 142.5713,
+          "z": 244.8978
+        },
+        "rotation": {
+          "x": 70,
+          "y": 240,
+          "z": 310
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+        "position": {
+          "x": -146.4889,
+          "y": 147.3608,
+          "z": 253.2443
+        },
+        "rotation": {
+          "x": 70,
+          "y": 240,
+          "z": 310
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+        "position": {
+          "x": -139.1943,
+          "y": 141.9251,
+          "z": 273.6289
+        },
+        "rotation": {
+          "x": 40,
+          "y": 15,
+          "z": 30
+        }
       },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Torch"
       },
-      {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)"
-      },
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)"
+      //},
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_Whiteboard (1)"
       },
@@ -95,6 +132,53 @@
       },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_Shelf (3)/Strucutre_NOM_Shelf" // there is no collider
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/finis_pod_crash.xml",
+        "rename": "finis_pod_crash_recorder",
+        "position": {
+          "x": -177.1322,
+          "y": 118.0841,
+          "z": 303.9593
+        },
+        "rotation": {
+          "x": 50,
+          "y": 140,
+          "z": 180
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_pod_cave.xml",
+        "rename": "finid_pod_cave_wall",
+        "position": {
+          "x": -153.1767,
+          "y": 148.2017,
+          "z": 239.1101
+        },
+        "rotation": {
+          "x": 339,
+          "y": 335,
+          "z": 60
+        }
       }
     ]
   }

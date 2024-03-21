@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Finis Plateau Core",
+  "starSystem": "Jam3",
+  "Base": {
+    "groundSize": 10,
+    "surfaceSize": 31,
+    "surfaceGravity": 70,
+    "hasMapMarker": true,
+    "gravityVolumePriority": 1
+  },
+  "Orbit": {
+    "semiMajorAxis": 0.1,
+    "primaryBody": "Finis Plateau"
+  },
+}
