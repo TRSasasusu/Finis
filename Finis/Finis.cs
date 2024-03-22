@@ -1,12 +1,19 @@
-﻿using OWML.Common;
+﻿using HarmonyLib;
+using OWML.Common;
 using OWML.ModHelper;
+using System.Reflection;
 
 namespace Finis {
     public class Finis : ModBehaviour {
+        public static Finis Instance;
+
+        public static void Log(string text, MessageType messageType = MessageType.Message) {
+            Instance.ModHelper.Console.WriteLine(text, messageType);
+        }
+
         private void Awake() {
-            // You won't be able to access OWML's mod helper in Awake.
-            // So you probably don't want to do anything here.
-            // Use Start() instead.
+            Instance = this;
+            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
         }
 
         private void Start() {

@@ -16,9 +16,10 @@
   "AmbientLights": [
     {
       "outerRadius": 700,
-      "innerRadius": 200,
-      "intensity": 1.4
-    }
+      "innerRadius": 350,
+      "intensity": 1.4,
+      "isShell": true
+    },
   ],
   "Atmosphere": {
     "size": 700,
@@ -89,13 +90,13 @@
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
         "position": {
-          "x": -146.4889,
-          "y": 147.3608,
-          "z": 253.2443
+          "x": -146.8889,
+          "y": 146.2608,
+          "z": 254.9443
         },
         "rotation": {
-          "x": 70,
-          "y": 240,
+          "x": 55,
+          "y": 225,
           "z": 310
         }
       },
@@ -103,8 +104,8 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
         "position": {
           "x": -139.1943,
-          "y": 141.9251,
-          "z": 273.6289
+          "y": 144.5251,
+          "z": 273.4289
         },
         "rotation": {
           "x": 40,
