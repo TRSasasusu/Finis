@@ -16,7 +16,7 @@
   "AmbientLights": [
     {
       "outerRadius": 700,
-      "innerRadius": 350,
+      "innerRadius": 360,
       "intensity": 1.4,
       "isShell": true
     },
@@ -32,6 +32,17 @@
     "fogDensity": 0.2,
     "useAtmosphereShader": true
   },
+  "Volumes": {
+    "audioVolumes": [
+      {
+        "audio": "planets/assets/TheLandWhereTheKingLeft.wav",
+        "track": "music",
+        "radius": 600,
+        "volume": 0.4,
+        "priority": 0
+      }
+    ]
+  },
   "Props": {
     "details": [
       {
@@ -39,6 +50,11 @@
         "path": "Assets/Finis/Prefabs/finis_plateau.prefab",
         "scale": 1,
         "keepLoaded": true
+      },
+      {
+        "assetBundle": "planets/assetbundles/finis",
+        "path": "Assets/Finis/Prefabs/notkeeploaded.prefab",
+        "scale": 1,
       },
       {
         "assetBundle": "planets/assetbundles/finis",

@@ -48,6 +48,9 @@
     <None Update="planets\assetbundles\finis.manifest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="planets\assets\TheLandWhereTheKingLeft.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="planets\finis_plateau.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -63,5 +66,8 @@
     <None Update="translations\japanese.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="planets\assets\" />
   </ItemGroup>
 </Project>

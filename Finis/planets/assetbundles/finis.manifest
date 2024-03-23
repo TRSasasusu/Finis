@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3190970338
+CRC: 428421637
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 893a14e9adb1b6cee7dbf99254db2ecc
+    Hash: c888c508d937665421e50d0905e09ce9
   TypeTreeHash:
     serializedVersion: 2
     Hash: d52e26b5615cbdd85e0875a881404a0d
@@ -39,7 +39,9 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Finis/Prefabs/red_crystal0.prefab
+- Assets/Finis/Prefabs/highblue_crystal.prefab
+- Assets/Finis/Prefabs/highred_crystal0.prefab
+- Assets/Finis/Prefabs/notkeeploaded.prefab
 - Assets/Finis/Prefabs/finis_plateau.prefab
 - Assets/Finis/Prefabs/Rod.prefab
 Dependencies: []

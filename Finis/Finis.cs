@@ -28,6 +28,8 @@ namespace Finis {
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) => {
                 if (loadScene != OWScene.SolarSystem) return;
                 ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
+                var stateController = new StateController();
+                stateController.Initialize();
             };
         }
     }
