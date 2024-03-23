@@ -10,13 +10,44 @@ namespace Finis {
     public class StateController {
         public static StateController Instance;
 
-        public RodItem RodItem { get; private set; }
+        public RodItem PickedUpRod { get; private set; }
         public Transform RodSocket { get; private set; }
 
         GameObject _finisPlateauSector;
+        List<Renderer> _greenRenderers;
+        List<GameObject> _weakredObjs;
+        List<GameObject> _weakblueObjs;
 
         public StateController() {
             Instance = this;
+        }
+
+        public void PickUpRod(RodItem rod) {
+            PickedUpRod = rod;
+            if(rod.Color == RodItem.State.BLUE) {
+                rod.ChangeToBlue();
+            }
+            else {
+                rod.ChangeToRed();
+            }
+        }
+
+        public void DropRod() {
+            PickedUpRod = null;
+        }
+
+        public void CollisionRed() {
+            if(PickedUpRod != null || PickedUpRod.Color == RodItem.State.RED) {
+                return;
+            }
+            PickedUpRod.ChangeToRed();
+        }
+
+        public void CollisionBlue() {
+            if(PickedUpRod != null || PickedUpRod.Color == RodItem.State.BLUE) {
+                return;
+            }
+            PickedUpRod.ChangeToBlue();
         }
 
         public void Initialize() {
@@ -50,12 +81,30 @@ namespace Finis {
             }
             Finis.Log("Found our sector");
 
+            _greenRenderers = new List<Renderer>();
+            _weakredObjs = new List<GameObject>();
+            _weakblueObjs = new List<GameObject>();
             foreach(var child in _finisPlateauSector.GetComponentsInChildren<Transform>()) {
                 if(child.name == "Rod") {
                     var rodItem = child.gameObject.AddComponent<RodItem>();
                     rodItem._localDropOffset = new Vector3(0, 1, 0);
                     child.gameObject.AddComponent<OWCollider>();
                     Finis.Log("Set RodItem");
+                }
+                else if(child.name.Contains("highred_crystal")) {
+                    // TODO
+                }
+                else if(child.name.Contains("highblue_crystal")) {
+                    // TODO
+                }
+                else if(child.name.Contains("weakred_crystal")) {
+                    _weakredObjs.Add(child.gameObject);
+                }
+                else if(child.name.Contains("weakblue_crystal")) {
+                    _weakblueObjs.Add(child.gameObject);
+                }
+                else if(child.name.Contains("green_crystal")) {
+                    _greenRenderers.AddRange(child.GetComponentsInChildren<Renderer>());
                 }
             }
         }
