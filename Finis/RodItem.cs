@@ -74,8 +74,8 @@ namespace Finis {
             effect.SetActive(true);
 
             float t = 0;
-            float acceleration = 20;
-            float speed = 5;
+            float acceleration = 50;
+            float speed = 10;
             while(true) {
                 yield return null;
                 if(!effect) {
@@ -84,7 +84,7 @@ namespace Finis {
                 speed += acceleration * Time.deltaTime;
                 effect.transform.localScale += Vector3.one * Time.deltaTime * speed;
                 t += Time.deltaTime;
-                if(t > 2f) {
+                if(t > 0.8f) {
                     break;
                 }
             }

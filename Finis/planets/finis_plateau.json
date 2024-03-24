@@ -41,9 +41,34 @@
         "volume": 0.4,
         "priority": 0
       }
+    ],
+    "creditsVolume": [
+      {
+        "position": {
+          "x": -358.1099,
+          "y": -113.3131,
+          "z": -203.9881
+        },
+        "rename": "EndVolume",
+        "radius": 80.0,
+        "creditsType": "fast",
+        "deathType": "blackHole",
+        "gameOverText": "Can you go to the Eye? (the next section would be made after the jam!)"
+      }
     ]
   },
   "Props": {
+    "singularities": [
+      {
+        "position": {
+          "x": -358.1099,
+          "y": -113.3131,
+          "z": -203.9881
+        },
+        "rename": "EndBH",
+        "horizonRadius": 80.0
+      }
+    ],
     "details": [
       {
         "assetBundle": "planets/assetbundles/finis",

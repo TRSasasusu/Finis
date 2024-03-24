@@ -25,6 +25,10 @@ namespace Finis {
             //        StateController.Instance.CollisionBlue();
             //    }
             //}
+
+            else if(collision.collider.transform.parent && collision.collider.transform.parent.name == "KingPart") {
+                StateController.Instance.StartEnd();
+            }
         }
     }
 }

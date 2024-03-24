@@ -13,10 +13,14 @@ namespace Finis {
         public RodItem PickedUpRod { get; private set; }
         public Transform RodSocket { get; private set; }
 
-        GameObject _finisPlateauSector;
+        public GameObject FinisPlateauSector { get; private set; }
+        public GameObject EndVolume { get; private set; }
+        public GameObject EndBH { get; private set; }
+
         List<Renderer> _greenRenderers;
         List<GameObject> _weakredObjs;
         List<GameObject> _weakblueObjs;
+        End _end;
 
         public StateController() {
             Instance = this;
@@ -80,6 +84,10 @@ namespace Finis {
             }
         }
 
+        public void StartEnd() {
+            _end.StartEnd();
+        }
+
         public void Initialize() {
             Finis.Instance.StartCoroutine(InitializeBody());
         }
@@ -114,17 +122,32 @@ namespace Finis {
 
             while (true) {
                 yield return null;
-                _finisPlateauSector = GameObject.Find("FinisPlateau_Body/Sector");
-                if(_finisPlateauSector) {
+                FinisPlateauSector = GameObject.Find("FinisPlateau_Body/Sector");
+                if(FinisPlateauSector) {
                     break;
                 }
             }
             Finis.Log("Found our sector");
 
+            while(true) {
+                yield return null;
+                EndVolume = GameObject.Find("FinisPlateau_Body/Sector/EndVolume");
+                if(EndVolume) {
+                    break;
+                }
+            }
+            while(true) {
+                yield return null;
+                EndBH = GameObject.Find("FinisPlateau_Body/Sector/EndBH");
+                if(EndBH) {
+                    break;
+                }
+            }
+
             _greenRenderers = new List<Renderer>();
             _weakredObjs = new List<GameObject>();
             _weakblueObjs = new List<GameObject>();
-            foreach(var child in _finisPlateauSector.GetComponentsInChildren<Transform>()) {
+            foreach(var child in FinisPlateauSector.GetComponentsInChildren<Transform>()) {
                 if(child.name == "Rod") {
                     var rodItem = child.gameObject.AddComponent<RodItem>();
                     rodItem._localDropOffset = new Vector3(0, 1, 0);
@@ -156,6 +179,8 @@ namespace Finis {
             EnableGreen(false);
             EnableRed(false);
             EnableBlue(true);
+
+            _end = new End();
         }
     }
 }
