@@ -37,14 +37,14 @@ namespace Finis {
         }
 
         public void CollisionRed() {
-            if(PickedUpRod != null || PickedUpRod.Color == RodItem.State.RED) {
+            if(PickedUpRod == null || PickedUpRod.Color == RodItem.State.RED) {
                 return;
             }
             PickedUpRod.ChangeToRed();
         }
 
         public void CollisionBlue() {
-            if(PickedUpRod != null || PickedUpRod.Color == RodItem.State.BLUE) {
+            if(PickedUpRod == null || PickedUpRod.Color == RodItem.State.BLUE) {
                 return;
             }
             PickedUpRod.ChangeToBlue();
@@ -72,6 +72,16 @@ namespace Finis {
             RodSocket.localEulerAngles = new Vector3(0, 340, 25);
             Finis.Log("Set RodSocket");
 
+            while(true) {
+                yield return null;
+                var playerBody = GameObject.Find("Player_Body");
+                if(playerBody) {
+                    playerBody.AddComponent<HighCrystalDetector>();
+                    break;
+                }
+            }
+            Finis.Log("Set HighCrystalDetector");
+
             while (true) {
                 yield return null;
                 _finisPlateauSector = GameObject.Find("FinisPlateau_Body/Sector");
@@ -91,12 +101,17 @@ namespace Finis {
                     child.gameObject.AddComponent<OWCollider>();
                     Finis.Log("Set RodItem");
                 }
-                else if(child.name.Contains("highred_crystal")) {
-                    // TODO
-                }
-                else if(child.name.Contains("highblue_crystal")) {
-                    // TODO
-                }
+                //else if(child.name.Contains("highred_crystal")) {
+                //    foreach(var collider in child.GetComponentsInChildren<Collider>()) {
+                //        collider.gameObject.AddComponent<HighCrystalDetector>().Color = RodItem.State.RED;
+                //    }
+                //    //child.gameObject.AddComponent<HighCrystal>().Color = RodItem.State.RED;
+                //}
+                //else if(child.name.Contains("highblue_crystal")) {
+                //    foreach(var collider in child.GetComponentsInChildren<Collider>()) {
+                //        collider.gameObject.AddComponent<HighCrystalDetector>().Color = RodItem.State.BLUE;
+                //    }
+                //}
                 else if(child.name.Contains("weakred_crystal")) {
                     _weakredObjs.Add(child.gameObject);
                 }

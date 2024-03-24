@@ -70,17 +70,21 @@ namespace Finis {
         }
 
         IEnumerator ExpandEffect(GameObject effect) {
+            effect.transform.localScale = Vector3.one;
             effect.SetActive(true);
 
             float t = 0;
+            float acceleration = 10;
+            float speed = 1;
             while(true) {
                 yield return null;
                 if(!effect) {
                     yield break;
                 }
-                effect.transform.localScale += Vector3.one * Time.deltaTime * 10;
+                speed += acceleration * Time.deltaTime;
+                effect.transform.localScale += Vector3.one * Time.deltaTime * speed;
                 t += Time.deltaTime;
-                if(t > 3) {
+                if(t > 2f) {
                     break;
                 }
             }
