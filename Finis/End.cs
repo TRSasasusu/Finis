@@ -79,6 +79,9 @@ namespace Finis {
 
             _unbrokenGround.SetActive(false);
             _brokenGround.SetActive(true);
+            foreach(var obj in _brokenGround.GetComponentsInChildren<Transform>().Skip(1)) {
+                obj.transform.parent = _bhPos.transform.parent;
+            }
             t = 0f;
             while(true) {
                 yield return null;
