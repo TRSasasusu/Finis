@@ -26,14 +26,22 @@ namespace Finis {
             PickedUpRod = rod;
             if(rod.Color == RodItem.State.BLUE) {
                 rod.ChangeToBlue();
+                EnableRed(false);
+                EnableBlue(true);
             }
             else {
                 rod.ChangeToRed();
+                EnableRed(true);
+                EnableBlue(false);
             }
+            EnableGreen(true);
         }
 
         public void DropRod() {
             PickedUpRod = null;
+            EnableGreen(false);
+            EnableRed(false);
+            EnableBlue(true);
         }
 
         public void CollisionRed() {
@@ -41,6 +49,8 @@ namespace Finis {
                 return;
             }
             PickedUpRod.ChangeToRed();
+            EnableRed(true);
+            EnableBlue(false);
         }
 
         public void CollisionBlue() {
@@ -48,6 +58,26 @@ namespace Finis {
                 return;
             }
             PickedUpRod.ChangeToBlue();
+            EnableRed(false);
+            EnableBlue(true);
+        }
+
+        public void EnableGreen(bool enabled) {
+            foreach(var renderer in  _greenRenderers) {
+                renderer.enabled = enabled;
+            }
+        }
+
+        public void EnableRed(bool enabled) {
+            foreach(var obj in _weakredObjs) {
+                obj.SetActive(enabled);
+            }
+        }
+
+        public void EnableBlue(bool enabled) {
+            foreach(var obj in _weakblueObjs) {
+                obj.SetActive(enabled);
+            }
         }
 
         public void Initialize() {
@@ -122,6 +152,10 @@ namespace Finis {
                     _greenRenderers.AddRange(child.GetComponentsInChildren<Renderer>());
                 }
             }
+
+            EnableGreen(false);
+            EnableRed(false);
+            EnableBlue(true);
         }
     }
 }

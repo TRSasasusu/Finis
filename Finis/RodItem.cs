@@ -74,8 +74,8 @@ namespace Finis {
             effect.SetActive(true);
 
             float t = 0;
-            float acceleration = 10;
-            float speed = 1;
+            float acceleration = 20;
+            float speed = 5;
             while(true) {
                 yield return null;
                 if(!effect) {
