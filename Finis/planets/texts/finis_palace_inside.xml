@@ -1,1 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>MENTH: The community is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: But what did the king, who remained alone, do? He didn't take revenge, what was he thinking?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>CUMIN: Even if the battle is over, it's going to happen again because of this guy spinning around at the top?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>SACCO: It's like there's something that causes endless death and rebirth. I wonder if such a thing really exists.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>CUMIN: Is it somewhere in the universe? How did it come about? Is this a machine made by someone?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>6</ID>
+    <ParentID>5</ParentID>
+    <Text>MENTH: And what worries me is... something as if there is a way to step out of that circle and become nothing. Did this king have any means?</Text>
+  </TextBlock>
+</NomaiObject>

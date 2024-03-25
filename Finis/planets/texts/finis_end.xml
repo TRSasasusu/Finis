@@ -1,0 +1,26 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>MENTH: This is some kind of device. And...maybe...</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: In any case, it seems we had no use for them. When I touched this, I received a report that the Vessel's core had returned to normal. In other words, it's probably some kind of authentication device.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>MENTH: We probably didn't help what this person wanted to do. However, someday someone who matches that request will be summoned here.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>MENTH: I'm not sure if this is the right thing to mention. However, just as this device interfered with warp, perhaps a powerful warp core could be used to disrupt it.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>MENTH: My intuition is that everything will be decided in this next section. Good luck.</Text>
+  </TextBlock>
+</NomaiObject>

@@ -106,15 +106,15 @@
         },
         "keepLoaded": true
       },
-      {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform"
-      },
-      {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BrokenPlatform"
-      },
-      {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_NorthFragment/Interactables_NorthFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Lamp_EscapePodFlare"
-      },
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BreakablePlatform"
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/Platforms/Prefab_NOM_BrokenPlatform"
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_NorthFragment/Interactables_NorthFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Lamp_EscapePodFlare"
+      //},
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
         "position": {
@@ -154,26 +154,178 @@
           "z": 30
         }
       },
-      {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Torch"
-      },
       //{
-      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)"
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/Prefab_NOM_Torch"
       //},
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_Whiteboard (1)"
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_Whiteboard (1)",
+        "position": {
+          "x": -172.5,
+          "y": 70.6,
+          "z": 303
+        }
+      },
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Table_Geo" // there is no collider
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1" // there is no collider
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)" // there is no collider
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_Shelf (3)/Strucutre_NOM_Shelf" // there is no collider
+      //}
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -56.3,
+      //    "y": 626,
+      //    "z": 82
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -59.8,
+      //    "y": 614.4,
+      //    "z": 82
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -59.8,
+      //    "y": 603.4,
+      //    "z": 87.9
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -62.7,
+      //    "y": 595.2,
+      //    "z": 87.9
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -66.2,
+      //    "y": 584.3,
+      //    "z": 87.9
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -66.2,
+      //    "y": 573.7,
+      //    "z": 91.3
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -69,
+      //    "y": 565.3,
+      //    "z": 93.1
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -76,
+      //    "y": 554.6,
+      //    "z": 93.1
+      //  }
+      //},
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+      //  "position": {
+      //    "x": -76,
+      //    "y": 545.9,
+      //    "z": 97
+      //  }
+      //}
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+        "position": {
+          "x": -55.84,
+          "y": 632.6,
+          "z": 81.04
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": -7.7
+        }
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Table_Geo" // there is no collider
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -50.68,
+          "y": 629.63,
+          "z": 74.86
+        },
+        "rotation": {
+          "x": -12.208,
+          "y": 1.678,
+          "z": -0.756
+        }
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1" // there is no collider
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -48.91,
+          "y": 630.89,
+          "z": 81.9
+        },
+        "rotation": {
+          "x": -12.208,
+          "y": 1.678,
+          "z": -0.756
+        }
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)" // there is no collider
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -45.64,
+          "y": 629.02,
+          "z": 72.47
+        },
+        "rotation": {
+          "x": -12.208,
+          "y": 1.678,
+          "z": -0.756
+        }
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_Shelf (3)/Strucutre_NOM_Shelf" // there is no collider
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -51.62,
+          "y": 628.4,
+          "z": 71.67
+        },
+        "rotation": {
+          "x": -12.208,
+          "y": 1.678,
+          "z": -0.756
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -45,
+          "y": 630.2,
+          "z": 76.73
+        },
+        "rotation": {
+          "x": -12.208,
+          "y": 1.678,
+          "z": -0.756
+        }
       }
     ],
     "translatorText": [
@@ -210,7 +362,7 @@
         "type": "wall",
         "location": "unspecified",
         "xmlFile": "planets/texts/finis_pod_cave.xml",
-        "rename": "finid_pod_cave_wall",
+        "rename": "finis_pod_cave_wall",
         "position": {
           "x": -153.1767,
           "y": 148.2017,
@@ -220,6 +372,172 @@
           "x": 339,
           "y": 335,
           "z": 60
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "scroll",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_near_pod.xml",
+        "rename": "finis_near_pod_scroll",
+        "position": {
+          "x": -172.5,
+          "y": 70.6,
+          "z": 303
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_palace_inside.xml",
+        "rename": "finis_palace_inside_wall",
+        "position": {
+          "x": 95.32,
+          "y": 14.74,
+          "z": 391.42
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_palace_broken.xml",
+        "rename": "finis_palace_broken_wall",
+        "position": {
+          "x": 5.4461,
+          "y": 4.5776,
+          "z": 0.7526
+        },
+        "rotation": {
+          "x": 336.996,
+          "y": 1.732,
+          "z": 320.638
+        }
+      },
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/finis_palace_outside.xml",
+        "rename": "finis_palace_outside_recorder",
+        "position": {
+          "x": 11.47,
+          "y": -13.78,
+          "z": 380.64
+        },
+        "rotation": {
+          "x": 69.108,
+          "y": 180,
+          "z": 175.038
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "teenager"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_cave_ship.xml",
+        "rename": "finis_cave_ship_wall",
+        "position": {
+          "x": 121.23,
+          "y": -118.5,
+          "z": -83.7
+        }
+      },
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/finis_end.xml",
+        "rename": "finis_end_recorder",
+        "position": {
+          "x": -161.39,
+          "y": -10.9,
+          "z": -21.55
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_top_cave_top.xml",
+        "rename": "finis_top_cave_top_wall",
+        "position": {
+          "x": -45.24,
+          "y": 633.35,
+          "z": 75.98
+        },
+        "rotation": {
+          "x": 38.694,
+          "y": -94.519,
+          "z": 88.11401
         }
       }
     ]
