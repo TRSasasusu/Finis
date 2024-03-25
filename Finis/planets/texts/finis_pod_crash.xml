@@ -21,6 +21,6 @@
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>MENTH: There might be a connection between the pod's warp failure and our <![CDATA[<Color=orange>]]>Vessel<![CDATA[</Color>]]> coming here. In any case, we have no choice but to go outside first.</Text>
+    <Text>MENTH: There might be a connection between the pod's warp failure and our Vessel coming here. In any case, we have no choice but to go outside first.</Text>
   </TextBlock>
 </NomaiObject>

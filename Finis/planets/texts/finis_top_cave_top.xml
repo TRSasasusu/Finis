@@ -1,0 +1,21 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>MENTH: Is this still the same invisible wall? I was really helped by Annona who suggested this gravity crystal after the warp core at the last festival. ...This was put into practical use based on that.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: Oh, Escall, where have you gone? Since it's about you, I'm sure you've found something outrageous. If I find you, I'd like to hear your story.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>CUMIN: I'm going first! Mentor!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>MENTH: Wait, be careful!</Text>
+  </TextBlock>
+</NomaiObject>

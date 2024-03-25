@@ -1,0 +1,21 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>SACCO: This is where the first collision occurred. Then I guess we bumped into this beautiful board. It must be quite sturdy as it doesn't have any scratches.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>SACCO: But it's strange. Does that mean there was only one board like this standing upright on the hill?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: This one is definitely beautiful. I want to take it home, ... but it's a bit too heavy.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>2</ParentID>
+    <Text>SACCO: I hear Cumin's voice somewhere nearby. Let's take a look.</Text>
+  </TextBlock>
+</NomaiObject>

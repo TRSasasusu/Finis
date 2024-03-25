@@ -1,0 +1,26 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>MENTH: In conclusion, we escaped safely (as long as we don't encounter something strange at the next warp destination. However, such things are very welcome to Nomai!)</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: I'm not sure you can read the Nomai language, but I'd like to note this anyway: You probably shouldn't end up in the abyss.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>MENTH: (Don't you think it's a bit of a joke to put two abyss together?)</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>2</ParentID>
+    <Text>MENTH: Still, it's probably your destiny to reach it in the end. That's why we put everything we found back in its original place to avoid making things easier due to our presence. I hope that you will take some time to think about its meaning.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>MENTH: Well, the ones that are too heavy will remain the same! Okay, now that the Vessel is ready, it's time to say goodbye. (...Ah, I left all the notes as they were... deleting them goes against the beliefs of the species!)</Text>
+  </TextBlock>
+</NomaiObject>
