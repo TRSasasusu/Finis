@@ -17,6 +17,7 @@ namespace Finis {
         List<Transform> _brokenObjs;
         GameObject _core;
         Light _pointLight;
+        GameObject _endMusic;
         bool _startEnd;
 
         public End() {
@@ -46,7 +47,11 @@ namespace Finis {
                 else if(child.name == "green_crystal_core") {
                     _core = child.gameObject;
                 }
+                else if(child.name == "finis_end_music") {
+                    _endMusic = child.gameObject;
+                }
             }
+            _endMusic.SetActive(false);
         }
 
         public void StartEnd() {
@@ -60,6 +65,7 @@ namespace Finis {
         IEnumerator StartEndBody() {
             _cannonBlack.SetActive(false);
             _cannonYellow.SetActive(true);
+            _endMusic.SetActive(true);
 
             foreach(var collider in _core.GetComponentsInChildren<Collider>()) {
                 collider.enabled = false;
@@ -87,7 +93,7 @@ namespace Finis {
                 yield return null;
                 t += Time.deltaTime;
                 foreach(var obj in  _brokenObjs) {
-                    obj.localPosition = Utils.Lerp(obj.position, _bhPos.transform.position, t > maxTime ? 1 : t / maxTime);
+                    obj.localPosition = Utils.Lerp(obj.localPosition, Vector3.zero, t > maxTime ? 1 : t / maxTime);
                 }
                 if(t > maxTime) {
                     break;

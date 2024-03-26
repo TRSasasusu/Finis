@@ -84,6 +84,9 @@
     <None Update="planets\texts\finis_top_cave_top.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="subtitle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="translations\japanese.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

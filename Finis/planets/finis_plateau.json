@@ -40,6 +40,14 @@
         "radius": 600,
         "volume": 0.4,
         "priority": 0
+      },
+      {
+        "audio": "planets/assets/FinisEnd.wav",
+        "track": "music",
+        "radius": 600,
+        "volume": 0.6,
+        "priority": 1,
+        "rename": "finis_end_music"
       }
     ],
     "creditsVolume": [
@@ -87,7 +95,7 @@
       },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket",
-        "removeChildren": [ "Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback" ],
+        "removeChildren": [ "Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback", "Interactibles_EscapePod/Prefab_NOM_Vessel_Computer" ],
         "position": {
           "x": -165,
           "y": 122,
@@ -160,9 +168,14 @@
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/TowerInterior/Prefab_NOM_Whiteboard (1)",
         "position": {
-          "x": -172.5,
-          "y": 70.6,
-          "z": 303
+          "x": -170.69,
+          "y": 70.4,
+          "z": 301.83
+        },
+        "rotation": {
+          "x": 282.969,
+          "y": 116.185,
+          "z": 18.72
         }
       },
       //{
@@ -397,9 +410,9 @@
         "xmlFile": "planets/texts/finis_near_pod.xml",
         "rename": "finis_near_pod_scroll",
         "position": {
-          "x": -172.5,
-          "y": 70.6,
-          "z": 303
+          "x": -161.1753,
+          "y": 120.6929,
+          "z": 298.78
         }
       },
       {
@@ -428,9 +441,14 @@
         "xmlFile": "planets/texts/finis_palace_inside.xml",
         "rename": "finis_palace_inside_wall",
         "position": {
-          "x": 95.32,
-          "y": 14.74,
-          "z": 391.42
+          "x": 95.37,
+          "y": 14.24,
+          "z": 391.58
+        },
+        "rotation": {
+          "x": 177.959,
+          "y": -167.24,
+          "z": -177.925
         }
       },
       {
@@ -453,14 +471,14 @@
         "xmlFile": "planets/texts/finis_palace_broken.xml",
         "rename": "finis_palace_broken_wall",
         "position": {
-          "x": 5.4461,
-          "y": 4.5776,
-          "z": 0.7526
+          "x": 48.06,
+          "y": -48.1,
+          "z": 366.7
         },
         "rotation": {
-          "x": 336.996,
-          "y": 1.732,
-          "z": 320.638
+          "x": 346.603,
+          "y": 20.801,
+          "z": 81.039
         }
       },
       {
@@ -495,9 +513,14 @@
         "xmlFile": "planets/texts/finis_cave_ship.xml",
         "rename": "finis_cave_ship_wall",
         "position": {
-          "x": 121.23,
-          "y": -118.5,
-          "z": -83.7
+          "x": 116.89,
+          "y": -118.65,
+          "z": -82.17
+        },
+        "rotation": {
+          "x": 144.023,
+          "y": -58.26398,
+          "z": -72.591
         }
       },
       {
@@ -505,9 +528,14 @@
         "xmlFile": "planets/texts/finis_end.xml",
         "rename": "finis_end_recorder",
         "position": {
-          "x": -161.39,
-          "y": -10.9,
-          "z": -21.55
+          "x": -159.73,
+          "y": -10.39,
+          "z": -20.88
+        },
+        "rotation": {
+          "x": 6.417,
+          "y": -21.403,
+          "z": 105.916
         }
       },
       {
