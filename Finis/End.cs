@@ -94,7 +94,7 @@ namespace Finis {
                 yield return null;
                 t += Time.deltaTime;
                 foreach(var obj in  _brokenObjs) {
-                    obj.localPosition = Utils.Lerp(obj.localPosition, Vector3.zero, t > maxTime ? 1 : t / maxTime);
+                    obj.localPosition = Utils.Lerp(obj.localPosition, _bhPos.transform.localPosition, t > maxTime ? 1 : t / maxTime);
                 }
                 if(t > maxTime) {
                     break;

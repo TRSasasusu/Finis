@@ -13,4 +13,14 @@
     <ParentID>2</ParentID>
     <Text>CUMIN: Because I'm curious!</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_cave_text</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_king_rumor_cave</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

@@ -18,4 +18,10 @@
     <ParentID>3</ParentID>
     <Text>MENTH: Wait, be careful!</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_top_cave_text</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

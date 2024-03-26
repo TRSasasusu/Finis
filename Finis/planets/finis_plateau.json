@@ -63,6 +63,35 @@
         "deathType": "blackHole",
         "gameOverText": "Can you go to the Eye? (the next section would be made after the jam!)"
       }
+    ],
+    "revealVolumes": [
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "finis_cave_fact"
+        ],
+        "position": {
+          "x": 113.6,
+          "y": -177.9,
+          "z": -5.7
+        },
+        "radius": 100
+      },
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "finis_palace_fact"
+        ],
+        "position": {
+          "x": 79.8,
+          "y": 22,
+          "z": 400.7
+        },
+        "radius": 100,
+        "rename": "finis_palace_fact_reveal"
+      }
     ]
   },
   "Props": {
@@ -569,5 +598,13 @@
         }
       }
     ]
+  },
+  "ShipLog": {
+    "mapMode": {
+      "outlineSprite": "planets/shiplogs/sprites/finis-icon-outline.png",
+      "revealedSprite": "planets/shiplogs/sprites/finis-icon-revealed.png"
+    },
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/finis_shiplog.xml"
   }
 }

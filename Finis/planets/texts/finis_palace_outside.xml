@@ -33,4 +33,10 @@
     <ParentID>6</ParentID>
     <Text>MENTH: Hmm, maybe we should put this place on the back burner until we understand how it works.</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_palace_rumor_invisible</FactID>
+      <Condition>4</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

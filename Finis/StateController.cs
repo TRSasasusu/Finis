@@ -20,6 +20,7 @@ namespace Finis {
         List<Renderer> _greenRenderers;
         List<GameObject> _weakredObjs;
         List<GameObject> _weakblueObjs;
+        GameObject _finisPalaceFactReveal;
         End _end;
 
         public StateController() {
@@ -70,6 +71,7 @@ namespace Finis {
             foreach(var renderer in  _greenRenderers) {
                 renderer.enabled = enabled;
             }
+            _finisPalaceFactReveal.SetActive(enabled);
         }
 
         public void EnableRed(bool enabled) {
@@ -173,6 +175,9 @@ namespace Finis {
                 }
                 else if(child.name.Contains("green_crystal")) {
                     _greenRenderers.AddRange(child.GetComponentsInChildren<Renderer>());
+                }
+                else if(child.name == "finis_palace_fact_reveal") {
+                    _finisPalaceFactReveal = child.gameObject;
                 }
             }
 

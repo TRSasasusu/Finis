@@ -23,4 +23,22 @@
     <ParentID>4</ParentID>
     <Text>MENTH: There might be a connection between the pod's warp failure and our Vessel coming here. In any case, we have no choice but to go outside first.</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_pod_record</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_top_cave_rumor</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_palace_rumor_crash</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_cave_rumor</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

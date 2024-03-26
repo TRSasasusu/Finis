@@ -23,4 +23,10 @@
     <ParentID>4</ParentID>
     <Text>MENTH: My intuition is that everything will be decided in this next section. Good luck.</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_king_text</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

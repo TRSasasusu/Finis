@@ -23,4 +23,14 @@
     <ParentID>4</ParentID>
     <Text>MENTH: Well, the ones that are too heavy will remain the same! Okay, now that the Vessel is ready, it's time to say goodbye. (...Ah, I left all the notes as they were... deleting them goes against the beliefs of the species!)</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_pod_scroll</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_king_rumor_abyss</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

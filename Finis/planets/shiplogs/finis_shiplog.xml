@@ -1,0 +1,120 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>Finis Plateau</ID>
+  <Entry>
+    <ID>finis_pod</ID>
+    <Name>Escape Pod</Name>
+    <Curiosity>finis_king</Curiosity>
+    <ExploreFact>
+      <ID>finis_pod_record</ID>
+      <Text>An escape pod launched towards this planet from a ship that had malfunctioned in warp.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_pod_scroll</ID>
+      <Text>It seems that the Nomai here were able to escape safely in the end.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_pod_cave</ID>
+      <Text>I found a cave behind the escape pod. It was suggested that the particularly bright crystal inside could not be used on its own.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>finis_top_cave</ID>
+    <Name>Mountaintop Cave</Name>
+    <Curiosity>finis_king</Curiosity>
+    <RumorFact>
+      <ID>finis_top_cave_rumor</ID>
+      <SourceID>finis_pod</SourceID>
+      <Text>Nomai exited the escape pod and began exploring the planet.</Text>
+      <RumorName>Mountaintop</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_top_cave_text</ID>
+      <Text>Nomai entered through the gap at the top of the cave to avoid the invisible wall. There was a rod inside.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>finis_palace</ID>
+    <Name>Crystal Palace</Name>
+    <Curiosity>finis_king</Curiosity>
+    <RumorFact>
+      <ID>finis_palace_rumor_crash</ID>
+      <SourceID>finis_pod</SourceID>
+      <Text>The escape pod crashed once before crashing somewhere on this planet.</Text>
+      <RumorName>Crash</RumorName>
+    </RumorFact>
+    <RumorFact>
+      <ID>finis_palace_rumor_invisible</ID>
+      <Text>A Nomai named Cumin was in trouble because she was blocked by an invisible wall.</Text>
+      <RumorName>Invisible Wall</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_palace_fact</ID>
+      <Text>A palace built with a substance that cannot be seen unless you are holding the rod.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_palace_center</ID>
+      <Text>I found a central room that you can't enter unless you can see the red crystal.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>finis_hidden_palace</ID>
+    <Name>Central Room</Name>
+    <Curiosity>finis_king</Curiosity>
+    <ExploreFact>
+      <ID>finis_hidden_palace_eye</ID>
+      <Text>I found a symbol that seemed to be the Eye of the Universe. There was a diagram showing that this caused a large loop that caused repeated battles and deaths in the community.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>finis_cave</ID>
+    <Name>Crystal Cave</Name>
+    <Curiosity>finis_king</Curiosity>
+    <RumorFact>
+      <ID>finis_cave_rumor</ID>
+      <SourceID>finis_pod</SourceID>
+      <Text>Nomai exited the escape pod and began exploring the planet.</Text>
+      <RumorName>South Pole</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_cave_fact</ID>
+      <Text>A cave full of crystals.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_cave_text</ID>
+      <Text>Traveling near the star's core is extremely dangerous without a ship.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>finis_king</ID>
+    <Name>Crystal Cannon</Name>
+    <Curiosity>finis_king</Curiosity>
+    <IsCuriosity/>
+    <RumorFact>
+      <ID>finis_king_rumor_abyss</ID>
+      <SourceID>finis_pod</SourceID>
+      <Text>A Nomai named Menth described something as an abyss.</Text>
+      <RumorName>Abyss</RumorName>
+    </RumorFact>
+    <RumorFact>
+      <ID>finis_king_rumor_cave</ID>
+      <SourceID>finis_cave</SourceID>
+      <Text>It seems there is still more to this cave.</Text>
+      <RumorName>Deep inside the Cave</RumorName>
+    </RumorFact>
+    <RumorFact>
+      <ID>finis_king_rumor_eye</ID>
+      <SourceID>finis_hidden_palace</SourceID>
+      <Text>The king is trying to break the repetition by some means towards the Eye.</Text>
+      <RumorName>Whereabouts of the King</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_king_text</ID>
+      <Text>If you touch something like a pedestal under the cannon, something might happen.</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

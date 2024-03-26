@@ -28,4 +28,18 @@
     <ParentID>5</ParentID>
     <Text>MENTH: And what worries me is... something as if there is a way to step out of that circle and become nothing. Did this king have any means?</Text>
   </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_palace_center</FactID>
+      <Condition>6</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_hidden_palace_eye</FactID>
+      <Condition>6</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_king_rumor_eye</FactID>
+      <Condition>6</Condition>
+    </RevealFact>
+  </ShipLogConditions>
 </NomaiObject>

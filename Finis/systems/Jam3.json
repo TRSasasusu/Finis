@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "entryPositions": [
+    {
+      "id": "finis_pod",
+      "position": {}
+    },
+    {
+      "id": "finis_top_cave",
+      "position": {
+        "x": 300,
+        "y": 300
+      }
+    },
+    {
+      "id": "finis_palace",
+      "position": {
+        "x": -200,
+        "y": 180
+      },
+    },
+    {
+      "id": "finis_hidden_palace",
+      "position": {
+        "x": -250,
+        "y": 50
+      }
+    },
+    {
+      "id": "finis_cave",
+      "position": {
+        "x": 150,
+        "y": -200
+      }
+    },
+    {
+      "id": "finis_king",
+      "position": {
+        "x": -180,
+        "y": -350
+      }
+    }
+  ],
+  "curiosities": [
+    {
+      "id": "finis_king",
+      "color": {
+        "r": 160,
+        "g": 160,
+        "b": 10,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 220,
+        "g": 220,
+        "b": 15,
+        "a": 255
+      }
+    }
+  ]
+}
