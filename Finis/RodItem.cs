@@ -8,6 +8,8 @@ using IEnumerator = System.Collections.IEnumerator;
 
 namespace Finis {
     public class RodItem : OWItem {
+        public const ItemType FinisRod = (ItemType)2048;
+
         public enum State {
             BLUE,
             RED,
@@ -27,6 +29,8 @@ namespace Finis {
             _redEffect = _red.transform.Find("GetEffect").gameObject;
             _blue = transform.Find("rod/blue").gameObject;
             _blueEffect = _blue.transform.Find("GetEffect").gameObject;
+
+            _type = FinisRod; // to avoid setting the rod into nomai whiteboard
         }
 
         public override string GetDisplayName() {

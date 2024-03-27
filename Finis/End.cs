@@ -73,11 +73,14 @@ namespace Finis {
 
             var t = 0f;
             var maxTime = 5;
+            _core.transform.localScale *= 2;
+            var baseRange = _pointLight.range;
+            var basePos = _core.transform.localPosition;
             while(true) {
                 yield return null;
                 t += Time.deltaTime;
-                _pointLight.range = Mathf.Lerp(_pointLight.range, 200, t > maxTime ? 1 : t / maxTime);
-                _core.transform.localPosition = Utils.Lerp(_core.transform.localPosition, _bhPos.transform.localPosition, t > maxTime ? 1 : t / maxTime);
+                _pointLight.range = Mathf.Lerp(baseRange, 200, Utils.EaseOutCubic(t / maxTime));
+                _core.transform.localPosition = Utils.Lerp(basePos, _bhPos.transform.localPosition, Utils.EaseOutCubic(t / maxTime));
                 if(t > maxTime) {
                     break;
                 }
@@ -89,12 +92,15 @@ namespace Finis {
             foreach(var obj in _brokenObjs) {
                 obj.parent = _bhPos.transform.parent;
             }
+            var objsBasePos = _brokenObjs.Select(x => x.transform.localPosition).ToArray();
+            var objsBaseScale = _brokenObjs.Select(x => x.transform.localScale).ToArray();
             t = 0f;
             while(true) {
                 yield return null;
                 t += Time.deltaTime;
-                foreach(var obj in  _brokenObjs) {
-                    obj.localPosition = Utils.Lerp(obj.localPosition, _bhPos.transform.localPosition, t > maxTime ? 1 : t / maxTime);
+                for(var i = 0; i < _brokenObjs.Count; i++) {
+                    _brokenObjs[i].transform.localPosition = Utils.Lerp(objsBasePos[i], _bhPos.transform.localPosition, Utils.EaseInBack(t / maxTime));
+                    _brokenObjs[i].transform.localScale = Utils.Lerp(objsBaseScale[i], objsBaseScale[i] * 0.5f, Utils.EaseOutCubic(t / maxTime));
                 }
                 if(t > maxTime) {
                     break;

@@ -30,5 +30,10 @@ namespace Finis {
                 StateController.Instance.StartEnd();
             }
         }
+
+        //void DebugEnd() {
+        //    Finis.Log("Please disable this function before releasing!!", OWML.Common.MessageType.Warning);
+        //    StateController.Instance.StartEnd();
+        //}
     }
 }
