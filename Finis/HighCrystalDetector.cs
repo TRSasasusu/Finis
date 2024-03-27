@@ -10,7 +10,7 @@ namespace Finis {
         //public RodItem.State Color;
 
         void OnCollisionEnter(Collision collision) {
-            Finis.Log($"collided with {collision.collider.name}");
+            //Finis.Log($"collided with {collision.collider.name}");
             if(collision.collider.transform.parent && collision.collider.transform.parent.name.Contains("highred_crystal")) {
                 StateController.Instance.CollisionRed();
             }

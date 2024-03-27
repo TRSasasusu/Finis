@@ -118,10 +118,10 @@
         "path": "Assets/Finis/Prefabs/notkeeploaded.prefab",
         "scale": 1,
       },
-      {
-        "assetBundle": "planets/assetbundles/finis",
-        "path": "Assets/Finis/Prefabs/crystal1.prefab"
-      },
+      //{
+      //  "assetBundle": "planets/assetbundles/finis",
+      //  "path": "Assets/Finis/Prefabs/crystal1.prefab"
+      //},
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket",
         "removeChildren": [ "Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback", "Interactibles_EscapePod/Prefab_NOM_Vessel_Computer" ],

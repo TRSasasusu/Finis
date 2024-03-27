@@ -18,7 +18,7 @@ namespace Finis {
 
         private void Start() {
             // Starting here, you'll have access to OWML's mod helper.
-            ModHelper.Console.WriteLine($"My mod {nameof(Finis)} is loaded!", MessageType.Success);
+            ModHelper.Console.WriteLine($"{nameof(Finis)} is loaded!", MessageType.Success);
 
             // Get the New Horizons API and load configs
             var newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
