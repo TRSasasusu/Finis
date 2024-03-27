@@ -108,7 +108,7 @@ namespace Finis {
             RodSocket = GameObject.Instantiate(defaultItemSocket).transform;
             RodSocket.gameObject.name = "RodSocket";
             RodSocket.parent = defaultItemSocket.transform.parent;
-            RodSocket.localPosition = new Vector3(0.325f, -0.22f, 0.4f);
+            RodSocket.localPosition = new Vector3(0.405f, -0.33f, 0.45f);
             RodSocket.localEulerAngles = new Vector3(0, 340, 25);
             Finis.Log("Set RodSocket");
 
