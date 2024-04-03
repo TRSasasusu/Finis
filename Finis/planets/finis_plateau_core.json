@@ -3,7 +3,7 @@
   "name": "Finis Plateau Core",
   "starSystem": "Jam3",
   "Base": {
-    "groundSize": 10,
+    //"groundSize": 10,
     "surfaceSize": 31,
     "surfaceGravity": 70,
     "hasMapMarker": false,
@@ -13,4 +13,9 @@
     "semiMajorAxis": 0.1,
     "primaryBody": "Finis Plateau"
   },
+  "ShipLog": {
+    "mapMode": {
+      "remove": true
+    }
+  }
 }

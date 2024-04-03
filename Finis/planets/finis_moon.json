@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Finis Moon",
+  "starSystem": "Jam3",
+  "Base": {
+    //"groundSize": 10,
+    "surfaceSize": 31,
+    "surfaceGravity": 8,
+    "hasMapMarker": false,
+    "gravityVolumePriority": 1
+  },
+  "Orbit": {
+    "semiMajorAxis": 900,
+    "primaryBody": "Finis Plateau"
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/finis",
+        "path": "Assets/Finis/Prefabs/finis_red_moon.prefab",
+        "scale": 1,
+        "keepLoaded": true
+      }
+    ]
+  }
+}
