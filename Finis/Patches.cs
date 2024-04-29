@@ -17,7 +17,7 @@ namespace Finis {
             }
             if(__instance.name == "Rod") {
                 Finis.Log("Set Rod in RodSocket");
-                socketTransform = StateController.Instance.RodSocket;
+                socketTransform = PlatteauStateController.Instance.RodSocket;
             }
         }
     }

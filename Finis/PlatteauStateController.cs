@@ -7,8 +7,8 @@ using UnityEngine;
 using IEnumerator = System.Collections.IEnumerator;
 
 namespace Finis {
-    public class StateController {
-        public static StateController Instance;
+    public class PlatteauStateController {
+        public static PlatteauStateController Instance;
 
         public RodItem PickedUpRod { get; private set; }
         public Transform RodSocket { get; private set; }
@@ -23,7 +23,7 @@ namespace Finis {
         GameObject _finisPalaceFactReveal;
         End _end;
 
-        public StateController() {
+        public PlatteauStateController() {
             Instance = this;
         }
 

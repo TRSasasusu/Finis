@@ -40,13 +40,13 @@ namespace Finis {
         public override void PickUpItem(Transform holdTranform) {
             base.PickUpItem(holdTranform);
             //PickedUp = true;
-            StateController.Instance.PickUpRod(this);
+            PlatteauStateController.Instance.PickUpRod(this);
         }
 
         public override void DropItem(Vector3 position, Vector3 normal, Transform parent, Sector sector, IItemDropTarget customDropTarget) {
             base.DropItem(position, normal, parent, sector, customDropTarget);
             //PickedUp = false;
-            StateController.Instance.DropRod();
+            PlatteauStateController.Instance.DropRod();
         }
 
         public void ChangeToRed() {
@@ -94,6 +94,10 @@ namespace Finis {
             }
 
             effect.SetActive(false);
+        }
+
+        void Update() {
+            //Physics.Raycast
         }
     }
 }

@@ -1,4 +1,4 @@
-{
+/*{
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Finis Plateau",
   "starSystem": "Jam3",
@@ -602,9 +602,10 @@
   "ShipLog": {
     "mapMode": {
       "outlineSprite": "planets/shiplogs/sprites/finis-icon-outline.png",
-      "revealedSprite": "planets/shiplogs/sprites/finis-icon-revealed.png"
+      "revealedSprite": "planets/shiplogs/sprites/finis-icon-revealed.png",
+      "scale": 1.5
     },
     "spriteFolder": "planets/shiplogs/sprites",
     "xmlFile": "planets/shiplogs/finis_shiplog.xml"
   }
-}
+}*/

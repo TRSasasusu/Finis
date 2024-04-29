@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 53795965
+CRC: 1242323946
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 78aae56660ce63fe3373fb4e4af1546a
+    Hash: 1ebb8b64d983e1216c64f9a59d2b1630
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d52e26b5615cbdd85e0875a881404a0d
+    Hash: 6298fc77af486da7c2728f1067dc57e2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,6 +31,12 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 108
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5c2d328d259791744bb8539650a9c619, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0697417d0b4243b48a036bfb10342726, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
 - Class: 198
   Script: {instanceID: 0}
 - Class: 199
@@ -40,6 +46,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Finis/Prefabs/highblue_crystal.prefab
+- Assets/Finis/Prefabs/TheCollector.prefab
 - Assets/Finis/Prefabs/highred_crystal0.prefab
 - Assets/Finis/Prefabs/notkeeploaded.prefab
 - Assets/Finis/Prefabs/finis_plateau.prefab

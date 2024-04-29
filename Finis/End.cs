@@ -21,11 +21,11 @@ namespace Finis {
         bool _startEnd;
 
         public End() {
-            StateController.Instance.EndVolume.SetActive(false);
-            StateController.Instance.EndBH.SetActive(false);
+            PlatteauStateController.Instance.EndVolume.SetActive(false);
+            PlatteauStateController.Instance.EndBH.SetActive(false);
 
             _brokenObjs = new List<Transform>();
-            foreach (var child in StateController.Instance.FinisPlateauSector.GetComponentsInChildren<Transform>(true)) {
+            foreach (var child in PlatteauStateController.Instance.FinisPlateauSector.GetComponentsInChildren<Transform>(true)) {
                 if(child.name == "green_crystal_cannon") {
                     _cannonBlack = child.transform.Find("black").gameObject;
                     _cannonYellow = child.transform.Find("yellow").gameObject;
@@ -107,8 +107,8 @@ namespace Finis {
                 }
             }
 
-            StateController.Instance.EndVolume.SetActive(true);
-            StateController.Instance.EndBH.SetActive(true);
+            PlatteauStateController.Instance.EndVolume.SetActive(true);
+            PlatteauStateController.Instance.EndBH.SetActive(true);
         }
     }
 }

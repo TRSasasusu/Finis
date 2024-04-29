@@ -1,4 +1,4 @@
-{
+/*{
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Finis Moon",
   "starSystem": "Jam3",
@@ -22,5 +22,11 @@
         "keepLoaded": true
       }
     ]
+  },
+  "ShipLog": {
+    "mapMode": {
+      "invisibleWhenHidden": true,
+      "scale": 0.5
+    }
   }
-}
+}*/
