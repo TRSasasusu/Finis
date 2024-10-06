@@ -1,7 +1,7 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>MENTH: The gravity of this star's core is tremendous. It would have been really dangerous if Sacco hadn't brought us a small ship.</Text>
+    <Text>MENTH: The gravity of this planet's core is tremendous. It would have been really dangerous if Sacco hadn't brought us a small ship.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>

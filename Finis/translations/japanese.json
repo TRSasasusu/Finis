@@ -2,5 +2,92 @@
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "UIDictionary": {
         "Finis Plateau": "望焉の台地"
+    },
+    "DialogueDictionary": {
+        // finis_pod_crash.xml
+        "MENTH: Cumin, Sacco! Are you all right?": "MENTH:Cumin、Sacco！大丈夫か？&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: I'm okay!": "Cumin:大丈夫！&lt;i&gt;&lt;/i&gt;",
+        "SACCO: Alright. What happens to us? The warp of this pod is failed, and we're crashed. Why?": "SACCO:問題ないわ。何が起きたの？このポッドのワープは失敗し、そして墜落した。なぜ？&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: We collided twice! It tipped at the beginning and fell straight down!": "CUMIN:2回衝突した！最初ので傾いて、そのまま落っこちた！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: There might be a connection between the pod's warp failure and our Vessel coming here. In any case, we have no choice but to go outside first.": "MENTH:このポッドのワープが失敗したのと、我々の船がここに来てしまったのには何らかの繋がりがあるかもしれない。いずれにせよ、まずは外に出てみるしかなさそうだ。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_near_pod.xml
+        "MENTH: In conclusion, we escaped safely (as long as we don't encounter something strange at the next warp destination. However, such things are very welcome to Nomai!)": "MENTH:結論から言って、我々は無事に脱出した(ただし、次のワープ地点でまた変なのに出くわさない限り、ではある。だが、そういうやつはNomaiにとって大歓迎だ！)&lt;i&gt;&lt;/i&gt;",
+        "MENTH: I'm not sure you can read the Nomai language, but I'd like to note this anyway: You probably shouldn't end up in the abyss.": "MENTH:君がNomai語を読めるかはわからない。だが、どうであれここに書かせてほしい:君は深淵にたどり着くべきではないかもしれない。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: (Don't you think it's a bit of a joke to put two abyss together?)": "MENTH:(2つの意味で深淵とかけていて、少しばかりしゃれてると思わないか？)&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Still, it's probably your destiny to reach it in the end. That's why we put everything we found back in its original place to avoid making things easier due to our presence. I hope that you will take some time to think about its meaning.": "MENTH:それでも結局はそこへと至る運命にあるかもしれない。それこそが、我々がここで見つけたものを元の場所へと戻し、物事がそう簡単にはいかないようにしている理由である。その意味について少しでも考える時間ができてくれたら幸いなんだ。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Well, the ones that are too heavy will remain the same! Okay, now that the Vessel is ready, it's time to say goodbye. (...Ah, I left all the notes as they were... deleting them goes against the beliefs of the species!)": "MENTH:ああ、あいつを元通りにするには重すぎて無理だったけどな！さて、船はもう完璧だ。あとはここにさよならを言うだけだ。(…待て、メモ書きがそのままだ…いや、そこまで消してしまうのは我々の種に反する！)&lt;i&gt;&lt;/i&gt;",
+
+        // finis_pod_cave.xml
+        "MENTH: This crystal really helped us. I can't bear to leave you here.": "MENTH:この結晶には本当に助けられた。お前を残していくなんて耐えられないよ。&lt;i&gt;&lt;/i&gt;",
+        "SACCO: I'll be the last to pull back the hatch. It must be difficult for you, and Cumin.": "SACCO:私が最後にハッチを元に戻すわ。あなたには、そしてCuminにも難しいでしょうからね。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Oh please. After all, this crystal alone won't be enough to solve the problem.": "MENTH:ああ、そうしてくれ。とはいえ、この結晶だけでは問題を解決することはできないだろうけどな。&lt;i&gt;&lt;/i&gt;",
+        "SACCO: I'll overlook leaving hints like that. It's really difficult for Nomai to hide any knowledge.": "SACCO:そうやってヒントを残すのは見逃してあげる。Nomaiにとっては、どんな知識であれ隠すのは本当は耐えがたいことなのだから。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_top_cave_top.xml
+        "MENTH: Is this still the same invisible wall? I was really helped by Annona who suggested this gravity crystal after the warp core at the last festival. ...This was put into practical use based on that.": "MENTH:また見えない壁か？まったくAnnonaがワープコアに引き続き前回の祝祭で提案してくれた重力水晶には助けられたよ。…こいつはあれから実用化されたんだよ。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Oh, Escall, where have you gone? Since it's about you, I'm sure you've found something outrageous. If I find you, I'd like to hear your story.": "MENTH:ああ、Escall、お前はどこへ行ってしまったんだ？お前のことだ、何かとんでもないものを見つけたに違いない。お前を見つけたら、何があったのか聞かせてもらうからな。&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: I'm going first! Mentor!": "CUMIN:先に行くね！師匠！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Wait, be careful!": "MENTH:待て、気をつけるんだぞ！&lt;i&gt;&lt;/i&gt;",
+
+        // finis_cave_ship.xml
+        "MENTH: The gravity of this planet's core is tremendous. It would have been really dangerous if Sacco hadn't brought us a small ship.": "MENTH:この惑星のコアは凄まじい重力だ。Saccoが小型の探査船を持ってきてなかったら、本当に危なかった。&lt;i&gt;&lt;/i&gt;",
+        "SACCO: It's probably because you two keep pushing forward without worrying.": "SACCO:あなたたち2人ともまったく気にせず突き進むせいよ。&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: Because I'm curious!": "CUMIN:好奇心は止められない！&lt;i&gt;&lt;/i&gt;",
+
+        // finis_palace_broken.xml
+        "SACCO: This is where the first collision occurred. Then I guess we bumped into this beautiful board. It must be quite sturdy as it doesn't have any scratches.": "SACCO:ここが最初の衝突があった場所ね。推測するに、この美しい板はそれで落下したのでしょう。それでも一切傷ついてないのだから、すごく頑丈だわ。&lt;i&gt;&lt;/i&gt;",
+        "SACCO: But it's strange. Does that mean there was only one board like this standing upright on the hill?": "SACCO:でも不思議。つまり、この板は丘の上にたった1枚で佇んでいたということ？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: This one is definitely beautiful. I want to take it home, ... but it's a bit too heavy.": "MENTH:本当に美しい。こいつは持ち帰りたい…ちと重すぎるな。&lt;i&gt;&lt;/i&gt;",
+        "SACCO: I hear Cumin's voice somewhere nearby. Let's take a look.": "SACCO:近くでCuminの声がしたわ。見に行きましょう。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_palace_outside.xml
+        "CUMIN: Help me! There's an invisible wall and I can't get out!!": "CUMIN:助けて！見えない壁があって出られないの！！&lt;i&gt;&lt;/i&gt;",
+        "SACCO: ...It's true. I can't get close to you even though you're right in front of me.": "SACCO:…本当だわ。すぐ目の前にいるというのに、あなたに近づけない。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Cumin, calm down. How the hell did you get there?": "MENTH:Cumin、落ち着くんだ。どうやってそこに入ってしまったんだ？&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: I don't know! I was jumping up and down the wall around here and it came in!": "CUMIN:わからない！ただ、この壁の周りをぴょんぴょん跳んでたら入れちゃったの！&lt;i&gt;&lt;/i&gt;",
+        "SACCO: Maybe you should do that again?": "SACCO:もう一度、それをやってみるのはどうかしら？&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: Ah! ...I got out! Awesome, sis!!": "CUMIN:あ！……出られた！さすが姉さん！！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Hmm, maybe we should put this place on the back burner until we understand how it works.": "MENTH:ふむ、こいつの仕組みを理解するまでこの場所は後回しにすべきだな。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_palace_inside.xml
+        "MENTH: The community is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.": "MENTH:このコミュニティは紛争の末に破滅したということか。この星系にはここ以外にも色々な惑星があるから、そいつらと争いがあってもおかしくはない。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: But what did the king, who remained alone, do? He didn't take revenge, what was he thinking?": "MENTH:だが、独り残ったこの王は何をしたんだ？どうやら復讐ではなさそうだが、何を考えていたんだ？&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: Even if the battle is over, it's going to happen again because of this guy spinning around at the top?": "CUMIN:戦いが終わったとしても、それはまた繰り返される、ということを言ってるのかな？&lt;i&gt;&lt;/i&gt;",
+        "SACCO: It's like there's something that causes endless death and rebirth. I wonder if such a thing really exists.": "SACCO:まるで終わりのない死と再生を引き起こす何かが存在すると言っているようね。そんなもの本当に存在するのかしら？&lt;i&gt;&lt;/i&gt;",
+
+        "CUMIN: Is it somewhere in the universe? How did it come about? Is this a machine made by someone?": "CUMIN: この宇宙のどこかにいるのかな？どんなのだろう？誰かが作った機械とかかな？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: And what worries me is... something as if there is a way to step out of that circle and become nothing. Did this king have any means?": "MENTH:私が危惧しているのは…このサイクルを止めて無と帰す何らかの方法があるかもしれないということだ。この王には何か手段があったのか？&lt;i&gt;&lt;/i&gt;",
+    },
+    "ShipLogDictionary": {
+        "Finis Plateau": "望焉の台地",
+        "Escape Pod": "脱出ポッド",
+        "An escape pod launched towards this planet from the Vessel that had malfunctioned in warp.": "ワープの故障した船からこの惑星へ向けて放たれた脱出ポッド。",
+        "It seems that the Nomai here were able to escape safely in the end.": "最終的にNomaiは無事に脱出したようだ。",
+        "I found a cave behind the escape pod. It was suggested that the particularly bright crystal inside could not be used on its own.": "脱出ポッドの後ろに洞窟を見つけた。中にあるひときわ輝く結晶は、それ単体だけでは使うことができないと示唆されていた。",
+        "Mountaintop Cave": "山頂の洞窟&lt;i&gt;&lt;/i&gt;",
+        "Mountaintop": "山頂&lt;i&gt;&lt;/i&gt;",
+        "Nomai exited the escape pod and began exploring the planet.": "脱出ポッドから出たNomaiは惑星の探索を始めた。",
+        "Nomai entered through the gap at the top of the cave to avoid the invisible wall. There was a rod inside.": "Nomaiは洞窟のてっぺんにある見えない壁の隙間から入った。内部にはロッドがあった。",
+        "Crystal Palace": "結晶の御殿",
+        "Crash": "衝突",
+        "The escape pod crashed once before crashing somewhere on this planet.": "脱出ポッドは墜落前にこの惑星のどこかへ衝突していた。",
+        "A Nomai named Cumin was in trouble because she was blocked by an invisible wall.": "Cuminという名のNomaiは、見えない壁に閉じ込められて困っていた。",
+        "A palace built with a substance that cannot be seen unless you are holding the rod.": "御殿はロッドを持たない限り見ることのできない物質で建てられている。",
+        "I found a central room that you can't enter unless you can see the red crystal.": "赤い結晶が見えない限りは入ることのできない中央の部屋を見つけた。",
+        "Central Room": "中央の部屋",
+        "I found a symbol that seemed to be the Eye of the Universe. There was a diagram showing that this caused a large loop that caused repeated battles and deaths in the community.": "宇宙の眼と思しきシンボルを見つけた。眼によって、コミュニティに争いと死が繰り返し引き起こされるという大きなループが作られる様子が示されていた。",
+        "Crystal Cave": "結晶洞窟",
+        "South Pole": "南極",
+        "A cave full of crystals.": "結晶で満たされた洞窟。",
+        "Traveling near the planet's core is extremely dangerous without a ship.": "この惑星のコア付近を探査艇なしで通るのは非常に危険である。",
+        "Crystal Cannon": "結晶砲",
+        "Abyss": "深淵&lt;i&gt;&lt;/i&gt;",
+        "A Nomai named Menth described something as an abyss.": "Menthという名のNomaiは何かを深淵と表現した。&lt;i&gt;&lt;/i&gt;",
+        "Deep inside the Cave": "洞窟の奥",
+        "It seems there is still more to this cave.": "この洞窟にはまだ何かあるようだ。&lt;i&gt;&lt;/i&gt;",
+        "Whereabouts of the King": "王の行方",
+        "The king is trying to break the repetition by some means towards the Eye.": "王は眼に対する何らかの手段によって、繰り返しを断ち切ろうとしている。&lt;i&gt;&lt;/i&gt;",
+        "If you touch something like a pedestal under the cannon, something might happen.": "砲の近くにある台座に触れることで、何かが起こるかもしれない。"
     }
 }

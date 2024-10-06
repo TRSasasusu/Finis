@@ -6,7 +6,7 @@
     <Curiosity>finis_king</Curiosity>
     <ExploreFact>
       <ID>finis_pod_record</ID>
-      <Text>An escape pod launched towards this planet from a ship that had malfunctioned in warp.</Text>
+      <Text>An escape pod launched towards this planet from the Vessel that had malfunctioned in warp.</Text>
     </ExploreFact>
     <ExploreFact>
       <ID>finis_pod_scroll</ID>
@@ -85,7 +85,7 @@
     </ExploreFact>
     <ExploreFact>
       <ID>finis_cave_text</ID>
-      <Text>Traveling near the star's core is extremely dangerous without a ship.</Text>
+      <Text>Traveling near the planet's core is extremely dangerous without a ship.</Text>
     </ExploreFact>
   </Entry>
 
