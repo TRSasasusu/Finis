@@ -292,18 +292,31 @@
       //  }
       //}
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
         "position": {
-          "x": -55.84,
-          "y": 632.6,
-          "z": 81.04
+          "x": -69.4,
+          "y": 535,
+          "z": 102.1
         },
         "rotation": {
-          "x": 0,
-          "y": 0,
-          "z": -7.7
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -23.697
         }
       },
+      //{
+      //  "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+      //  "position": {
+      //    "x": -55.84,
+      //    "y": 632.6,
+      //    "z": 81.04
+      //  },
+      //  "rotation": {
+      //    "x": 0,
+      //    "y": 0,
+      //    "z": -7.7
+      //  }
+      //},
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
         "position": {

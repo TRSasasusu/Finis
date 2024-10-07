@@ -7,6 +7,8 @@ namespace Finis {
     public class Finis : ModBehaviour {
         public static Finis Instance;
 
+        public FixOWObj _fixOWObj;
+
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
         }
@@ -30,6 +32,11 @@ namespace Finis {
                 ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
                 var stateController = new StateController();
                 stateController.Initialize();
+
+                if(_fixOWObj != null) {
+                    _fixOWObj.DestroyResources();
+                }
+                _fixOWObj = new FixOWObj();
             };
         }
     }

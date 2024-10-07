@@ -64,9 +64,10 @@ namespace Finis {
 
             for(var i = 0; i < __instance._textContainerList.Count; i++) {
                 var container = __instance._textContainerList[i];
-                //Finis.Log($"Check container text: {container.textElement.text}");
+                Finis.Log($"Check container text: {container.textElement.text}");
                 if(container.textElement.text.Contains("<i>")) {
                     container.originalFont = _japanese_dynamic_font;
+                    container.textElement.font = _japanese_dynamic_font;
                     __instance._textContainerList[i] = container;
                 }
             }
