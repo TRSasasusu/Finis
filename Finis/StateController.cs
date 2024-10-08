@@ -22,27 +22,43 @@ namespace Finis {
         List<GameObject> _weakblueObjs;
         GameObject _finisPalaceFactReveal;
         End _end;
+        Coroutine _runAfterExpandingRod;
 
         public StateController() {
             Instance = this;
         }
 
         public void PickUpRod(RodItem rod) {
+            if(_runAfterExpandingRod != null) {
+                Finis.Instance.StopCoroutine(_runAfterExpandingRod);
+                _runAfterExpandingRod = null;
+            }
+
             PickedUpRod = rod;
             if(rod.Color == RodItem.State.BLUE) {
                 rod.ChangeToBlue();
-                EnableRed(false);
-                EnableBlue(true);
+                _runAfterExpandingRod = Finis.Instance.StartCoroutine(RunAfterExpandingRod(() => {
+                    EnableRed(false);
+                    EnableBlue(true);
+                    EnableGreen(true);
+                }));
             }
             else {
                 rod.ChangeToRed();
-                EnableRed(true);
-                EnableBlue(false);
+                _runAfterExpandingRod = Finis.Instance.StartCoroutine(RunAfterExpandingRod(() => {
+                    EnableRed(true);
+                    EnableBlue(false);
+                    EnableGreen(true);
+                }));
             }
-            EnableGreen(true);
         }
 
         public void DropRod() {
+            if(_runAfterExpandingRod != null) {
+                Finis.Instance.StopCoroutine(_runAfterExpandingRod);
+                _runAfterExpandingRod = null;
+            }
+
             PickedUpRod = null;
             EnableGreen(false);
             EnableRed(false);
@@ -53,18 +69,32 @@ namespace Finis {
             if(PickedUpRod == null || PickedUpRod.Color == RodItem.State.RED) {
                 return;
             }
+            if(_runAfterExpandingRod != null) {
+                Finis.Instance.StopCoroutine(_runAfterExpandingRod);
+                _runAfterExpandingRod = null;
+            }
+
             PickedUpRod.ChangeToRed();
-            EnableRed(true);
-            EnableBlue(false);
+            _runAfterExpandingRod = Finis.Instance.StartCoroutine(RunAfterExpandingRod(() => {
+                EnableRed(true);
+                EnableBlue(false);
+            }));
         }
 
         public void CollisionBlue() {
             if(PickedUpRod == null || PickedUpRod.Color == RodItem.State.BLUE) {
                 return;
             }
+            if(_runAfterExpandingRod != null) {
+                Finis.Instance.StopCoroutine(_runAfterExpandingRod);
+                _runAfterExpandingRod = null;
+            }
+
             PickedUpRod.ChangeToBlue();
-            EnableRed(false);
-            EnableBlue(true);
+            _runAfterExpandingRod = Finis.Instance.StartCoroutine(RunAfterExpandingRod(() => {
+                EnableRed(false);
+                EnableBlue(true);
+            }));
         }
 
         public void EnableGreen(bool enabled) {
@@ -92,6 +122,11 @@ namespace Finis {
 
         public void Initialize() {
             Finis.Instance.StartCoroutine(InitializeBody());
+        }
+
+        IEnumerator RunAfterExpandingRod(Action action) {
+            yield return new WaitForSeconds(0.65f);
+            action();
         }
 
         IEnumerator InitializeBody() {

@@ -53,8 +53,14 @@ namespace Finis {
                 yield return null;
                 var whiteBoard = GameObject.Find(WHITE_BOARD_PATH);
                 if(whiteBoard) {
-                    whiteBoard.transform.Find("whiteboard_stone").GetComponent<MeshRenderer>().materials[0] = _grayMat;
-                    whiteBoard.transform.Find("whiteboard_brokenTiles").GetComponent<MeshRenderer>().materials[0] = _grayMat;
+                    var stoneRenderer = whiteBoard.transform.Find("whiteboard_stone").GetComponent<MeshRenderer>();
+                    var stoneMats = stoneRenderer.materials;
+                    stoneMats[0] = _grayMat;
+                    stoneRenderer.materials = stoneMats;
+                    var brokenTilesRenderer = whiteBoard.transform.Find("whiteboard_brokenTiles").GetComponent<MeshRenderer>();
+                    var brokenTilesMats = brokenTilesRenderer.materials;
+                    brokenTilesMats[0] = _grayMat;
+                    brokenTilesRenderer.materials = brokenTilesMats;
                     break;
                 }
             }

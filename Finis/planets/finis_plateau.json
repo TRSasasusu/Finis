@@ -304,6 +304,136 @@
           "z": -23.697
         }
       },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -68.91,
+          "y": 544.12,
+          "z": 99.44
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -25.738
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -65.08,
+          "y": 549.7,
+          "z": 100.84
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -63.7648,
+          "y": 560.694,
+          "z": 98.1133
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -63.7555,
+          "y": 572.9347,
+          "z": 94.0185
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -63.3611,
+          "y": 582.3,
+          "z": 91.1701
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -59.039,
+          "y": 591.9,
+          "z": 91.2648
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -58.9448,
+          "y": 599.8,
+          "z": 88.6631
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -60.3852,
+          "y": 610.2,
+          "z": 84.0542
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -57.5435,
+          "y": 618.8,
+          "z": 83.307
+        },
+        "rotation": {
+          "x": 74.261,
+          "y": -65.10001,
+          "z": -27.443
+        }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
+        "position": {
+          "x": -56.7549,
+          "y": 626.1,
+          "z": 81.4679
+        },
+        "rotation": {
+          "x": 76.16901,
+          "y": -69.325,
+          "z": -31.529
+        }
+      },
       //{
       //  "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
       //  "position": {
@@ -321,7 +451,7 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
         "position": {
           "x": -50.68,
-          "y": 629.63,
+          "y": 630.3285,
           "z": 74.86
         },
         "rotation": {
@@ -334,7 +464,7 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
         "position": {
           "x": -48.91,
-          "y": 630.89,
+          "y": 631.5184,
           "z": 81.9
         },
         "rotation": {
@@ -360,7 +490,7 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
         "position": {
           "x": -51.62,
-          "y": 628.4,
+          "y": 629.8228,
           "z": 71.67
         },
         "rotation": {
@@ -373,7 +503,7 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
         "position": {
           "x": -45,
-          "y": 630.2,
+          "y": 629.801,
           "z": 76.73
         },
         "rotation": {
