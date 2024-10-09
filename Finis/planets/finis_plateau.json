@@ -221,10 +221,32 @@
         }
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1" // there is no collider
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1", // there is no collider
+        "position": {
+          "x": 11.2436,
+          "y": -12.2401,
+          "z": 380.9987
+        },
+        "rotation": {
+          "x": 79.4641,
+          "y": 180,
+          "z": 176.4073
+        },
+        "rename": "Props_NOM_SimpleChair_Geo 1_0"
       },
       {
-        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)" // there is no collider
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)", // there is no collider
+        "position": {
+          "x": 48.431,
+          "y": -49.521,
+          "z": 366.815
+        },
+        "rotation": {
+          "x": 81.5159,
+          "y": 353.8635,
+          "z": 329.3282
+        },
+        "rename": "Prefab_NOM_VaseThick_0"
       },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_Shelf (3)/Strucutre_NOM_Shelf", // there is no collider

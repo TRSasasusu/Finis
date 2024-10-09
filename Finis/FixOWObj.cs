@@ -16,6 +16,12 @@ namespace Finis {
         const string WHITE_BOARD_PATH = "FinisPlateau_Body/Sector/Prefab_NOM_Whiteboard (1)/Props_NOM_Whiteboard (1)";
         const string TABLE_PATH = "FinisPlateau_Body/Sector/Props_NOM_Table_Geo";
         const string SHELF_PATH = "FinisPlateau_Body/Sector/Strucutre_NOM_Shelf";
+        readonly string[] VASE_THICK_PATHS = new string[] {
+            "FinisPlateau_Body/Sector/Prefab_NOM_VaseThick_0",
+        };
+        readonly string[] CHAIR_PATHS = new string[] {
+            "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_0",
+        };
 
         Material _grayMat;
 
@@ -73,7 +79,13 @@ namespace Finis {
                 yield return null;
                 var table = GameObject.Find(TABLE_PATH);
                 if(table) {
-                    table.AddComponent<BoxCollider>();
+                    var colliderObj = new GameObject("collider");
+                    colliderObj.transform.parent = table.transform;
+                    colliderObj.transform.localPosition = new Vector3(0, 0.5f, 0);
+                    colliderObj.transform.localEulerAngles = Vector3.zero;
+                    colliderObj.transform.localScale = new Vector3(2.75f, 1.1f, 1.5f);
+                    colliderObj.AddComponent<BoxCollider>();
+
 
                     var tableRenderer = table.GetComponent<MeshRenderer>();
                     var tableMats = tableRenderer.materials;
@@ -90,7 +102,12 @@ namespace Finis {
                 yield return null;
                 var shelf = GameObject.Find(SHELF_PATH);
                 if(shelf) {
-                    shelf.AddComponent<BoxCollider>();
+                    var colliderObj = new GameObject("collider");
+                    colliderObj.transform.parent = shelf.transform;
+                    colliderObj.transform.localPosition = new Vector3(2, 0, 0);
+                    colliderObj.transform.localEulerAngles = Vector3.zero;
+                    colliderObj.transform.localScale = new Vector3(4, 0.5f, 1);
+                    colliderObj.AddComponent<BoxCollider>();
 
                     var shelfRenderer = shelf.GetComponent<MeshRenderer>();
                     var shelfMats = shelfRenderer.materials;
@@ -101,6 +118,50 @@ namespace Finis {
                 }
             }
             Finis.Log("end: finding shelf");
+
+            Finis.Log("start: finding vase");
+            foreach(var path in VASE_THICK_PATHS) {
+                while(true) {
+                    yield return null;
+                    var vase = GameObject.Find(path);
+                    if(vase) {
+                        var colliderObj = new GameObject("collider");
+                        colliderObj.transform.parent = vase.transform;
+                        colliderObj.transform.localPosition = new Vector3(0, 0.3f, 0);
+                        colliderObj.transform.localEulerAngles = Vector3.zero;
+                        colliderObj.transform.localScale = new Vector3(0.5f, 0.6f, 0.5f);
+                        colliderObj.AddComponent<BoxCollider>();
+
+                        var vaseRenderer = vase.GetComponent<MeshRenderer>();
+                        var vaseMats = vaseRenderer.materials;
+                        vaseMats[0] = _grayMat;
+                        vaseRenderer.materials = vaseMats;
+                        break;
+                    }
+                }
+            }
+            Finis.Log("end: finding vase");
+
+            foreach(var path in CHAIR_PATHS) {
+                while(true) {
+                    yield return null;
+                    var chair = GameObject.Find(path);
+                    if (chair) {
+                        var colliderObj = new GameObject("collider");
+                        colliderObj.transform.parent = chair.transform;
+                        colliderObj.transform.localPosition = new Vector3(0, 0.35f, 0);
+                        colliderObj.transform.localEulerAngles = new Vector3(0, 10, 0);
+                        colliderObj.transform.localScale = new Vector3(1.25f, 0.65f, 0.5f);
+                        colliderObj.AddComponent<BoxCollider>();
+
+                        var chairRenderer = chair.GetComponent<MeshRenderer>();
+                        var chairMats = chairRenderer.materials;
+                        chairMats[0] = _grayMat;
+                        chairRenderer.materials = chairMats;
+                        break;
+                    }
+                }
+            }
         }
     }
 }
