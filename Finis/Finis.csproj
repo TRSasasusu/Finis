@@ -48,6 +48,12 @@
     <None Update="planets\assetbundles\finis.manifest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="planets\assets\FinisEnd.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="planets\assets\KingsCriticalThings.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="planets\assets\TheLandWhereTheKingLeft.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

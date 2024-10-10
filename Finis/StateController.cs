@@ -16,6 +16,7 @@ namespace Finis {
         public GameObject FinisPlateauSector { get; private set; }
         public GameObject EndVolume { get; private set; }
         public GameObject EndBH { get; private set; }
+        public GameObject FinisMoonSector { get; private set; }
 
         List<Renderer> _greenRenderers;
         List<GameObject> _weakredObjs;
@@ -164,7 +165,14 @@ namespace Finis {
                     break;
                 }
             }
-            Finis.Log("Found our sector");
+            while (true) {
+                yield return null;
+                FinisMoonSector = GameObject.Find("FinisMoon_Body/Sector/");
+                if(FinisMoonSector) {
+                    break;
+                }
+            }
+            Finis.Log("Found sectors");
 
             while(true) {
                 yield return null;
@@ -213,6 +221,11 @@ namespace Finis {
                 }
                 else if(child.name == "finis_palace_fact_reveal") {
                     _finisPalaceFactReveal = child.gameObject;
+                }
+            }
+            foreach(var child in FinisMoonSector.GetComponentsInChildren<Transform>()) {
+                if(child.name.Contains("weakred_crystal")) {
+                    _weakredObjs.Add(child.gameObject);
                 }
             }
 

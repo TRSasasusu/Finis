@@ -6,12 +6,31 @@
     //"groundSize": 10,
     "surfaceSize": 31,
     "surfaceGravity": 8,
-    "hasMapMarker": false,
     "gravityVolumePriority": 1
+  },
+  "MapMarker": {
+    "maxDisplayDistanceOverride": 200
   },
   "Orbit": {
     "semiMajorAxis": 900,
     "primaryBody": "Finis Plateau"
+  },
+  "AmbientLights": [
+    {
+      "outerRadius": 80,
+      "intensity": 1.4
+    }
+  ],
+  "Volumes": {
+    "audioVolumes": [
+      {
+        "audio": "planets/assets/KingsCriticalThings.wav",
+        "track": "music",
+        "radius": 28,
+        "volume": 0.5,
+        "priority": 0
+      }
+    ]
   },
   "Props": {
     "details": [
@@ -20,7 +39,45 @@
         "path": "Assets/Finis/Prefabs/finis_red_moon.prefab",
         "scale": 1,
         "keepLoaded": true
+      },
+      {
+        "path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+        "quantumGroupID": "moonGMGroup",
+        "parentPath": "FinisMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/eyemeter",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -1.15,
+          "y": 2.8571,
+          "z": -0.7328
+        },
+        "rotation": {
+          "x": 0.9755,
+          "y": 328.0552,
+          "z": 16.4106
+        },
+        "scale": 0.3
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock",
+        "quantumGroupID": "moonQuantumGroup",
+        "parentPath": "FinisMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/eyemeter",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0.7593,
+          "y": 4.0197,
+          "z": -2.0385
+        },
+        "rotation": {
+          "x": 288.0992,
+          "y": 191.8554,
+          "z": 134.5247
+        }
       }
     ]
+  },
+  "ShipLog": {
+    "mapMode": {
+      "invisibleWhenHidden": true
+    }
   }
 }

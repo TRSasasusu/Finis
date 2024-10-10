@@ -235,6 +235,20 @@
         "rename": "Props_NOM_SimpleChair_Geo 1_0"
       },
       {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1", // there is no collider
+        "position": {
+          "x": 45.7914,
+          "y": -46.9081,
+          "z": 367.2505
+        },
+        "rotation": {
+          "x": 45.9091,
+          "y": 97.2396,
+          "z": 70.1457
+        },
+        "rename": "Props_NOM_SimpleChair_Geo 1_1"
+      },
+      {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)", // there is no collider
         "position": {
           "x": 48.431,
@@ -247,6 +261,34 @@
           "z": 329.3282
         },
         "rename": "Prefab_NOM_VaseThick_0"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)", // there is no collider
+        "position": {
+          "x": 20.7947,
+          "y": -30.2813,
+          "z": 375.7694
+        },
+        "rotation": {
+          "x": 18.9696,
+          "y": 103.1781,
+          "z": 105.5624
+        },
+        "rename": "Prefab_NOM_VaseThick_1"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)", // there is no collider
+        "position": {
+          "x": 9.4509,
+          "y": -15.2324,
+          "z": 380.4362
+        },
+        "rotation": {
+          "x": 13.945,
+          "y": 264.7446,
+          "z": 255.1243
+        },
+        "rename": "Prefab_NOM_VaseThick_2"
       },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_Shelf (3)/Strucutre_NOM_Shelf", // there is no collider

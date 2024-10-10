@@ -6,8 +6,10 @@
     //"groundSize": 10,
     "surfaceSize": 31,
     "surfaceGravity": 70,
-    "hasMapMarker": false,
     "gravityVolumePriority": 1
+  },
+  "MapMarker": {
+    "enabled": false
   },
   "Orbit": {
     "semiMajorAxis": 0.1,

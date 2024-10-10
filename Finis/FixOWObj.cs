@@ -18,9 +18,12 @@ namespace Finis {
         const string SHELF_PATH = "FinisPlateau_Body/Sector/Strucutre_NOM_Shelf";
         readonly string[] VASE_THICK_PATHS = new string[] {
             "FinisPlateau_Body/Sector/Prefab_NOM_VaseThick_0",
+            "FinisPlateau_Body/Sector/Prefab_NOM_VaseThick_1",
+            "FinisPlateau_Body/Sector/Prefab_NOM_VaseThick_2",
         };
         readonly string[] CHAIR_PATHS = new string[] {
             "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_0",
+            "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_1",
         };
 
         Material _grayMat;
