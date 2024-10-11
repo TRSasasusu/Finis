@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "Finis Moon",
+  "name": "Red Moon",
   "starSystem": "Jam3",
   "Base": {
     //"groundSize": 10,
@@ -43,7 +43,7 @@
       {
         "path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
         "quantumGroupID": "moonGMGroup",
-        "parentPath": "FinisMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/eyemeter",
+        "parentPath": "Sector/finis_red_moon/weakred_crystal_moon",
         "isRelativeToParent": true,
         "position": {
           "x": -1.15,
@@ -58,9 +58,43 @@
         "scale": 0.3
       },
       {
+        "path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+        "quantumGroupID": "moonGMGroup",
+        "parentPath": "Sector/finis_red_moon/weakred_crystal_moon",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -2.4087,
+          "y": -1.8617,
+          "z": 0.757
+        },
+        "rotation": {
+          "x": 3.6228,
+          "y": 15.4442,
+          "z": 122.1042
+        },
+        "scale": 0.3
+      },
+      {
+        "path": "GabbroIsland_Body/Sector_GabbroIsland/DetailPatches_GabbroIsland/Foliage_GabbroIsland/Props_Ghostmatter/Props_GM_Clutter (1)",
+        "quantumGroupID": "moonGMGroup",
+        "parentPath": "Sector/finis_red_moon/weakred_crystal_moon",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 1.6503,
+          "y": -0.0158,
+          "z": 2.7103
+        },
+        "rotation": {
+          "x": 281.502,
+          "y": 303.7802,
+          "z": 269.4461
+        },
+        "scale": 0.3
+      },
+      {
         "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock",
         "quantumGroupID": "moonQuantumGroup",
-        "parentPath": "FinisMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/eyemeter",
+        "parentPath": "Sector/finis_red_moon/weakred_crystal_moon",
         "isRelativeToParent": true,
         "position": {
           "x": 0.7593,
@@ -71,6 +105,167 @@
           "x": 288.0992,
           "y": 191.8554,
           "z": 134.5247
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock",
+        "quantumGroupID": "moonQuantumGroup",
+        "parentPath": "Sector/finis_red_moon/weakred_crystal_moon",
+        "isRelativeToParent": true,
+        "position": {
+          "x": -4.3109,
+          "y": -0.0735,
+          "z": 1.9625
+        },
+        "rotation": {
+          "x": 6.2681,
+          "y": 291.8554,
+          "z": 314.5247
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock",
+        "quantumGroupID": "moonQuantumGroup",
+        "parentPath": "Sector/finis_red_moon/weakred_crystal_moon",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 1.3728,
+          "y": -4.24,
+          "z": -1.8286
+        },
+        "rotation": {
+          "x": 59.4277,
+          "y": 111.8555,
+          "z": 138.6386
+        }
+      }
+    ],
+    "quantumGroups": [
+      {
+        "id": "moonGMGroup",
+        "type": "states",
+        "loop": true
+      },
+      {
+        "id": "moonQuantumGroup",
+        "type": "states",
+        "loop": true
+      }
+    ],
+    "translatorText": [
+      {
+        "arcInfo": [
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          },
+          //{
+          //  "type": "teenager"
+          //}
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_moon_escall.xml",
+        "rename": "finis_moon_escall_wall",
+        "position": {
+          "x": 0.7094,
+          "y": -2.7481,
+          "z": 1.6786
+        },
+        "rotation": {
+          "x": 35.3203,
+          "y": 11.4652,
+          "z": 18.5817
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_moon_infinite.xml",
+        "rename": "finis_moon_infinite_wall",
+        "position": {
+          "x": -0.865,
+          "y": -3.238,
+          "z": 1.344
+        },
+        "rotation": {
+          "x": 68.1771,
+          "y": 239.1701,
+          "z": 308.5481
+        },
+        "seed": 24
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_moon_collector.xml",
+        "rename": "finis_moon_collector_wall",
+        "position": {
+          "x": -2.9898,
+          "y": 1.3329,
+          "z": -0.5785
+        },
+        "rotation": {
+          "x": 0.2611,
+          "y": 258.2069,
+          "z": 201.4874
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_moon_chime.xml",
+        "rename": "finis_moon_chime_wall",
+        "position": {
+          "x": -1.7942,
+          "y": 2.5464,
+          "z": -0.6148
+        },
+        "rotation": {
+          "x": 290.4396,
+          "y": 237.8916,
+          "z": 41.0292
         }
       }
     ]

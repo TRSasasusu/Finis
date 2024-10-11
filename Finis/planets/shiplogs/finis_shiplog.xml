@@ -90,6 +90,22 @@
   </Entry>
 
   <Entry>
+    <ID>finis_battlefield</ID>
+    <Name>Battlefield</Name>
+    <Curiosity>finis_king</Curiosity>
+    <RumorFact>
+      <ID>finis_battlefield_rumor</ID>
+      <SourceID>finis_pod</SourceID>
+      <Text>Nomai exited the escape pod and began exploring the planet.</Text>
+      <RumorName>Plateau</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_battlefield_fact</ID>
+      <Text>The remains of a battlefield littered with the bodies and weapons of inhabitants.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
     <ID>finis_king</ID>
     <Name>Crystal Cannon</Name>
     <Curiosity>finis_king</Curiosity>
@@ -115,6 +131,39 @@
     <ExploreFact>
       <ID>finis_king_text</ID>
       <Text>If you touch something like a pedestal under the cannon, something might happen.</Text>
+    </ExploreFact>
+  </Entry>
+
+  <Entry>
+    <ID>finis_moon</ID>
+    <Name>Red Moon</Name>
+    <Curiosity>finis_moon</Curiosity>
+    <IsCuriosity/>
+    <RumorFact>
+      <ID>finis_moon_rumor</ID>
+      <SourceID>finis_pod</SourceID>
+      <Text>A Nomai named Cumin noticed something in the sky.</Text>
+      <RumorName>Sky</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_moon_fact</ID>
+      <Text>The relationships between various things centered around the eye are shown.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_quantum</ID>
+      <Text>Quantum shards and ghost matter crystals were collected here.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_cone</ID>
+      <Text>Once a Nomai named Menth had been stabbed with the line, now it was stabbed with me.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_nerine</ID>
+      <Text>The problem of the Collector was once solved, centered around a tribe led by a Nomai named Nerine.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_collector</ID>
+      <Text>It was suggested that there was a relationship between the Collector and the Lingering Chime. The inhabitants learned that a similar event had occurred in the previous universe.</Text>
     </ExploreFact>
   </Entry>
 </AstroObjectEntry>

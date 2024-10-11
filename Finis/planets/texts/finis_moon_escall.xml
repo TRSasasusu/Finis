@@ -1,0 +1,31 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>CUMIN: Amazing! This rock disappears when I take my eyes off it! Wait, it's moving?! ...And so are these scattered crystals!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: I've never seen anything like this. …Wait, isn't that Escall's Vessel?! Why, why! …No, calm down, analyze calmly... The angle of this line probably represents the proximity... the dot product, and then that symbol...</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>CUMIN: The <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>! ... Don't they look like that?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>MENTH: Ah, that's good. Yes, it shows how close we are to the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>, doesn't it? So, Escall, you're in the middle of this whole thing with the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>... Ok, let's get out of here and go find the thorn planets across the Universe!</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_moon_quantum</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_moon_fact</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

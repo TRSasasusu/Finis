@@ -1,7 +1,7 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>MENTH: The community is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.</Text>
+    <Text>MENTH: The <![CDATA[<Color=orange>]]>community<![CDATA[</Color>]]> is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>

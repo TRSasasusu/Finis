@@ -1,0 +1,22 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>SACCO: If your hypothesis is correct, then there is something closer to <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]> than the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>. But what is that structure? It almost looks like it came out of the Eye. …By the way, what are you investigating?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: Hmm... I thought these broken crystals looked similar to the crystals from <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, but upon closer inspection, they were subtly different. Rather, the material that makes up this planet is closer to <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, or you could even say it's the same. In other words (although there are many speculations), is this planet we're on now <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, and these broken crystals were...retrieved from that structure?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>SACCO: Too much speculation. But if that's the case, what does it mean that this planet and that structure are similar? For the inhabitants of this planet to see that their planet is similar to the one that came out of the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>?</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_moon_collector</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

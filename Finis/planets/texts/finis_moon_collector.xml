@@ -1,0 +1,22 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>MENTH: I know this one! <![CDATA[<Color=lightblue>]]>The Collector<![CDATA[</Color>]]>, right? They once released a deadly gas that could have wiped out life in an entire galaxy, but were contained by a tribe of Nomai and other species. Yes, it was a tribe led by a Nomai called Nerine.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>CUMIN: Mentor, you know a lot! The Nomai called Nerine is also amazing!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>MENTH: That's right... Actually, there was a kid on the Escall's Vessel who knew a lot about this, and he gave me a passionate speech about it. I hope they're safe too.</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_moon_nerine</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

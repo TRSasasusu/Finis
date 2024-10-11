@@ -25,6 +25,7 @@ namespace Finis {
             "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_0",
             "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_1",
         };
+        const string ESCAPE_POD_COMPUTER_PATH = "FinisPlateau_Body/Sector/EscapePod_Socket/Interactibles_EscapePod/Prefab_NOM_Vessel_Computer";
 
         Material _grayMat;
 
@@ -145,6 +146,7 @@ namespace Finis {
             }
             Finis.Log("end: finding vase");
 
+            Finis.Log("start: finding chair");
             foreach(var path in CHAIR_PATHS) {
                 while(true) {
                     yield return null;
@@ -165,6 +167,20 @@ namespace Finis {
                     }
                 }
             }
+            Finis.Log("end: finding chair");
+
+            Finis.Log("start: finding escape pod computer");
+            while(true) {
+                yield return null;
+                var escape_pod_computer = GameObject.Find(ESCAPE_POD_COMPUTER_PATH);
+                if(escape_pod_computer) {
+                    escape_pod_computer.GetComponent<CapsuleCollider>().enabled = false;
+                    var pillar = escape_pod_computer.transform.Find("Props_NOM_Vessel_Computer 1");
+                    pillar.transform.localPosition = new Vector3(0, 3, 0);
+                    break;
+                }
+            }
+            Finis.Log("end: finding escape pod computer");
         }
     }
 }

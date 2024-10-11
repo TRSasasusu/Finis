@@ -17,6 +17,7 @@ namespace Finis {
         public GameObject EndVolume { get; private set; }
         public GameObject EndBH { get; private set; }
         public GameObject FinisMoonSector { get; private set; }
+        public GameObject PlayerBody { get; private set; }
 
         List<Renderer> _greenRenderers;
         List<GameObject> _weakredObjs;
@@ -150,9 +151,9 @@ namespace Finis {
 
             while(true) {
                 yield return null;
-                var playerBody = GameObject.Find("Player_Body");
-                if(playerBody) {
-                    playerBody.AddComponent<HighCrystalDetector>();
+                PlayerBody = GameObject.Find("Player_Body");
+                if(PlayerBody) {
+                    PlayerBody.AddComponent<HighCrystalDetector>();
                     break;
                 }
             }
@@ -167,7 +168,7 @@ namespace Finis {
             }
             while (true) {
                 yield return null;
-                FinisMoonSector = GameObject.Find("FinisMoon_Body/Sector/");
+                FinisMoonSector = GameObject.Find("RedMoon_Body/Sector/");
                 if(FinisMoonSector) {
                     break;
                 }
@@ -234,6 +235,18 @@ namespace Finis {
             EnableBlue(true);
 
             _end = new End();
+
+            Finis.Log("Correctly set colors and end");
+
+            while(true) {
+                yield return null;
+                var eyeMeter = GameObject.Find("RedMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/eyemeter");
+                if(eyeMeter) {
+                    eyeMeter.AddComponent<EyeMeter>();
+                    break;
+                }
+            }
+            Finis.Log("Set EyeMeter");
         }
     }
 }

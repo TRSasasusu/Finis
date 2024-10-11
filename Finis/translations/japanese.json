@@ -1,7 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "UIDictionary": {
-        "Finis Plateau": "望焉の台地"
+        "Finis Plateau": "望焉の台地",
+        "Red Moon": "赤い月"
     },
     "DialogueDictionary": {
         // finis_pod_crash.xml
@@ -21,7 +22,7 @@
         // finis_pod_cave.xml
         "MENTH: This crystal really helped us. I can't bear to leave you here.": "MENTH:この結晶には本当に助けられた。お前を残していくなんて耐えられないよ。&lt;i&gt;&lt;/i&gt;",
         "SACCO: I'll be the last to pull back the hatch. It must be difficult for you, and Cumin.": "SACCO:私が最後にハッチを元に戻すわ。あなたには、そしてCuminにも難しいでしょうからね。&lt;i&gt;&lt;/i&gt;",
-        "MENTH: Oh please. After all, this crystal alone won't be enough to solve the problem.": "MENTH:ああ、そうしてくれ。とはいえ、この結晶だけでは問題を解決することはできないだろうけどな。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Oh please. After all, <![CDATA[<i>]]>this crystal alone won't be enough to solve the problem<![CDATA[</i>]]>.": "MENTH:ああ、そうしてくれ。とはいえ、<![CDATA[<i>]]>この結晶だけでは問題を解決することはできない<![CDATA[</i>]]>だろうけどな。&lt;i&gt;&lt;/i&gt;",
         "SACCO: I'll overlook leaving hints like that. It's really difficult for Nomai to hide any knowledge.": "SACCO:そうやってヒントを残すのは見逃してあげる。Nomaiにとっては、どんな知識であれ隠すのは本当は耐えがたいことなのだから。&lt;i&gt;&lt;/i&gt;",
 
         // finis_top_cave_top.xml
@@ -51,13 +52,45 @@
         "MENTH: Hmm, maybe we should put this place on the back burner until we understand how it works.": "MENTH:ふむ、こいつの仕組みを理解するまでこの場所は後回しにすべきだな。&lt;i&gt;&lt;/i&gt;",
 
         // finis_palace_inside.xml
-        "MENTH: The community is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.": "MENTH:このコミュニティは紛争の末に破滅したということか。この星系にはここ以外にも色々な惑星があるから、そいつらと争いがあってもおかしくはない。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: The <![CDATA[<Color=orange>]]>community<![CDATA[</Color>]]> is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.": "MENTH:この<![CDATA[<Color=orange>]]>コミュニティ<![CDATA[</Color>]]>は紛争の末に破滅したということか。この星系にはここ以外にも色々な惑星があるから、そいつらと争いがあってもおかしくはない。&lt;i&gt;&lt;/i&gt;",
         "MENTH: But what did the king, who remained alone, do? He didn't take revenge, what was he thinking?": "MENTH:だが、独り残ったこの王は何をしたんだ？どうやら復讐ではなさそうだが、何を考えていたんだ？&lt;i&gt;&lt;/i&gt;",
         "CUMIN: Even if the battle is over, it's going to happen again because of this guy spinning around at the top?": "CUMIN:戦いが終わったとしても、それはまた繰り返される、ということを言ってるのかな？&lt;i&gt;&lt;/i&gt;",
         "SACCO: It's like there's something that causes endless death and rebirth. I wonder if such a thing really exists.": "SACCO:まるで終わりのない死と再生を引き起こす何かが存在すると言っているようね。そんなもの本当に存在するのかしら？&lt;i&gt;&lt;/i&gt;",
 
         "CUMIN: Is it somewhere in the universe? How did it come about? Is this a machine made by someone?": "CUMIN:この宇宙のどこかにいるのかな？どんなのだろう？誰かが作った機械とかかな？&lt;i&gt;&lt;/i&gt;",
         "MENTH: And what worries me is... something as if there is a way to step out of that circle and become nothing. Did this king have any means?": "MENTH:私が危惧しているのは…このサイクルを止めて無と帰す何らかの方法があるかもしれないということだ。この王には何か手段があったのか？&lt;i&gt;&lt;/i&gt;",
+
+        // finis_battlefield.xml
+        "SACCO: This is a terrible sight... If the picture is correct, the only one who survived was the king. They couldn't win even with this cannon.": "SACCO:これは、凄惨な有様ね…。生き残ったのはあの絵の通りだとすると王だけかしら。この砲を使っても勝てなかったのね。&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: ...Wait, up! Look at the sky!": "CUMIN:…待って、上！空を見てみて！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Sky? There's nothing there...? ...Ah, I see, that's what it means.": "MENTH:空？何もないぞ…？…あぁ、なるほど、そういうことか。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_moon_escall.xml
+        "CUMIN: Amazing! This rock disappears when I take my eyes off it! Wait, it's moving?! ...And so are these scattered crystals!": "CUMIN:すごい！目を離すとこの石は消える！待って、移動してる？！…それに、ここのバラバラの結晶も！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: I've never seen anything like this. …Wait, isn't that Escall's Vessel?! Why, why! …No, calm down, analyze calmly... The angle of this line probably represents the proximity... the dot product, and then that symbol...": "MENTH:こんなもの見たことがない。…待て、あれはEscallの船じゃないか？！どうして、なぜ！…いや、落ち着け、冷静に分析しろ…。この線の角度はおそらく近さを表していて…内積か、それで、あのグルグル…&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: The <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>! ... Don't they look like that?": "CUMIN:<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>！…そんなふうに見えない？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Ah, that's good. Yes, it shows how close we are to the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>, doesn't it? So, Escall, you're in the middle of this whole thing with the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>... Ok, let's get out of here and go find the thorn planets across the Universe!": "MENTH:あぁ、採用だ。そう、<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>にどれだけ近いかを表しているんじゃないか？Escallよ、お前もこの<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>にまつわる渦中にいるというのか…よし、ここを脱出したら、宇宙中のイバラ惑星を探しにいくぞ！&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: Let's go!": "CUMIN:おー！",
+        //"": "SACCO:(どうしてあれがEscallの船だとわかったのかしら…私にはNomaiの船なんて大体どれも同じに見えるわ)",
+        // finis_moon_infinite.xml
+        "CUMIN: There have been lines stuck in your body for a while now, mentor. Are you okay?": "CUMIN:さっきから師匠にずっと線が刺さってるけど、大丈夫なの？",
+        "MENTH: Oh, I don't feel anything in particular. It's a strange thing in terms of the closeness, but it just means... I guess I have infinite possibilities!": "MENTH:ああ、特に何も感じないな。近さという観点からは奇妙なものだが、それは…きっと自分には無限の可能性があるということなんだろうな！",
+        "SACCO: I hope so.": "SACCO:だといいけど。",
+        // finis_moon_collector.xml
+        "MENTH: I know this one! <![CDATA[<Color=lightblue>]]>The Collector<![CDATA[</Color>]]>, right? They once released a deadly gas that could have wiped out life in an entire galaxy, but were contained by a tribe of Nomai and other species. Yes, it was a tribe led by a Nomai called Nerine.": "MENTH:こいつは知ってる！<![CDATA[<Color=lightblue>]]>収拾者<![CDATA[</Color>]]>、だろう？かつて1つの銀河の生命系を滅ぼしうる致死性のガスを撒き散らしていたが、Nomaiのある部族や他の種族らの協力によって封じ込められたんだ。あれは、そう、NerineというNomaiがリーダーを務める部族だった。&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: Mentor, you know a lot! The Nomai called Nerine is also amazing!": "CUMIN:師匠詳しい！NerineっていうNomaiもすごい！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: That's right... Actually, there was a kid on the Escall's Vessel who knew a lot about this, and he gave me a passionate speech about it. I hope they're safe too.": "MENTH:そうだな…実はEscallの船でこいつにやたら詳しいガキがいてな、そいつに熱弁されたことがあったんだ。…あいつらも無事だといいんだが…。&lt;i&gt;&lt;/i&gt;",
+        // finis_moon_chime.xml
+        "SACCO: If your hypothesis is correct, then there is something closer to <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]> than the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>. But what is that structure? It almost looks like it came out of the Eye. …By the way, what are you investigating?": "SACCO:先ほどのあなたの仮説の通りだとすると、<![CDATA[<Color=lightblue>]]>収拾者<![CDATA[</Color>]]>には<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>よりも近い存在があるわ。でも、あの構造物は何かしら。まるで<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>から出てきたようにも見える。…ところで何を調べてるの？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Hmm... I thought these broken crystals looked similar to the crystals from <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, but upon closer inspection, they were subtly different. Rather, the material that makes up this planet is closer to <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, or you could even say it's the same. In other words (although there are many speculations), is this planet we're on now <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, and these broken crystals were...retrieved from that structure?": "MENTH:ふむ…。この砕けた結晶が<![CDATA[<Color=lightblue>]]>収拾者<![CDATA[</Color>]]>由来の結晶と似ている、と思ったのだが、よく組成を調べると微妙に異なっている。むしろ、この惑星を構成する物質の方が<![CDATA[<Color=lightblue>]]>収拾者<![CDATA[</Color>]]>に近い、いや、同じと言ってもいい。つまり(推測も多いが)、今いるこの惑星は<![CDATA[<Color=lightblue>]]>収拾者<![CDATA[</Color>]]>であり、そしてこの砕けた結晶はあの構造物から…回収した、ということか？&lt;i&gt;&lt;/i&gt;",
+        "SACCO: Too much speculation. But if that's the case, what does it mean that this planet and that structure are similar? For the inhabitants of this planet to see that their planet is similar to the one that came out of the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>?": "SACCO:推測が多すぎるわ。…でも、仮にそうだとすると、この惑星とあの構造物が似ていることにどのような意味があるのかしら？この惑星の住人にとって、自分の住む惑星が<![CDATA[<Color=lightblue>]]>眼<![CDATA[</Color>]]>から出てきたものと似ていることに。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_end_online.xml
+        "HYSSOP: The signal is still active, good. I am now sending you a message through a device created by my ancestors. It was meant to be activated when someone arrived here, and it was said that the descendants would respond at that time. Now is the time.": "HYSSOP:通信はまだ生きているな、よし。私は今、祖先の作った装置を通してあなたにメッセージを送っている。ここに誰かがたどり着いたときに起動する仕組みとなっており、そのときに子孫は対応するようにと言い伝えられてきた。今がそのときだ。&lt;i&gt;&lt;/i&gt;",
+        "HYSSOP: Your ancestors feared that the cannon would bring about the end of the universe, so they set up a mechanism to interfere with its activation. The cannon uses the salvaged Nomai warp technology to create a singularity and destroy what lies beyond. Therefore, they can shift the singularity slightly after you pass through it, delaying its destruction.": "HYSSOP:祖先は、その砲がこの宇宙を終わりへと導くものだと危惧し、それが起動した際に干渉する仕掛けを施していた。というのも、その砲は回収したNomaiのワープ技術を利用して特異点を作り出し、その先を破壊しようとする。ゆえに、その特異点をあなたが通過した後に少しずらして、破壊を遅らせることができるのだ。&lt;i&gt;&lt;/i&gt;",
+        "HYSSOP: We believe you were selected because you knew the target's coordinates. As mentioned earlier, the cannon uses Nomai warp technology, and needs the target's coordinates. And that's why you were retrieved to this system.": "HYSSOP:あなたが選ばれたのは、おそらくその対象の座標を知っているからだと私たちは推測している。先ほども言及したように、その砲はNomaiのワープ技術を利用しているので、対象の座標を必要としているのだ。そうして、あなたはこの星系へと回収されてしまったのだろう。&lt;i&gt;&lt;/i&gt;",
+        "HYSSOP: We don't know what lies ahead. We can no longer expect to discover the unknown in our Blackrock's system, and I envy you.": "HYSSOP:この先に何が待ち受けているのか私たちにはわからない。もはや、私たちのいる黒き岩の星系では未知の発見など望めず、あなたをとても羨ましく思っている。&lt;i&gt;&lt;/i&gt;",
+        "HYSSOP: Our ancestors say it all begins when you touch that pedestal. This Nomai device can only delay the destruction for a short time. We hope to achieve our goal soon.": "HYSSOP:祖先によると、そこの台座にあなたが触れるとすべてが始まるらしい。このNomaiの装置によって破壊を遅らせられるのはわずかな時間だけだ。なるべく早く目的を達成できることを願っている。&lt;i&gt;&lt;/i&gt;"
     },
     "ShipLogDictionary": {
         "Finis Plateau": "望焉の台地",
@@ -81,6 +114,9 @@
         "South Pole": "南極",
         "A cave full of crystals.": "結晶で満たされた洞窟。",
         "Traveling near the planet's core is extremely dangerous without a ship.": "この惑星のコア付近を探査艇なしで通るのは非常に危険である。",
+        "Battlefield": "戦場跡",
+        "Plateau": "台地",
+        "The remains of a battlefield littered with the bodies and weapons of inhabitants.": "住人の死体や武器が散乱する戦場跡。",
         "Crystal Cannon": "結晶砲",
         "Abyss": "深淵&lt;i&gt;&lt;/i&gt;",
         "A Nomai named Menth described something as an abyss.": "Menthという名のNomaiは何かを深淵と表現した。&lt;i&gt;&lt;/i&gt;",
@@ -88,6 +124,14 @@
         "It seems there is still more to this cave.": "この洞窟にはまだ何かあるようだ。&lt;i&gt;&lt;/i&gt;",
         "Whereabouts of the King": "王の行方",
         "The king is trying to break the repetition by some means towards the Eye.": "王は眼に対する何らかの手段によって、繰り返しを断ち切ろうとしている。&lt;i&gt;&lt;/i&gt;",
-        "If you touch something like a pedestal under the cannon, something might happen.": "砲の近くにある台座に触れることで、何かが起こるかもしれない。"
+        "If you touch something like a pedestal under the cannon, something might happen.": "砲の近くにある台座に触れることで、何かが起こるかもしれない。",
+        "Red Moon": "赤い月",
+        "Sky": "空",
+        "A Nomai named Cumin noticed something in the sky.": "Cuminという名のNomaiは、空に何かを見つけた。",
+        "The relationships between various things centered around the eye are shown.": "眼を中心とした様々なものの関係が示されている。",
+        "Quantum shards and ghost matter crystals were collected here.": "量子のかけらと幽霊物質結晶がこの場に回収されていた。",
+        "Once a Nomai named Menth had been stabbed with the line, now it was stabbed with me.": "かつてはMenthという名のNomaiが線で刺されていたが、今は私に刺されていた。",
+        "The problem of the Collector was once solved, centered around a tribe led by a Nomai named Nerine.": "Nerineという名のNomai率いる部族を中心として、収拾者の問題はかつて解決された。",
+        "It was suggested that there was a relationship between the Collector and the Lingering Chime. The inhabitants learned that a similar event had occurred in the previous universe.": "収拾者と名残り奏の関係が示唆されていた。そして、住人たちは前の宇宙でも同じようなことが繰り返されたと知った。"
     }
 }
