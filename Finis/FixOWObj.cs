@@ -26,6 +26,8 @@ namespace Finis {
             "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_1",
         };
         const string ESCAPE_POD_COMPUTER_PATH = "FinisPlateau_Body/Sector/EscapePod_Socket/Interactibles_EscapePod/Prefab_NOM_Vessel_Computer";
+        const string MOON_ESCALL_WALL_PATH = "RedMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/finis_moon_escall_wall";
+        const string MOON_INFINITE_WALL_PATH = "RedMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/finis_moon_infinite_wall";
 
         Material _grayMat;
 
@@ -181,6 +183,28 @@ namespace Finis {
                 }
             }
             Finis.Log("end: finding escape pod computer");
+
+            Finis.Log("start: finding escall wall");
+            while (true) {
+                yield return null;
+                var moonEscallWall = GameObject.Find(MOON_ESCALL_WALL_PATH);
+                if(moonEscallWall) {
+                    moonEscallWall.transform.localScale = new Vector3(0.78f, 0.78f, 0.78f);
+                    break;
+                }
+            }
+            Finis.Log("end: finding escall wall");
+
+            Finis.Log("start: finding infinite wall");
+            while(true) {
+                yield return null;
+                var moonInfiniteWall = GameObject.Find(MOON_INFINITE_WALL_PATH);
+                if(moonInfiniteWall) {
+                    moonInfiniteWall.transform.localScale = new Vector3(0.88f, 0.88f, 0.88f);
+                    break;
+                }
+            }
+            Finis.Log("end: finding infinite wall");
         }
     }
 }

@@ -18,6 +18,11 @@
     <ParentID>3</ParentID>
     <Text>MENTH: Ah, that's good. Yes, it shows how close we are to the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>, doesn't it? So, Escall, you're in the middle of this whole thing with the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>... Ok, let's get out of here and go find the thorn planets across the Universe!</Text>
   </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>CUMIN: Let's go!</Text>
+  </TextBlock>
   <ShipLogConditions>
     <RevealFact>
       <FactID>finis_moon_quantum</FactID>

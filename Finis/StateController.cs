@@ -26,6 +26,12 @@ namespace Finis {
         End _end;
         Coroutine _runAfterExpandingRod;
 
+        readonly string[] ADDITIONAL_RED_OBJECT_PATHS = new string[] {
+            "RedMoon_Body/Sector/Quantum States - moonGMGroup",
+            "RedMoon_Body/Sector/Quantum States - moonQuantumGroup",
+            "RedMoon_Body/Sector/AudioVolume",
+        };
+
         public StateController() {
             Instance = this;
         }
@@ -227,6 +233,16 @@ namespace Finis {
             foreach(var child in FinisMoonSector.GetComponentsInChildren<Transform>()) {
                 if(child.name.Contains("weakred_crystal")) {
                     _weakredObjs.Add(child.gameObject);
+                }
+            }
+            foreach(var path in ADDITIONAL_RED_OBJECT_PATHS) {
+                while(true) {
+                    var obj = GameObject.Find(path);
+                    if(obj) {
+                        _weakredObjs.Add(obj);
+                        break;
+                    }
+                    yield return null;
                 }
             }
 
