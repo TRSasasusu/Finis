@@ -72,6 +72,12 @@
     <None Update="planets\shiplogs\sprites\finis-icon-revealed.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="planets\shiplogs\sprites\finismoon-icon-revealed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="planets\shiplogs\sprites\finis_battlefield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="planets\shiplogs\sprites\finis_cave.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -79,6 +85,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="planets\shiplogs\sprites\finis_king.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="planets\shiplogs\sprites\finis_moon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="planets\shiplogs\sprites\finis_palace.png">

@@ -275,7 +275,8 @@
   },
   "ShipLog": {
     "mapMode": {
-      "invisibleWhenHidden": true
-    }
+      "invisibleWhenHidden": true,
+      "revealedSprite": "planets/shiplogs/sprites/finismoon-icon-revealed.png"
+    },
   }
 }
