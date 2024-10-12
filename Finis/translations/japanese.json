@@ -2,7 +2,8 @@
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "UIDictionary": {
         "Finis Plateau": "望焉の台地",
-        "Red Moon": "赤い月"
+        "Red Moon": "赤い月",
+        "You arrived safely before the Eye of the Universe was destroyed.": "宇宙の眼が破壊される前にあなたは無事にたどり着いた"
     },
     "DialogueDictionary": {
         // finis_pod_crash.xml
@@ -51,6 +52,13 @@
         "CUMIN: Ah! ...I got out! Awesome, sis!!": "CUMIN:あ！……出られた！さすが姉さん！！&lt;i&gt;&lt;/i&gt;",
         "MENTH: Hmm, maybe we should put this place on the back burner until we understand how it works.": "MENTH:ふむ、こいつの仕組みを理解するまでこの場所は後回しにすべきだな。&lt;i&gt;&lt;/i&gt;",
 
+        // finis_palace_power.xml
+        "SACCO: So on this planet, they were using the corpses as an energy source to build cannons and steal things from other planets?": "SACCO:この惑星では、死体をエネルギー源にして砲の建造や、他の惑星などからものを奪うことをしていたというの？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: I see. Perhaps, hypothesis: they salvaged the warp technology from our Vessel and the escape pod, which is why we're stuck in this system.": "MENTH:そういうことか。おそらく、仮説:我々の船や脱出ポッドのワープ技術が回収された。それでこの星系に留められたのだろう。&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: What the heck! Then we'll never be able to get out of here!": "CUMIN:そんな！それじゃあ私たち、ここからもう一生出られない！&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Don't worry! Our Vessel has a spare warp core. And I just heard from our supervisor that it's working fine. So we'll leave the system as soon as we finish investigating this planet.": "MENTH:安心するんだ！我々の船には予備のワープコアがある。それに、そいつは問題なく稼働できると先ほど担当から連絡があった。だからあとはこの惑星の調査が終わり次第、この星系を離れる予定だ。&lt;i&gt;&lt;/i&gt;",
+        "MENTH: Well, it was only after your Vessel was gone that a spare warp core became recommended, Escall.": "MENTH:そう、予備のワープコアが推奨されるようになったのは、お前の船がいなくなってからなんだよ、Escall。&lt;i&gt;&lt;/i&gt;",
+
         // finis_palace_inside.xml
         "MENTH: The <![CDATA[<Color=orange>]]>community<![CDATA[</Color>]]> is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.": "MENTH:この<![CDATA[<Color=orange>]]>コミュニティ<![CDATA[</Color>]]>は紛争の末に破滅したということか。この星系にはここ以外にも色々な惑星があるから、そいつらと争いがあってもおかしくはない。&lt;i&gt;&lt;/i&gt;",
         "MENTH: But what did the king, who remained alone, do? He didn't take revenge, what was he thinking?": "MENTH:だが、独り残ったこの王は何をしたんだ？どうやら復讐ではなさそうだが、何を考えていたんだ？&lt;i&gt;&lt;/i&gt;",
@@ -90,7 +98,14 @@
         "HYSSOP: Your ancestors feared that the cannon would bring about the end of the universe, so they set up a mechanism to interfere with its activation. The cannon uses the salvaged Nomai warp technology to create a singularity and destroy what lies beyond. Therefore, they can shift the singularity slightly after you pass through it, delaying its destruction.": "HYSSOP:祖先は、その砲がこの宇宙を終わりへと導くものだと危惧し、それが起動した際に干渉する仕掛けを施していた。というのも、その砲は回収したNomaiのワープ技術を利用して特異点を作り出し、その先を破壊しようとする。ゆえに、その特異点をあなたが通過した後に少しずらして、破壊を遅らせることができるのだ。&lt;i&gt;&lt;/i&gt;",
         "HYSSOP: We believe you were selected because you knew the target's coordinates. As mentioned earlier, the cannon uses Nomai warp technology, and needs the target's coordinates. And that's why you were retrieved to this system.": "HYSSOP:あなたが選ばれたのは、おそらくその対象の座標を知っているからだと私たちは推測している。先ほども言及したように、その砲はNomaiのワープ技術を利用しているので、対象の座標を必要としているのだ。そうして、あなたはこの星系へと回収されてしまったのだろう。&lt;i&gt;&lt;/i&gt;",
         "HYSSOP: We don't know what lies ahead. We can no longer expect to discover the unknown in our Blackrock's system, and I envy you.": "HYSSOP:この先に何が待ち受けているのか私たちにはわからない。もはや、私たちのいる黒き岩の星系では未知の発見など望めず、あなたをとても羨ましく思っている。&lt;i&gt;&lt;/i&gt;",
-        "HYSSOP: Our ancestors say it all begins when you touch that pedestal. This Nomai device can only delay the destruction for a short time. We hope to achieve our goal soon.": "HYSSOP:祖先によると、そこの台座にあなたが触れるとすべてが始まるらしい。このNomaiの装置によって破壊を遅らせられるのはわずかな時間だけだ。なるべく早く目的を達成できることを願っている。&lt;i&gt;&lt;/i&gt;"
+        "HYSSOP: Our ancestors say it all begins when you touch that pedestal. This Nomai device can only delay the destruction for a short time. We hope to achieve our goal soon.": "HYSSOP:祖先によると、そこの台座にあなたが触れるとすべてが始まるらしい。このNomaiの装置によって破壊を遅らせられるのはわずかな時間だけだ。なるべく早く目的を達成できることを願っている。&lt;i&gt;&lt;/i&gt;",
+
+        // finis_ernesto.xml
+        "I'm Ernesto of the core! I'm a star, so it's okay to say here is the core of the star, right?": "ボクはコアのErnesto！ボクはスターなんだから、ここはスターのコアと言っても間違いじゃないよね？",
+        "Well, I used to be Nerine's pet, and I love it here so much I've been living here ever since. I love gravity!": "さて、ボクはかつてNerineのペットだったんだけど、ここが気に入ってずっと暮らしてるんだ。重力大好き！",
+        "Nerine had the theory that these crystals could even produce life, so she took the deadly material and left the core here. It's amazing how it has grown into a planet like this!": "Nerineは、ここの結晶は生命すら生み出しそうとの見解をもっていたから、致死性の物質だけとって、ここのコアは残してたんだ。そしたら、ここまでの惑星にまで成長するとは驚きだ！",
+        "She also liked the gravitational properties, and apparently brought some to the festival in the hopes that it might be used to manipulate black holes. That brings back memories!": "あとは、この重力性も気に入って、もしかするとブラックホールの扱いに応用できるかもと祝祭に一部を持っていったらしいよ。懐かしい！",
+        "I think I'll go after the core later too. See you!": "ボクもあとでコアを追いかけようかな。じゃあね！"
     },
     "ShipLogDictionary": {
         "Finis Plateau": "望焉の台地",
@@ -102,6 +117,7 @@
         "Mountaintop": "山頂&lt;i&gt;&lt;/i&gt;",
         "Nomai exited the escape pod and began exploring the planet.": "脱出ポッドから出たNomaiは惑星の探索を始めた。",
         "Nomai entered through the gap at the top of the cave to avoid the invisible wall. There was a rod inside.": "Nomaiは洞窟のてっぺんにある見えない壁の隙間から入った。内部にはロッドがあった。",
+        "The bodies of the planet's inhabitants were buried there, but there were signs that most of them had been taken elsewhere.": "この惑星の住人たちの死体が埋葬されていた。だが、大部分がどこかへ持ち去られた形跡がある。&lt;i&gt;&lt;/i&gt;",
         "Crystal Palace": "結晶の御殿",
         "Crash": "衝突",
         "The escape pod crashed once before crashing somewhere on this planet.": "脱出ポッドは墜落前にこの惑星のどこかへ衝突していた。",
@@ -109,6 +125,8 @@
         "A palace built with a substance that cannot be seen unless you are holding the rod.": "御殿はロッドを持たない限り見ることのできない物質で建てられている。",
         "I found a central room that you can't enter unless you can see the red crystal.": "赤い結晶が見えない限りは入ることのできない中央の部屋を見つけた。",
         "Central Room": "中央の部屋",
+        "The bodies of the residents were used to create cannons and retrieve objects from remote locations.": "住人の死体を用いて、砲の作成や、遠隔地の物体の回収がされていた。&lt;i&gt;&lt;/i&gt;",
+        "The Nomai speculated that their warp technology had been retrieved.": "Nomaiは、自分たちのワープ技術が回収されたと推測した。",
         "I found a symbol that seemed to be the Eye of the Universe. There was a diagram showing that this caused a large loop that caused repeated battles and deaths in the community.": "宇宙の眼と思しきシンボルを見つけた。眼によって、コミュニティに争いと死が繰り返し引き起こされるという大きなループが作られる様子が示されていた。",
         "Crystal Cave": "結晶洞窟",
         "South Pole": "南極",
@@ -124,6 +142,7 @@
         "It seems there is still more to this cave.": "この洞窟にはまだ何かあるようだ。&lt;i&gt;&lt;/i&gt;",
         "Whereabouts of the King": "王の行方",
         "The king is trying to break the repetition by some means towards the Eye.": "王は眼に対する何らかの手段によって、繰り返しを断ち切ろうとしている。&lt;i&gt;&lt;/i&gt;",
+        "A cannon built to destroy the Eye of the Universe.": "宇宙の眼を破壊するために建造された砲。",
         "If you touch something like a pedestal under the cannon, something might happen.": "砲の近くにある台座に触れることで、何かが起こるかもしれない。",
         "Red Moon": "赤い月",
         "Sky": "空",

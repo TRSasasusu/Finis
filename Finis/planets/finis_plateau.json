@@ -61,7 +61,8 @@
         "radius": 80.0,
         "creditsType": "fast",
         "deathType": "blackHole",
-        "gameOverText": "Can you go to the Eye? (the next section would be made after the jam!)"
+        //"gameOverText": "Can you go to the Eye? (the next section would be made after the jam!)"
+        "gameOverText": "You arrived safely before the Eye of the Universe was destroyed."
       }
     ],
     "revealVolumes": [
@@ -91,6 +92,20 @@
         },
         "radius": 100,
         "rename": "finis_palace_fact_reveal"
+      },
+      {
+        "revealOn": "enter",
+        "revealFor": "both",
+        "reveals": [
+          "finis_top_cave_grave"
+        ],
+        "position": {
+          "x": -55.3,
+          "y": 496.4,
+          "z": 2.5
+        },
+        "radius": 30,
+        "rename": "finist_top_cave_grave_reveal"
       }
     ]
   },
@@ -290,6 +305,34 @@
         "rename": "Props_NOM_SimpleChair_Geo 1_1"
       },
       {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1", // there is no collider
+        "position": {
+          "x": 117.883,
+          "y": -117.1297,
+          "z": -82.5834
+        },
+        "rotation": {
+          "x": 347.1085,
+          "y": 206.1745,
+          "z": 127.4853
+        },
+        "rename": "Props_NOM_SimpleChair_Geo 1_2"
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Furniture/Prefab_NOM_TableSet (1)/Props_NOM_TableSet/Props_NOM_Seat_B/Props_NOM_SimpleChair_Geo 1", // there is no collider
+        "position": {
+          "x": 116.7919,
+          "y": -120.3009,
+          "z": -79.8868
+        },
+        "rotation": {
+          "x": 50.7123,
+          "y": 277.2396,
+          "z": 154.5087
+        },
+        "rename": "Props_NOM_SimpleChair_Geo 1_3"
+      },
+      {
         "path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Props_QuantumFragment/OtherComponentsGroup/Architecture/Prefab_NOM_VaseThick (7)", // there is no collider
         "position": {
           "x": 48.431,
@@ -343,6 +386,62 @@
           "y": 219.7284,
           "z": 7.3138
         }
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -166.1546,
+          "y": -11.3787,
+          "z": -51.105
+        },
+        "rotation": {
+          "x": 352.8586,
+          "y": 197.2851,
+          "z": 249.9285
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -166.1546,
+          "y": -41.4956,
+          "z": -51.105
+        },
+        "rotation": {
+          "x": 32.1059,
+          "y": 102.4767,
+          "z": 249.9285
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -216.1482,
+          "y": -49.5581,
+          "z": -91.3825
+        },
+        "rotation": {
+          "x": 52.824,
+          "y": 282.4767,
+          "z": 69.9285
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -160.6501,
+          "y": -8.3866,
+          "z": -26.3756
+        },
+        "rotation": {
+          "x": 12.5996,
+          "y": 282.4767,
+          "z": 348.8082
+        },
+        "keepLoaded": true
       },
       //{
       //  "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/Interactables_CrashFragment/VisibleFrom_EscapePodCrashSite/GravityCrystals/Prefab_NOM_GravityCrystal (1)",
@@ -636,6 +735,11 @@
           "y": 1.678,
           "z": -0.756
         }
+      },
+      {
+        "rename": "Ernesto",
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/AnglerFishExhibit/AnglerFishTankPivot/Beast_Anglerfish",
+        "scale": 0.025
       }
     ],
     "translatorText": [
@@ -652,6 +756,21 @@
           "x": 50,
           "y": 140,
           "z": 180
+        }
+      },
+      {
+        "type": "recorder",
+        "xmlFile": "planets/texts/finis_battlefield.xml",
+        "rename": "finis_battlefield_recorder",
+        "position": {
+          "x": -347.4901,
+          "y": 20.6368,
+          "z": -193.5558
+        },
+        "rotation": {
+          "x": 176.94,
+          "y": -213.09,
+          "z": -89.87201
         }
       },
       {
@@ -710,6 +829,39 @@
           "x": -161.1753,
           "y": 120.6929,
           "z": 298.78
+        }
+      },
+      {
+        "arcInfo": [
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "teenager"
+          },
+          {
+            "type": "adult"
+          },
+          {
+            "type": "adult"
+          }
+        ],
+        "type": "wall",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_palace_power.xml",
+        "rename": "finis_palace_power_wall",
+        "position": {
+          "x": 73.45,
+          "y": 18.39,
+          "z": 425.15
+        },
+        "rotation": {
+          "x": 177.959,
+          "y": -167.24,
+          "z": -177.925
         }
       },
       {
@@ -820,19 +972,35 @@
           "z": -72.591
         }
       },
+      //{
+      //  "type": "recorder",
+      //  "xmlFile": "planets/texts/finis_end.xml",
+      //  "rename": "finis_end_recorder",
+      //  "position": {
+      //    "x": -159.73,
+      //    "y": -10.39,
+      //    "z": -20.88
+      //  },
+      //  "rotation": {
+      //    "x": 6.417,
+      //    "y": -21.403,
+      //    "z": 105.916
+      //  }
+      //},
       {
-        "type": "recorder",
-        "xmlFile": "planets/texts/finis_end.xml",
-        "rename": "finis_end_recorder",
+        "type": "wall",
+        "xmlFile": "planets/texts/finis_end_online.xml",
+        "rename": "finis_end_online_wall",
+        "location": "a",
         "position": {
-          "x": -159.73,
-          "y": -10.39,
-          "z": -20.88
+          "x": -161.3936,
+          "y": -8.5204,
+          "z": -19.4921
         },
         "rotation": {
-          "x": 6.417,
-          "y": -21.403,
-          "z": 105.916
+          "x": 274.4117,
+          "y": 347.7642,
+          "z": 107.3063
         }
       },
       {
@@ -864,6 +1032,16 @@
           "y": -94.519,
           "z": 88.11401
         }
+      }
+    ],
+    "dialogue": [
+      {
+        "parentPath": "Sector/Ernesto",
+        "isRelativeToParent": true,
+        "pathToAnimController": "Sector/Ernesto",
+        "radius": 3,
+        "range": 7,
+        "xmlFile": "planets/texts/finis_ernesto.xml"
       }
     ]
   },

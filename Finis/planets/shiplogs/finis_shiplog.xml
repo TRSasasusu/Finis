@@ -32,6 +32,10 @@
       <ID>finis_top_cave_text</ID>
       <Text>Nomai entered through the gap at the top of the cave to avoid the invisible wall. There was a rod inside.</Text>
     </ExploreFact>
+    <ExploreFact>
+      <ID>finis_top_cave_grave</ID>
+      <Text>The bodies of the planet's inhabitants were buried there, but there were signs that most of them had been taken elsewhere.</Text>
+    </ExploreFact>
   </Entry>
 
   <Entry>
@@ -63,6 +67,14 @@
     <ID>finis_hidden_palace</ID>
     <Name>Central Room</Name>
     <Curiosity>finis_king</Curiosity>
+    <ExploreFact>
+      <ID>finis_hidden_palace_power</ID>
+      <Text>The bodies of the residents were used to create cannons and retrieve objects from remote locations.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_hidden_palace_warp</ID>
+      <Text>The Nomai speculated that their warp technology had been retrieved.</Text>
+    </ExploreFact>
     <ExploreFact>
       <ID>finis_hidden_palace_eye</ID>
       <Text>I found a symbol that seemed to be the Eye of the Universe. There was a diagram showing that this caused a large loop that caused repeated battles and deaths in the community.</Text>
@@ -129,6 +141,10 @@
       <RumorName>Whereabouts of the King</RumorName>
     </RumorFact>
     <ExploreFact>
+      <ID>finis_king_purpose</ID>
+      <Text>A cannon built to destroy the Eye of the Universe.</Text>
+    </ExploreFact>
+    <ExploreFact>
       <ID>finis_king_text</ID>
       <Text>If you touch something like a pedestal under the cannon, something might happen.</Text>
     </ExploreFact>
@@ -141,7 +157,7 @@
     <IsCuriosity/>
     <RumorFact>
       <ID>finis_moon_rumor</ID>
-      <SourceID>finis_pod</SourceID>
+      <SourceID>finis_battlefield</SourceID>
       <Text>A Nomai named Cumin noticed something in the sky.</Text>
       <RumorName>Sky</RumorName>
     </RumorFact>

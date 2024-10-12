@@ -24,6 +24,8 @@ namespace Finis {
         readonly string[] CHAIR_PATHS = new string[] {
             "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_0",
             "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_1",
+            "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_2",
+            "FinisPlateau_Body/Sector/Props_NOM_SimpleChair_Geo 1_3",
         };
         const string ESCAPE_POD_COMPUTER_PATH = "FinisPlateau_Body/Sector/EscapePod_Socket/Interactibles_EscapePod/Prefab_NOM_Vessel_Computer";
         const string MOON_ESCALL_WALL_PATH = "RedMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/finis_moon_escall_wall";

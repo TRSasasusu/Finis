@@ -1,0 +1,41 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>HYSSOP: The signal is still active, good. I am now sending you a message through a device created by my ancestors. It was meant to be activated when someone arrived here, and it was said that the descendants would respond at that time. Now is the time.</Text>
+    <LocationB/>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>HYSSOP: Your ancestors feared that the cannon would bring about the end of the universe, so they set up a mechanism to interfere with its activation. The cannon uses the salvaged Nomai warp technology to create a singularity and destroy what lies beyond. Therefore, they can shift the singularity slightly after you pass through it, delaying its destruction.</Text>
+    <LocationB/>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>HYSSOP: We believe you were selected because you knew the target's coordinates. As mentioned earlier, the cannon uses Nomai warp technology, and needs the target's coordinates. And that's why you were retrieved to this system.</Text>
+    <LocationB/>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>HYSSOP: We don't know what lies ahead. We can no longer expect to discover the unknown in our Blackrock's system, and I envy you.</Text>
+    <LocationB/>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>HYSSOP: Our ancestors say it all begins when you touch that pedestal. This Nomai device can only delay the destruction for a short time. We hope to achieve our goal soon.</Text>
+    <LocationB/>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_king_purpose</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_king_text</FactID>
+      <Condition>5</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

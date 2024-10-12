@@ -1,0 +1,36 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>SACCO: So on this planet, they were using the corpses as an energy source to build cannons and steal things from other planets?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>MENTH: I see. Perhaps, hypothesis: they salvaged the warp technology from our Vessel and the escape pod, which is why we're stuck in this system.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>CUMIN: What the heck! Then we'll never be able to get out of here!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>MENTH: Don't worry! Our Vessel has a spare warp core. And I just heard from our supervisor that it's working fine. So we'll leave the system as soon as we finish investigating this planet.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>MENTH: Well, it was only after your Vessel was gone that a spare warp core became recommended, Escall.</Text>
+  </TextBlock>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>finis_hidden_palace_power</FactID>
+      <Condition>1</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_hidden_palace_warp</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

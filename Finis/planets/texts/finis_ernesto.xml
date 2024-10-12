@@ -1,0 +1,15 @@
+﻿<DialogueTree   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Ernesto</NameField>
+
+  <DialogueNode>
+    <Name>START</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>I'm Ernesto of the core! I'm a star, so it's okay to say here is the core of the star, right?</Page>
+      <Page>Well, I used to be Nerine's pet, and I love it here so much I've been living here ever since. I love gravity!</Page>
+      <Page>Nerine had the theory that these crystals could even produce life, so she took the deadly material and left the core here. It's amazing how it has grown into a planet like this!</Page>
+      <Page>She also liked the gravitational properties, and apparently brought some to the festival in the hopes that it might be used to manipulate black holes. That brings back memories!</Page>
+      <Page>I think I'll go after the core later too. See you!</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>
