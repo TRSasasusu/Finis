@@ -1,4 +1,4 @@
-![](finis-subtitle-readme.png?raw=true)
+![](finis-subtitle-readme_v2.png?raw=true)
 
 # Finis
 
