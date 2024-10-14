@@ -1,0 +1,35 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>Red Moon</ID>
+  <Entry>
+    <ID>finis_moon</ID>
+    <Name>Red Moon</Name>
+    <Curiosity>finis_moon</Curiosity>
+    <IsCuriosity/>
+    <RumorFact>
+      <ID>finis_moon_rumor</ID>
+      <SourceID>finis_battlefield</SourceID>
+      <Text>A Nomai named Cumin noticed something in the sky.</Text>
+      <RumorName>Sky</RumorName>
+    </RumorFact>
+    <ExploreFact>
+      <ID>finis_moon_fact</ID>
+      <Text>The relationships between various things centered around the eye are shown.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_quantum</ID>
+      <Text>Quantum shards and ghost matter crystals retrieved from our star system were present here.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_cone</ID>
+      <Text>Once a Nomai named Menth had been stabbed with the line, now it was stabbed with me.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_nerine</ID>
+      <Text>The problem of the Collector was once solved, centered around a tribe led by a Nomai named Nerine.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>finis_moon_collector</ID>
+      <Text>It was suggested that there was a relationship between the Collector and the Lingering Chime. The inhabitants learned that a similar event had occurred in the previous universe.</Text>
+    </ExploreFact>
+  </Entry>
+</AstroObjectEntry>

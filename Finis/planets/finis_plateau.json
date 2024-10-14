@@ -853,10 +853,11 @@
         "location": "unspecified",
         "xmlFile": "planets/texts/finis_palace_power.xml",
         "rename": "finis_palace_power_wall",
+        "parentPath": "Sector/notkeeploaded/weakred_crystal_palace",
         "position": {
           "x": 73.45,
           "y": 18.39,
-          "z": 425.15
+          "z": 425.3388
         },
         "rotation": {
           "x": 177.959,
@@ -889,6 +890,7 @@
         "location": "unspecified",
         "xmlFile": "planets/texts/finis_palace_inside.xml",
         "rename": "finis_palace_inside_wall",
+        "parentPath": "Sector/notkeeploaded/weakred_crystal_palace",
         "position": {
           "x": 95.37,
           "y": 14.24,

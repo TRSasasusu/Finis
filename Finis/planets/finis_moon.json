@@ -278,5 +278,7 @@
       "invisibleWhenHidden": true,
       "revealedSprite": "planets/shiplogs/sprites/finismoon-icon-revealed.png"
     },
+    "spriteFolder": "planets/shiplogs/sprites",
+    "xmlFile": "planets/shiplogs/finismoon_shiplog.xml"
   }
 }
