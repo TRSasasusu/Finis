@@ -19,6 +19,7 @@ namespace Finis {
         Light _pointLight;
         GameObject _endMusic;
         bool _startEnd;
+        GameObject _ernesto;
 
         public End() {
             StateController.Instance.EndVolume.SetActive(false);
@@ -50,8 +51,12 @@ namespace Finis {
                 else if(child.name == "finis_end_music") {
                     _endMusic = child.gameObject;
                 }
+                else if(child.name == "Ernesto") {
+                    _ernesto = child.gameObject;
+                }
             }
             _endMusic.SetActive(false);
+            //_ernesto.SetActive(false);
         }
 
         public void StartEnd() {
@@ -109,6 +114,8 @@ namespace Finis {
 
             StateController.Instance.EndVolume.SetActive(true);
             StateController.Instance.EndBH.SetActive(true);
+
+            _ernesto.SetActive(true);
         }
     }
 }

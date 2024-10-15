@@ -391,8 +391,8 @@
         "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
         "position": {
           "x": -166.1546,
-          "y": -11.3787,
-          "z": -51.105
+          "y": -13.3417,
+          "z": -71.9242
         },
         "rotation": {
           "x": 352.8586,
@@ -440,6 +440,160 @@
           "x": 12.5996,
           "y": 282.4767,
           "z": 348.8082
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -168.2296,
+          "y": -75.7468,
+          "z": -110.0768
+        },
+        "rotation": {
+          "x": 12.5996,
+          "y": 282.4767,
+          "z": 54.698
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -177.9267,
+          "y": -26.511,
+          "z": -55.5338
+        },
+        "rotation": {
+          "x": 12.5996,
+          "y": 185.0785,
+          "z": 168.6423
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -222.6757,
+          "y": -34.061,
+          "z": -112.2709
+        },
+        "rotation": {
+          "x": 12.5996,
+          "y": 50.4576,
+          "z": 255.4363
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -204.8441,
+          "y": -77.3207,
+          "z": -126.2782
+        },
+        "rotation": {
+          "x": 275.4742,
+          "y": 150.4293,
+          "z": 223.581
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -159.7184,
+          "y": -30.45,
+          "z": -105.0674
+        },
+        "rotation": {
+          "x": 12.5996,
+          "y": 73.8765,
+          "z": 71.1188
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -157.1283,
+          "y": -68.2267,
+          "z": -70.4541
+        },
+        "rotation": {
+          "x": 337.0962,
+          "y": 238.4001,
+          "z": 301.8821
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -169.9777,
+          "y": -17.5778,
+          "z": -17.4609
+        },
+        "rotation": {
+          "x": 2.774,
+          "y": 90.6674,
+          "z": 112.811
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -167.2018,
+          "y": -21.4758,
+          "z": -4.0718
+        },
+        "rotation": {
+          "x": 7.8132,
+          "y": 168.3245,
+          "z": 84.2275
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -167.8458,
+          "y": -22.0425,
+          "z": -28.1465
+        },
+        "rotation": {
+          "x": 355.7701,
+          "y": 56.8556,
+          "z": 106.2687
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -158.8682,
+          "y": -29.0278,
+          "z": -34.3616
+        },
+        "rotation": {
+          "x": 27.4852,
+          "y": 303.1187,
+          "z": 319.8925
+        },
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_EscapePodCrashSite/Sector_CrashFragment/EscapePod_Socket/Geometry_EscapePod/Structure_NOM_EscapePod_HT/escape_pod_ext/broken_swirlback",
+        "position": {
+          "x": -154.8196,
+          "y": -19.8683,
+          "z": -30.965
+        },
+        "rotation": {
+          "x": 359.5737,
+          "y": 95.3204,
+          "z": 86.5045
         },
         "keepLoaded": true
       },
@@ -995,14 +1149,14 @@
         "rename": "finis_end_online_wall",
         "location": "a",
         "position": {
-          "x": -161.3936,
-          "y": -8.5204,
-          "z": -19.4921
+          "x": -155.2513,
+          "y": -16.3707,
+          "z": -30.9911
         },
         "rotation": {
-          "x": 274.4117,
-          "y": 347.7642,
-          "z": 107.3063
+          "x": 357.4509,
+          "y": 183.9555,
+          "z": 287.3063
         }
       },
       {
