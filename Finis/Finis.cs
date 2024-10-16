@@ -6,6 +6,7 @@ using System.Reflection;
 namespace Finis {
     public class Finis : ModBehaviour {
         public static Finis Instance;
+        public static INewHorizons newHorizons;
 
         public FixOWObj _fixOWObj;
 
@@ -23,7 +24,7 @@ namespace Finis {
             ModHelper.Console.WriteLine($"{nameof(Finis)} is loaded!", MessageType.Success);
 
             // Get the New Horizons API and load configs
-            var newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
+            newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             newHorizons.LoadConfigs(this);
 
             // Example of accessing game code.

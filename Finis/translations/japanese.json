@@ -3,7 +3,8 @@
     "UIDictionary": {
         "Finis Plateau": "望焉の台地",
         "Red Moon": "赤い月",
-        "You arrived safely before the Eye of the Universe was destroyed.": "宇宙の眼が破壊される前にあなたは無事にたどり着いた"
+        "You arrived safely before the Eye of the Universe was destroyed.": "宇宙の眼が破壊される前にあなたは無事にたどり着いた",
+        "Rod": "ロッド"
     },
     "DialogueDictionary": {
         // finis_pod_crash.xml

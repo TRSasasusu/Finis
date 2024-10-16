@@ -34,7 +34,7 @@ namespace Finis {
         }
 
         public override string GetDisplayName() {
-            return "Rod";
+            return Finis.newHorizons.GetTranslationForUI("Rod");
         }
 
         public override void PickUpItem(Transform holdTranform) {
