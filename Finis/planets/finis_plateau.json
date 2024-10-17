@@ -50,21 +50,21 @@
         "rename": "finis_end_music"
       }
     ],
-    "creditsVolume": [
-      {
-        "position": {
-          "x": -358.1099,
-          "y": -113.3131,
-          "z": -203.9881
-        },
-        "rename": "EndVolume",
-        "radius": 80.0,
-        "creditsType": "fast",
-        "deathType": "blackHole",
-        //"gameOverText": "Can you go to the Eye? (the next section would be made after the jam!)"
-        "gameOverText": "You arrived safely before the Eye of the Universe was destroyed."
-      }
-    ],
+    //"creditsVolume": [
+    //  {
+    //    "position": {
+    //      "x": -358.1099,
+    //      "y": -113.3131,
+    //      "z": -203.9881
+    //    },
+    //    "rename": "EndVolume",
+    //    "radius": 80.0,
+    //    "creditsType": "fast",
+    //    "deathType": "blackHole",
+    //    //"gameOverText": "Can you go to the Eye? (the next section would be made after the jam!)"
+    //    "gameOverText": "You arrived safely before the Eye of the Universe was destroyed."
+    //  }
+    //],
     "revealVolumes": [
       {
         "revealOn": "enter",
@@ -118,7 +118,9 @@
           "z": -203.9881
         },
         "rename": "EndBH",
-        "horizonRadius": 80.0
+        "horizonRadius": 80.0,
+        "targetStarSystem": "EyeOfTheUniverse",
+        "spawnPointID": "finis_eye_spawn"
       }
     ],
     "details": [

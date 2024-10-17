@@ -9,6 +9,7 @@ namespace Finis {
         public static INewHorizons newHorizons;
 
         public FixOWObj _fixOWObj;
+        public ControllerForEye _controllerForEye;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -23,14 +24,29 @@ namespace Finis {
             // Starting here, you'll have access to OWML's mod helper.
             ModHelper.Console.WriteLine($"{nameof(Finis)} is loaded!", MessageType.Success);
 
+            //PlayerData.SaveEyeCompletion(); // Start should be Jam3 not the Eye.
+
             // Get the New Horizons API and load configs
             newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             newHorizons.LoadConfigs(this);
 
+            ModHelper.Events.Unity.RunWhen(() => PlayerData._currentGameSave != null, () => {
+                Log("Start in Jam3 not in the Eye");
+                PlayerData._currentGameSave.warpedToTheEye = false;
+            });
+
             // Example of accessing game code.
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) => {
-                if (loadScene != OWScene.SolarSystem) return;
-                ModHelper.Console.WriteLine("Loaded into solar system!", MessageType.Success);
+                if(loadScene != OWScene.SolarSystem || newHorizons.GetCurrentStarSystem() != "Jam3") {
+                    if(loadScene == OWScene.EyeOfTheUniverse) {
+                        if(_controllerForEye != null) {
+                            _controllerForEye.SpawnShip();
+                        }
+                    }
+                    return;
+                }
+                ModHelper.Console.WriteLine("Loaded into Jam3 system!", MessageType.Success);
+
                 var stateController = new StateController();
                 stateController.Initialize();
 
@@ -38,6 +54,15 @@ namespace Finis {
                     _fixOWObj.DestroyResources();
                 }
                 _fixOWObj = new FixOWObj();
+
+                if(_controllerForEye != null) {
+                    if(_controllerForEye.ClonedShip) {
+                        return;
+                    }
+                    _controllerForEye.DestroyResources();
+                }
+                _controllerForEye = new ControllerForEye();
+                _controllerForEye.CloneShip();
             };
         }
     }

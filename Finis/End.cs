@@ -22,7 +22,7 @@ namespace Finis {
         GameObject _ernesto;
 
         public End() {
-            StateController.Instance.EndVolume.SetActive(false);
+            //StateController.Instance.EndVolume.SetActive(false);
             StateController.Instance.EndBH.SetActive(false);
 
             _brokenObjs = new List<Transform>();
@@ -112,7 +112,7 @@ namespace Finis {
                 }
             }
 
-            StateController.Instance.EndVolume.SetActive(true);
+            //StateController.Instance.EndVolume.SetActive(true);
             StateController.Instance.EndBH.SetActive(true);
 
             _ernesto.SetActive(true);

@@ -14,7 +14,7 @@ namespace Finis {
         public Transform RodSocket { get; private set; }
 
         public GameObject FinisPlateauSector { get; private set; }
-        public GameObject EndVolume { get; private set; }
+        //public GameObject EndVolume { get; private set; }
         public GameObject EndBH { get; private set; }
         public GameObject FinisMoonSector { get; private set; }
         public GameObject PlayerBody { get; private set; }
@@ -181,13 +181,13 @@ namespace Finis {
             }
             Finis.Log("Found sectors");
 
-            while(true) {
-                yield return null;
-                EndVolume = GameObject.Find("FinisPlateau_Body/Sector/EndVolume");
-                if(EndVolume) {
-                    break;
-                }
-            }
+            //while(true) {
+            //    yield return null;
+            //    EndVolume = GameObject.Find("FinisPlateau_Body/Sector/EndVolume");
+            //    if(EndVolume) {
+            //        break;
+            //    }
+            //}
             while(true) {
                 yield return null;
                 EndBH = GameObject.Find("FinisPlateau_Body/Sector/EndBH");

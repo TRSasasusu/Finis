@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Dummy",
+  "starSystem": "EyeOfTheUniverse",
+  "Spawn": {
+    "playerSpawnPoints": [
+      {
+        "position": {
+          "x": 0.5,
+          "y": 199.3824,
+          "z": 35.606
+        },
+        "rename": "PlayerSpawnPoint",
+        "id": "finis_eye_spawn"
+      }
+    ]
+  },
+  "Volumes": {
+    "audioVolumes": [
+      {
+        "audio": "planets/assets/FlyIntoTheEye.wav",
+        "track": "music",
+        "radius": 60000,
+        "volume": 0.4,
+        "priority": 0
+      }
+    ]
+  }
+}

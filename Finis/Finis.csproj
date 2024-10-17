@@ -51,6 +51,9 @@
     <None Update="planets\assets\FinisEnd.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="planets\assets\FlyIntoTheEye.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="planets\assets\KingsCriticalThings.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
