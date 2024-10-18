@@ -24,6 +24,15 @@
         "volume": 0.4,
         "priority": 0
       }
+    ],
+    "creditsVolume": [
+      {
+        "radius": 100000,
+        "creditsType": "fast",
+        "gameOverText": "You arrived safely before the Eye of the Universe was destroyed.",
+        "deathType": "bigBang",
+        "rename": "bigbang_credit_volume"
+      }
     ]
   }
 }

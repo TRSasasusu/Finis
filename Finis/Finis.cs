@@ -8,6 +8,7 @@ namespace Finis {
         public static Finis Instance;
         public static INewHorizons newHorizons;
 
+        public StateController _stateController;
         public FixOWObj _fixOWObj;
         public ControllerForEye _controllerForEye;
 
@@ -30,6 +31,7 @@ namespace Finis {
             newHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             newHorizons.LoadConfigs(this);
 
+            bool initial = true;
             ModHelper.Events.Unity.RunWhen(() => PlayerData._currentGameSave != null, () => {
                 Log("Start in Jam3 not in the Eye");
                 PlayerData._currentGameSave.warpedToTheEye = false;
@@ -39,16 +41,22 @@ namespace Finis {
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) => {
                 if(loadScene != OWScene.SolarSystem || newHorizons.GetCurrentStarSystem() != "Jam3") {
                     if(loadScene == OWScene.EyeOfTheUniverse) {
-                        if(_controllerForEye != null) {
+                        if(_controllerForEye != null && _controllerForEye.ClonedShip) {
+                            initial = false;
                             _controllerForEye.SpawnShip();
+                        }
+                        if(initial) {
+                            Log("initial fix is now worked");
+                            PlayerData._currentGameSave.warpedToTheEye = false;
+                            LoadManager.LoadScene(OWScene.SolarSystem, LoadManager.FadeType.ToBlack, 0.5f);
                         }
                     }
                     return;
                 }
                 ModHelper.Console.WriteLine("Loaded into Jam3 system!", MessageType.Success);
 
-                var stateController = new StateController();
-                stateController.Initialize();
+                _stateController = new StateController();
+                _stateController.Initialize();
 
                 if(_fixOWObj != null) {
                     _fixOWObj.DestroyResources();

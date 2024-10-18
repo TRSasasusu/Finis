@@ -2,4 +2,15 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Eye Of The Universe",
   "starSystem": "EyeOfTheUniverse",
+  "Volumes": {
+    "creditsVolume": [
+      {
+        "radius": 1000000,
+        "creditsType": "fast",
+        "gameOverText": "The universe has died forever.",
+        "deathType": "energy",
+        "rename": "destroy_credit_volume"
+      },
+    ]
+  }
 }

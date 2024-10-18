@@ -171,6 +171,10 @@ namespace Finis {
                 if(FinisPlateauSector) {
                     break;
                 }
+                //if(Finis.newHorizons.GetCurrentStarSystem() != "Jam3") {
+                //    Finis.Log("StateController is starting even in not Jam3", OWML.Common.MessageType.Warning);
+                //    yield break;
+                //}
             }
             while (true) {
                 yield return null;
@@ -180,6 +184,10 @@ namespace Finis {
                 }
             }
             Finis.Log("Found sectors");
+            if(Finis.Instance._stateController != this) {
+                Finis.Log("Multiple StateController is making now!", OWML.Common.MessageType.Warning);
+                yield break;
+            }
 
             //while(true) {
             //    yield return null;
@@ -194,6 +202,11 @@ namespace Finis {
                 if(EndBH) {
                     break;
                 }
+            }
+            Finis.Log("Found sectors");
+            if(Finis.Instance._stateController != this) {
+                Finis.Log("Multiple StateController is making now! (2)", OWML.Common.MessageType.Warning);
+                yield break;
             }
 
             _greenRenderers = new List<Renderer>();
