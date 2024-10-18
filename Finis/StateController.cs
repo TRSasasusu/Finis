@@ -143,7 +143,8 @@ namespace Finis {
             GameObject defaultItemSocket;
             while (true) {
                 yield return null;
-                defaultItemSocket = GameObject.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket");
+                //defaultItemSocket = GameObject.Find("Player_Body/PlayerCamera/ItemCarryTool/ItemSocket");
+                defaultItemSocket = Locator.GetToolModeSwapper().GetItemCarryTool().transform.Find("ItemSocket").gameObject;
                 if (defaultItemSocket) {
                     break;
                 }
