@@ -6,6 +6,5 @@
   "uniqueName": "orclecle.Finis",
   "version": "2.1.0",
   "owmlVersion": "2.9.0",
-  "dependencies": [ "xen.NewHorizons", "xen.ModJam3" ],
-  "conflicts": [ "Owen_013.FirstPersonPresence" ]
+  "dependencies": [ "xen.NewHorizons", "xen.ModJam3" ]
 }
