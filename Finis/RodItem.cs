@@ -24,6 +24,9 @@ namespace Finis {
         Coroutine _expandEffectCoroutine;
 
         public override void Awake() {
+            if(Finis.newHorizons.GetCurrentStarSystem() != "Jam3") {
+                gameObject.SetActive(false);
+            }
             base.Awake();
             _red = transform.Find("rod/red").gameObject;
             _redEffect = _red.transform.Find("GetEffect").gameObject;

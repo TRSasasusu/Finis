@@ -13,6 +13,7 @@ namespace Finis {
         Coroutine _spawnShipBodyCoroutine;
         Coroutine _creditDestroyCoroutine;
         Coroutine _creditBigbangCoroutine;
+        Coroutine _fixEyeWhenBringingItemCoroutine;
         public GameObject ClonedShip { get; private set; }
 
         public void DestroyResources() {
@@ -31,6 +32,10 @@ namespace Finis {
             if(_creditBigbangCoroutine != null) {
                 Finis.Instance.StopCoroutine(_creditBigbangCoroutine);
                 _creditBigbangCoroutine = null;
+            }
+            if(_fixEyeWhenBringingItemCoroutine != null) {
+                Finis.Instance.StopCoroutine(_fixEyeWhenBringingItemCoroutine);
+                _fixEyeWhenBringingItemCoroutine = null;
             }
             GameObject.Destroy(ClonedShip);
         }
@@ -59,6 +64,42 @@ namespace Finis {
             _spawnShipBodyCoroutine = Finis.Instance.StartCoroutine(SpawnShipBody());
             _creditDestroyCoroutine = Finis.Instance.StartCoroutine(DestroyCreditBody());
             _creditBigbangCoroutine = Finis.Instance.StartCoroutine(BigbangCreditBody());
+            _fixEyeWhenBringingItemCoroutine = Finis.Instance.StartCoroutine(FixEyeWhenBringingItemBody());
+        }
+
+        IEnumerator FixEyeWhenBringingItemBody() {
+            GameObject eye;
+            while (true) {
+                eye = GameObject.Find("EyeOfTheUniverse_Body");
+                if(eye) {
+                    break;
+                }
+                yield return null;
+            }
+            while(true) {
+                yield return null;
+                if(!eye.activeSelf) {
+                    eye.SetActive(true);
+                    break;
+                }
+            }
+
+            GameObject star;
+            while(true) {
+                var shelling = GameObject.Find("Shelling_Body");
+                if(shelling) {
+                    star = shelling.transform.Find("Sector/Star").gameObject;
+                    break;
+                }
+                yield return null;
+            }
+            while(true) {
+                yield return null;
+                if(!star.activeSelf) {
+                    star.SetActive(true);
+                    break;
+                }
+            }
         }
 
         IEnumerator DestroyCreditBody() {

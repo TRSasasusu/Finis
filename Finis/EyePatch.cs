@@ -96,6 +96,9 @@ namespace Finis {
         [HarmonyPatch(typeof(ShipNotificationDisplay), nameof(ShipNotificationDisplay.Awake))]
         [HarmonyPatch(typeof(RepairReceiver), nameof(RepairReceiver.Awake))]
         private static bool DisableAtEye(MonoBehaviour __instance) {
+            if(SceneManager.GetActiveScene().name != "EyeOfTheUniverse") {
+                return true;
+            }
             __instance.enabled = false;
             return false;
         }
