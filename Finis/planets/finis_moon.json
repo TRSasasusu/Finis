@@ -6,7 +6,8 @@
     //"groundSize": 10,
     "surfaceSize": 31,
     "surfaceGravity": 8,
-    "gravityVolumePriority": 1
+    "gravityVolumePriority": 1,
+    "gravityFallOff": "inverseSquared"
   },
   "MapMarker": {
     "maxDisplayDistanceOverride": 200
