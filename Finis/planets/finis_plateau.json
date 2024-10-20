@@ -1011,14 +1011,14 @@
         "rename": "finis_palace_power_wall",
         "parentPath": "Sector/notkeeploaded/weakred_crystal_palace",
         "position": {
-          "x": 73.45,
-          "y": 18.39,
-          "z": 425.3388
+          "x": 82.86,
+          "y": 18.74,
+          "z": 422.8058
         },
         "rotation": {
-          "x": 177.959,
-          "y": -167.24,
-          "z": -177.925
+          "x": 2.041,
+          "y": 16.5469,
+          "z": 2.075
         }
       },
       {

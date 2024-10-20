@@ -4,7 +4,7 @@
   "author": "orclecle",
   "name": "Finis",
   "uniqueName": "orclecle.Finis",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "owmlVersion": "2.9.0",
   "dependencies": [ "xen.NewHorizons", "xen.ModJam3" ]
 }

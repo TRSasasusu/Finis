@@ -115,6 +115,10 @@
       <ID>finis_battlefield_fact</ID>
       <Text>The remains of a battlefield littered with the bodies and weapons of inhabitants.</Text>
     </ExploreFact>
+    <ExploreFact>
+      <ID>finis_battlefield_rod</ID>
+      <Text>There is a delay of about 1 second between picking up the rod and the effect taking place.</Text>
+    </ExploreFact>
   </Entry>
 
   <Entry>

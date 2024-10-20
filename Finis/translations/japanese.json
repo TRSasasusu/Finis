@@ -63,15 +63,17 @@
 
         // finis_palace_inside.xml
         "MENTH: The <![CDATA[<Color=orange>]]>community<![CDATA[</Color>]]> is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.": "MENTH:この<![CDATA[<Color=orange>]]>コミュニティ<![CDATA[</Color>]]>は紛争の末に破滅したということか。この星系にはここ以外にも色々な惑星があるから、そいつらと争いがあってもおかしくはない。&lt;i&gt;&lt;/i&gt;",
-        "MENTH: But what did the king, who remained alone, do? He didn't take revenge, what was he thinking?": "MENTH:だが、独り残ったこの王は何をしたんだ？どうやら復讐ではなさそうだが、何を考えていたんだ？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: But what did the king, who remained alone, do? They didn't take revenge, what was they thinking?": "MENTH:だが、独り残ったこの王は何をしたんだ？どうやら復讐ではなさそうだが、何を考えていたんだ？&lt;i&gt;&lt;/i&gt;",
         "CUMIN: Even if the battle is over, it's going to happen again because of this guy spinning around at the top?": "CUMIN:戦いが終わったとしても、それはまた繰り返される、ということを言ってるのかな？&lt;i&gt;&lt;/i&gt;",
         "SACCO: It's like there's something that causes endless death and rebirth. I wonder if such a thing really exists.": "SACCO:まるで終わりのない死と再生を引き起こす何かが存在すると言っているようね。そんなもの本当に存在するのかしら？&lt;i&gt;&lt;/i&gt;",
 
         "CUMIN: Is it somewhere in the universe? How did it come about? Is this a machine made by someone?": "CUMIN:この宇宙のどこかにいるのかな？どんなのだろう？誰かが作った機械とかかな？&lt;i&gt;&lt;/i&gt;",
-        "MENTH: And what worries me is... something as if there is a way to step out of that circle and become nothing. Did this king have any means?": "MENTH:私が危惧しているのは…このサイクルを止めて無と帰す何らかの方法があるかもしれないということだ。この王には何か手段があったのか？&lt;i&gt;&lt;/i&gt;",
+        "MENTH: And what worries me is... something as if there is a way to step out of that cycle and become nothing. Did this king have any means?": "MENTH:私が危惧しているのは…このサイクルを止めて無と帰す何らかの方法があるかもしれないということだ。この王には何か手段があったのか？&lt;i&gt;&lt;/i&gt;",
 
         // finis_battlefield.xml
-        "SACCO: This is a terrible sight... If the picture is correct, the only one who survived was the king. They couldn't win even with this cannon.": "SACCO:これは、凄惨な有様ね…。生き残ったのはあの絵の通りだとすると王だけかしら。この砲を使っても勝てなかったのね。&lt;i&gt;&lt;/i&gt;",
+        "SACCO: This is a terrible sight... If the picture is correct, the only one who survived was the king. They couldn't win even with this cannon. It's a sight I don't really want Cumin to see...I wonder if she's okay.": "SACCO:これは、凄惨な有様ね…。生き残ったのはあの絵の通りだとすると王だけかしら。この砲を使っても勝てなかったのね。Cuminにはあまり見せたくない光景…大丈夫かしら。&lt;i&gt;&lt;/i&gt;",
+        "CUMIN: After the light from this rod finishes spreading, the way you see things changes! There's a delay of about one second... I think?": "CUMIN:このロッド、ちゃんと光が広がり終わってから周りの見え方が変わってる！1秒くらいのずれがある…のかな？&lt;i&gt;&lt;/i&gt;",
+        "SACCO: She seems okay...maybe.": "SACCO:どうやら大丈夫そうね…多分。&lt;i&gt;&lt;/i&gt;",
         "CUMIN: ...Wait, up! Look at the sky!": "CUMIN:…待って、上！空を見てみて！&lt;i&gt;&lt;/i&gt;",
         "MENTH: Sky? There's nothing there...? ...Ah, I see, that's what it means.": "MENTH:空？何もないぞ…？…あぁ、なるほど、そういうことか。&lt;i&gt;&lt;/i&gt;",
 
@@ -137,6 +139,7 @@
         "Battlefield": "戦場跡",
         "Plateau": "台地",
         "The remains of a battlefield littered with the bodies and weapons of inhabitants.": "住人の死体や武器が散乱する戦場跡。",
+        "There is a delay of about 1 second between picking up the rod and the effect taking place.": "ロッドを拾ってから効果が発揮されるまで1秒程度の遅れが存在する。&lt;i&gt;&lt;/i&gt;",
         "Crystal Cannon": "結晶砲",
         "Abyss": "深淵&lt;i&gt;&lt;/i&gt;",
         "A Nomai named Menth described something as an abyss.": "Menthという名のNomaiは何かを深淵と表現した。&lt;i&gt;&lt;/i&gt;",

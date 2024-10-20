@@ -1,16 +1,26 @@
 ﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SACCO: This is a terrible sight... If the picture is correct, the only one who survived was the king. They couldn't win even with this cannon.</Text>
+    <Text>SACCO: This is a terrible sight... If the picture is correct, the only one who survived was the king. They couldn't win even with this cannon. It's a sight I don't really want Cumin to see...I wonder if she's okay.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>CUMIN: ...Wait, up! Look at the sky!</Text>
+    <Text>CUMIN: After the light from this rod finishes spreading, the way you see things changes! There's a delay of about one second... I think?</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
+    <Text>SACCO: She seems okay...maybe.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>CUMIN: ...Wait, up! Look at the sky!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
     <Text>MENTH: Sky? There's nothing there...? ...Ah, I see, that's what it means.</Text>
   </TextBlock>
   <ShipLogConditions>
@@ -19,8 +29,12 @@
       <Condition>1</Condition>
     </RevealFact>
     <RevealFact>
-      <FactID>finis_moon_rumor</FactID>
+      <FactID>finis_battlefield_rod</FactID>
       <Condition>2</Condition>
+    </RevealFact>
+    <RevealFact>
+      <FactID>finis_moon_rumor</FactID>
+      <Condition>4</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>
