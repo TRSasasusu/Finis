@@ -216,7 +216,7 @@ namespace Finis {
             foreach(var child in FinisPlateauSector.GetComponentsInChildren<Transform>()) {
                 if(child.name == "Rod") {
                     var rodItem = child.gameObject.AddComponent<RodItem>();
-                    rodItem._localDropOffset = new Vector3(0, 1, 0);
+                    rodItem._localDropOffset = new Vector3(0, 0.73f, 0);
                     child.gameObject.AddComponent<OWCollider>();
                     Finis.Log("Set RodItem");
                 }
