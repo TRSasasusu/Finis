@@ -19,5 +19,8 @@
     "mapMode": {
       "remove": true
     }
+  },
+  "ReferenceFrame": {
+    "enabled": false
   }
 }

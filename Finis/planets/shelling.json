@@ -19,7 +19,7 @@
   "Star": {
     "stellarDeathType": "supernova",
     "size": 200,
-    "lifespan": 3,
+    "lifespan": 0,
     "solarLuminosity": 1,
     "lightTint": {
       "r": 100,

@@ -4,7 +4,8 @@
   "author": "orclecle",
   "name": "Finis",
   "uniqueName": "orclecle.Finis",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "owmlVersion": "2.9.0",
-  "dependencies": [ "xen.NewHorizons", "xen.ModJam3" ]
+  "dependencies": [ "xen.NewHorizons", "xen.ModJam3" ],
+  "conflicts": [ "pikpik_carrot.BandTogether" ]
 }

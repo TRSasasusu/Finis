@@ -5,7 +5,7 @@
   "Volumes": {
     "creditsVolume": [
       {
-        "radius": 1000000,
+        "radius": 5000000,
         "creditsType": "fast",
         "gameOverText": "The universe has died forever.",
         "deathType": "energy",
