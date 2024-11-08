@@ -7,6 +7,7 @@ namespace Finis {
     public class Finis : ModBehaviour {
         public static Finis Instance;
         public static INewHorizons newHorizons;
+        public static bool _bandTogether;
 
         public StateController _stateController;
         public FixOWObj _fixOWObj;
@@ -36,6 +37,13 @@ namespace Finis {
                 Log("Start in Jam3 not in the Eye");
                 PlayerData._currentGameSave.warpedToTheEye = false;
             });
+
+            _bandTogether = ModHelper.Interaction.ModExists("pikpik_carrot.BandTogether");
+            if(_bandTogether ) {
+                ModHelper.Events.Unity.FireOnNextUpdate(() => {
+                    BandTogetherController.FixBandTogether();
+                });
+            }
 
             // Example of accessing game code.
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) => {
