@@ -207,6 +207,17 @@ namespace Finis {
                 }
             }
             Finis.Log("end: finding infinite wall");
+
+            //Finis.Log("start: fixing ship light");
+            //var ship = Locator._shipBody;
+            //var camera = Locator.GetPlayerCamera();
+            ////ship.transform.Find("Module_Cockpit/Lights_Cockpit/Pointlight_HEA_ShipCockpit").GetComponent<LightmapController>().Awake();
+            ////ship.transform.Find("Module_Cabin/Lights_Cabin/Pointlight_HEA_ShipCabin").GetComponent<LightmapController>().Awake();
+            ////ship.transform.Find("Module_Supplies/Lights_Supplies/Pointlight_HEA_ShipSupplies_Top").GetComponent<LightmapController>().Awake();
+            //ship.transform.Find("Module_Cockpit/Lights_Cockpit/Pointlight_HEA_ShipCockpit").GetComponent<LightmapController>().UpdateLightmapSettings(camera.mainCamera);
+            //ship.transform.Find("Module_Cabin/Lights_Cabin/Pointlight_HEA_ShipCabin").GetComponent<LightmapController>().UpdateLightmapSettings(camera.mainCamera);
+            //ship.transform.Find("Module_Supplies/Lights_Supplies/Pointlight_HEA_ShipSupplies_Top").GetComponent<LightmapController>().UpdateLightmapSettings(camera.mainCamera);
+            //Finis.Log("end: fixing ship light");
         }
     }
 }

@@ -54,10 +54,27 @@ namespace Finis {
                 }
             }
 
+            var lights = new GameObject[] {
+                originalShip.transform.Find("Module_Cockpit/Lights_Cockpit/Pointlight_HEA_ShipCockpit").gameObject,
+                originalShip.transform.Find("Module_Cabin/Lights_Cabin/Pointlight_HEA_ShipCabin").gameObject,
+                originalShip.transform.Find("Module_Supplies/Lights_Supplies/Pointlight_HEA_ShipSupplies_Top").gameObject,
+            };
+            foreach (var light in lights) {
+                light.gameObject.SetActive(false);
+            }
+
             ClonedShip = GameObject.Instantiate(originalShip);
             ClonedShip.SetActive(false);
             ClonedShip.name = originalShip.name;
             GameObject.DontDestroyOnLoad(ClonedShip);
+
+            foreach (var light in lights) {
+                light.gameObject.SetActive(true);
+            }
+            //yield return null;
+            //originalShip.transform.Find("Module_Cockpit/Lights_Cockpit/Pointlight_HEA_ShipCockpit").GetComponent<LightmapController>().Awake();
+            //originalShip.transform.Find("Module_Cabin/Lights_Cabin/Pointlight_HEA_ShipCabin").GetComponent<LightmapController>().Awake();
+            //originalShip.transform.Find("Module_Supplies/Lights_Supplies/Pointlight_HEA_ShipSupplies_Top").GetComponent<LightmapController>().Awake();
         }
 
         public void SpawnShip() {

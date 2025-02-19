@@ -90,6 +90,9 @@ namespace Finis {
         [HarmonyPrefix]
         [HarmonyPatch(typeof(ShipGroanAudioController), nameof(ShipGroanAudioController.Update))]
         [HarmonyPatch(typeof(NotificationDisplayTextLayout), nameof(NotificationDisplayTextLayout.Update))]
+        [HarmonyPatch(typeof(ShipLight), nameof(ShipLight.SetIntensityScale))] // added by me
+        [HarmonyPatch(typeof(ShipCockpitUI), nameof(ShipCockpitUI.OnEnterFlightConsole))] // added by me
+        [HarmonyPatch(typeof(ShipLight), nameof(ShipLight.SetIntensityScale))] // added by me
         private static bool SkipAtEye() => SceneManager.GetActiveScene().name != "EyeOfTheUniverse";
 
         [HarmonyPrefix]
@@ -100,6 +103,39 @@ namespace Finis {
                 return true;
             }
             __instance.enabled = false;
+            return false;
+        }
+
+        // added by me
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(ShipCockpitUI), nameof(ShipCockpitUI.Start))]
+        private static bool StartAtEye(ShipCockpitUI __instance) {
+            if(SceneManager.GetActiveScene().name != "EyeOfTheUniverse") {
+                return true;
+            }
+            __instance._playerCam = Locator.GetPlayerCamera();
+            //__instance._signalscopeTool = __instance._playerCam.GetComponentInChildren<Signalscope>();
+            __instance._shipAudioController = Locator.GetShipTransform().GetComponentInChildren<ShipAudioController>();
+            return false;
+            //__instance._cockpitLockOnGui = 
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(ShipHUDMarker), nameof(ShipHUDMarker.OnEnterShip))]
+        private static bool ShipHUDMarker_OnEnterShipAtEye(ShipHUDMarker __instance) {
+            if(SceneManager.GetActiveScene().name != "EyeOfTheUniverse") {
+                return true;
+            }
+            __instance._playerInShip = true;
+            return false;
+        }
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(ShipHUDMarker), nameof(ShipHUDMarker.OnExitShip))]
+        private static bool ShipHUDMarker_OnExitShipAtEye(ShipHUDMarker __instance) {
+            if(SceneManager.GetActiveScene().name != "EyeOfTheUniverse") {
+                return true;
+            }
+            __instance._playerInShip = false;
             return false;
         }
     }
