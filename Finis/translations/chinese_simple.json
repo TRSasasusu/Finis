@@ -1,0 +1,165 @@
+{
+//该翻译补丁经检查没有发现任何问题。
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+  "UIDictionary": {
+    "Finis Plateau": "终焉高地",
+    "Red Moon": "红月",
+    "The universe has died forever.": "宇宙已迎来永恒的终结。",
+    "You arrived safely before the Eye of the Universe was destroyed.": "你在宇宙之眼被摧毁前安全抵达。",
+    "Rod": "权杖"
+  },
+  "DialogueDictionary": {
+    // finis_pod_crash.xml
+    "MENTH: Cumin, Sacco! Are you all right?": "门斯：库敏、萨科！你们还好吗？",
+    "CUMIN: I'm okay!": "库敏：我没事！",
+    "SACCO: Alright. What happens to us? The warp of this pod is failed, and we're crashed. Why?": "萨科：还好。我们怎么了？这艘逃生舱的跃迁失败了，我们坠毁了。为什么会这样？",
+    "CUMIN: We collided twice! It tipped at the beginning and fell straight down!": "库敏：我们撞了两次！它一开始就倾斜了，然后径直掉了下来！",
+    "MENTH: There might be a connection between the pod's warp failure and our Vessel coming here. In any case, we have no choice but to go outside first.": "门斯：逃生舱的跃迁失败和我们的飞船来到这里可能有关联。不管怎样，我们别无选择，只能先出去看看。",
+
+    // finis_near_pod.xml
+    "MENTH: In conclusion, we escaped safely (as long as we don't encounter something strange at the next warp destination. However, such things are very welcome to Nomai!)": "门斯：总之，我们安全逃脱了。（只要在下一个跃迁目的地不会遇到什么奇怪的东西。不过，对于挪麦人来说，这样的事情可是求之不得的！）",
+    "MENTH: I'm not sure you can read the Nomai language, but I'd like to note this anyway: You probably shouldn't end up in the abyss.": "门斯：我不知道你是否能读懂挪麦语，但无论如何我想说明一点：你或许不该最终坠入深渊。",
+    "MENTH: (Don't you think it's a bit of a joke to put two abyss together?)": "门斯：（把两个“深渊”双关并用，你不觉得有点巧妙吗？）",
+    "MENTH: Still, it's probably your destiny to reach it in the end. That's why we put everything we found back in its original place to avoid making things easier due to our presence. I hope that you will take some time to think about its meaning.": "门斯：尽管如此，最终抵达那里或许是你的命运。这就是为什么我们把找到的所有东西都放回原处——不想因为我们的存在让事情变得过于简单。希望你能花些时间思考其中的意义。",
+    "MENTH: Well, the ones that are too heavy will remain the same! Okay, now that the Vessel is ready, it's time to say goodbye. (...Ah, I left all the notes as they were... deleting them goes against the beliefs of the species!)": "门斯：好吧，那些太重的东西就保持原样吧！好了，飞船已经准备好了，是时候说再见了。（……啊，我把所有笔记都留着了……删除它们违背我们种族的信仰！）",
+
+    // finis_pod_cave.xml
+    "MENTH: This crystal really helped us. I can't bear to leave you here.": "门斯：这块水晶真的帮了我们大忙。我不忍心把你留在这里。",
+    "SACCO: I'll be the last to pull back the hatch. It must be difficult for you, and Cumin.": "萨科：我会最后一个关上舱门。这对你和库敏来说一定很难接受。",
+    "MENTH: Oh please. After all, <![CDATA[<i>]]>this crystal alone won't be enough to solve the problem<![CDATA[</i>]]>.": "门斯：哦，拜托。毕竟，<![CDATA[<i>]]>仅凭这块水晶不足以解决问题<![CDATA[</i>]]>。",
+    "SACCO: I'll overlook leaving hints like that. It's really difficult for Nomai to hide any knowledge.": "萨科：我就当没看见你留的这种暗示好了。对挪麦人来说，隐藏任何知识真的太难了。",
+
+    // finis_top_cave_top.xml
+    "MENTH: Is this still the same invisible wall? I was really helped by Annona who suggested this gravity crystal after the warp core at the last festival. ...This was put into practical use based on that.": "门斯：这还是那道隐形墙吗？上次庆典上，在跃迁核心之后，安诺娜提议用这种重力水晶，真是帮了我大忙。……这就是基于那个提议投入实际使用的成果。",
+    "MENTH: Oh, Escall, where have you gone? Since it's about you, I'm sure you've found something outrageous. If I find you, I'd like to hear your story.": "门斯：哦，艾斯科尔，你去哪儿了？以你的性格，肯定发现了什么惊人的东西。如果我找到你，一定要听听你的经历。",
+    "CUMIN: I'm going first! Mentor!": "库敏：我先走啦！导师！",
+    "MENTH: Wait, be careful!": "门斯：等等，小心点！",
+
+    // finis_cave_ship.xml
+    "MENTH: The gravity of this planet's core is tremendous. It would have been really dangerous if Sacco hadn't brought us a small ship.": "门斯：这颗行星核心的引力太强了。如果不是萨科带了一艘小型飞船来，我们肯定凶多吉少。",
+    "SACCO: It's probably because you two keep pushing forward without worrying.": "萨科：还不是因为你们俩总是毫无顾虑地往前冲。",
+    "CUMIN: Because I'm curious!": "库敏：因为我好奇呀！",
+
+    // finis_palace_broken.xml
+    "SACCO: This is where the first collision occurred. Then I guess we bumped into this beautiful board. It must be quite sturdy as it doesn't have any scratches.": "萨科：这里就是第一次碰撞发生的地方。那我猜我们当时是撞到了这块漂亮的石板。它一点划痕都没有，肯定特别坚固。",
+    "SACCO: But it's strange. Does that mean there was only one board like this standing upright on the hill?": "萨科：但这也太奇怪了。难道说山上原本就只竖着这么一块石板？",
+    "MENTH: This one is definitely beautiful. I want to take it home, ... but it's a bit too heavy.": "门斯：这块石板确实很漂亮。我真想把它带回家，……可惜太重了。",
+    "SACCO: I hear Cumin's voice somewhere nearby. Let's take a look.": "萨科：我听到附近有库敏的声音。我们去看看吧。",
+
+    // finis_palace_outside.xml
+    "CUMIN: Help me! There's an invisible wall and I can't get out!!": "库敏：帮帮我！有一道隐形墙，我出不去了！！",
+    "SACCO: ...It's true. I can't get close to you even though you're right in front of me.": "萨科：……是真的。你明明就在我眼前，我却怎么也靠近不了。",
+    "MENTH: Cumin, calm down. How the hell did you get there?": "门斯：库敏，冷静点。你到底是怎么进去的？",
+    "CUMIN: I don't know! I was jumping up and down the wall around here and it came in!": "库敏：我不知道啊！我就是在这墙周围跳来跳去，然后就莫名其妙进去了！",
+    "SACCO: Maybe you should do that again?": "萨科：或许你再跳一次试试？",
+    "CUMIN: Ah! ...I got out! Awesome, sis!!": "库敏：啊！……我出来了！姐姐太厉害啦！！",
+    "MENTH: Hmm, maybe we should put this place on the back burner until we understand how it works.": "门斯：嗯，或许在弄明白它的原理之前，我们还是先放一放这个地方吧。",
+
+    // finis_palace_power.xml
+    "SACCO: So on this planet, they were using the corpses as an energy source to build cannons and steal things from other planets?": "萨科：这么说，这颗行星上的人竟然用尸体当能源，用来制造大炮，还从其他行星偷东西？",
+    "MENTH: I see. Perhaps, hypothesis: they salvaged the warp technology from our Vessel and the escape pod, which is why we're stuck in this system.": "门斯：我明白了。或许可以这样推测：他们从我们的飞船和逃生舱里回收了跃迁技术，这就是我们被困在这个星系的原因。",
+    "CUMIN: What the heck! Then we'll never be able to get out of here!": "库敏：什么嘛！那我们岂不是永远都出不去了！",
+    "MENTH: Don't worry! Our Vessel has a spare warp core. And I just heard from our supervisor that it's working fine. So we'll leave the system as soon as we finish investigating this planet.": "门斯：别担心！我们的飞船有备用跃迁核心。而且我刚跟飞船监管确认过，它运行得很好。所以我们一完成这颗行星的调查就离开这个星系。",
+    "MENTH: Well, it was only after your Vessel was gone that a spare warp core became recommended, Escall.": "门斯：说起来，艾斯科尔，就是因为你的飞船出事了，备用跃迁核心才成为强制配置的呢。",
+
+    // finis_palace_inside.xml
+    "MENTH: The <![CDATA[<Color=orange>]]>community<![CDATA[</Color>]]> is said to have collapsed due to the conflict. There are other planets in this star system besides this one, so there may be a conflict with them.": "门斯：据说<![CDATA[<Color=orange>]]>这个社群<![CDATA[</Color>]]>已经因为冲突瓦解了。这个恒星系统里除了这颗行星还有其他星球，所以他们可能和那些星球也发生过冲突。",
+    "MENTH: But what did the king, who remained alone, do? They didn't take revenge, what was they thinking?": "门斯：但那个独自存活下来的国王后来做了什么？他们没有选择复仇，到底在想些什么？",
+    "CUMIN: Even if the battle is over, it's going to happen again because of this guy spinning around at the top?": "库敏：难道说就算战斗结束了，就因为这个在顶部旋转的东西，一切还会重演吗？",
+    "SACCO: It's like there's something that causes endless death and rebirth. I wonder if such a thing really exists.": "萨科：就好像有某种东西在引发无尽的死亡与重生。真不知道这样的东西是否真的存在。",
+    "CUMIN: Is it somewhere in the universe? How did it come about? Is this a machine made by someone?": "库敏：它在宇宙的某个角落吗？它是怎么出现的？是别人制造的机器吗？",
+    "MENTH: And what worries me is... something as if there is a way to step out of that cycle and become nothing. Did this king have any means?": "门斯：而我担心的是……似乎存在一种能跳出这个循环、归于虚无的方法。这位国王是否掌握了这种方法？",
+
+    // finis_battlefield.xml
+    "SACCO: This is a terrible sight... If the picture is correct, the only one who survived was the king. They couldn't win even with this cannon. It's a sight I don't really want Cumin to see...I wonder if she's okay.": "萨科：这景象太惨烈了……如果这幅画是真实的，那唯一活下来的就只有国王了。就算有这门大炮，他们还是没能赢。这种景象我真不想让库敏看到……不知道她还好吗。",
+    "CUMIN: After the light from this rod finishes spreading, the way you see things changes! There's a delay of about one second... I think?": "库敏：这根权杖的光完全散开后，看东西的方式就变了！大概有一秒钟的延迟……我觉得是这样！",
+    "SACCO: She seems okay...maybe.": "萨科：她看起来好像没事……也许吧。",
+    "CUMIN: ...Wait, up! Look at the sky!": "库敏：……等等，抬头！快看天空！",
+    "MENTH: Sky? There's nothing there...? ...Ah, I see, that's what it means.": "门斯：天空？那里什么都没有啊……？……啊，我明白了，原来是这个意思。",
+
+    // finis_moon_escall.xml
+    "CUMIN: Amazing! This rock disappears when I take my eyes off it! Wait, it's moving?! ...And so are these scattered crystals!": "库敏：太神奇了！我一移开视线，这块石头就消失了！等等，它还在动？！……这些散落的水晶也是！",
+    "MENTH: I've never seen anything like this. …Wait, isn't that Escall's Vessel?! Why, why! …No, calm down, analyze calmly... The angle of this line probably represents the proximity... the dot product, and then that symbol...": "门斯：我从没见过这种东西。……等等，那不是艾斯科尔的飞船吗？！怎么会在这里！……不，冷静点，冷静分析……这条线的角度可能代表距离……是点积运算，然后那个符号……",
+    "CUMIN: The <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>! ... Don't they look like that?": "库敏：是<![CDATA[<Color=lightblue>]]>宇宙之眼<![CDATA[</Color>]]>！……它们看起来不像吗？",
+    "MENTH: Ah, that's good. Yes, it shows how close we are to the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>, doesn't it? So, Escall, you're in the middle of this whole thing with the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>... Ok, let's get out of here and go find the thorn planets across the Universe!": "门斯：啊，说得对。没错，这应该是在显示我们离<![CDATA[<Color=lightblue>]]>宇宙之眼<![CDATA[</Color>]]>有多近，对吧？所以，艾斯科尔，你也卷入了和<![CDATA[<Color=lightblue>]]>宇宙之眼<![CDATA[</Color>]]>相关的这整件事里……好吧，我们先离开这里，去寻找宇宙中那些荆棘行星！",
+　　"CUMIN: Let's go!": "库敏：出发！",
+    //"": "萨科: 为什么能确定那是艾斯科尔的飞船呀…… 在我看来，挪麦人的飞船大体上都长得一个样呢。",
+
+    // finis_moon_infinite.xml
+    "CUMIN: There have been lines stuck in your body for a while now, mentor. Are you okay?": "库敏：导师，有线条卡在你身上好一会儿了。你没事吧？",
+    "MENTH: Oh, I don't feel anything in particular. It's a strange thing in terms of the closeness, but it just means... I guess I have infinite possibilities!": "门斯：哦，我没什么特别的感觉。就距离而言确实挺奇怪的，但这只能说明……我想我拥有无限的可能性！",
+    "SACCO: I hope so.": "萨科：希望如此吧。",
+
+    // finis_moon_collector.xml
+    "MENTH: I know this one! <![CDATA[<Color=lightblue>]]>The Collector<![CDATA[</Color>]]>, right? They once released a deadly gas that could have wiped out life in an entire galaxy, but were contained by a tribe of Nomai and other species. Yes, it was a tribe led by a Nomai called Nerine.": "门斯：我认识这个！<![CDATA[<Color=lightblue>]]>收集者<![CDATA[</Color>]]>，对不对？他们曾经释放过一种能摧毁整个星系生命的致命气体，但被挪麦人的一个家族和其他物种联手封印了。没错，那个家族的首领是个名叫内琳的挪麦人。",
+    "CUMIN: Mentor, you know a lot! The Nomai called Nerine is also amazing!": "库敏：导师你懂得真多！那个叫内琳的挪麦人也太厉害了吧！",
+    "MENTH: That's right... Actually, there was a kid on the Escall's Vessel who knew a lot about this, and he gave me a passionate speech about it. I hope they're safe too.": "门斯：是啊……其实，艾斯科尔的飞船上有个孩子对这件事特别了解，还跟我热情地讲解过。……希望他们也都平安无事。",
+
+    // finis_moon_chime.xml
+    "SACCO: If your hypothesis is correct, then there is something closer to <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]> than the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>. But what is that structure? It almost looks like it came out of the Eye. …By the way, what are you investigating?": "萨科：如果你之前的推测是对的，那有个东西比<![CDATA[<Color=lightblue>]]>宇宙之眼<![CDATA[</Color>]]>更接近<![CDATA[<Color=lightblue>]]>收集者<![CDATA[</Color>]]>。但那个结构到底是什么？看起来简直就像是从宇宙之眼里出来的。……对了，你在调查什么？",
+    "MENTH: Hmm... I thought these broken crystals looked similar to the crystals from <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, but upon closer inspection, they were subtly different. Rather, the material that makes up this planet is closer to <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, or you could even say it's the same. In other words (although there are many speculations), is this planet we're on now <![CDATA[<Color=lightblue>]]>the Collector<![CDATA[</Color>]]>, and these broken crystals were...retrieved from that structure?": "门斯：嗯……我原以为这些破碎的水晶和<![CDATA[<Color=lightblue>]]>收集者<![CDATA[</Color>]]>的水晶很像，但仔细检查后发现有细微差别。相反，构成这颗行星的物质更接近<![CDATA[<Color=lightblue>]]>收集者<![CDATA[</Color>]]>，甚至可以说完全相同。也就是说（虽然只是推测），我们现在所在的这颗行星就是<![CDATA[<Color=lightblue>]]>收集者<![CDATA[</Color>]]>，而这些破碎的水晶是……从那个结构中回收的？",
+    "SACCO: Too much speculation. But if that's the case, what does it mean that this planet and that structure are similar? For the inhabitants of this planet to see that their planet is similar to the one that came out of the <![CDATA[<Color=lightblue>]]>Eye<![CDATA[</Color>]]>?": "萨科：推测也太多了吧。……不过，要是真的是这样，这颗行星和那个结构相似又有什么意义呢？对这颗行星的居民来说，发现自己居住的星球和从<![CDATA[<Color=lightblue>]]>宇宙之眼<![CDATA[</Color>]]>里出来的东西相似，又能说明什么？",
+
+    // finis_end_online.xml
+    "HYSSOP: The signal is still active, good. I am now sending you a message through a device created by my ancestors. It was meant to be activated when someone arrived here, and it was said that the descendants would respond at that time. Now is the time.": "希索普：信号仍然有效，很好。我现在正通过我祖先制造的装置给你发送信息。这个装置本该在有人抵达这里时启动，据说届时后代会做出回应。现在就是那个时刻。",
+    "HYSSOP: Your ancestors feared that the cannon would bring about the end of the universe, so they set up a mechanism to interfere with its activation. The cannon uses the salvaged Nomai warp technology to create a singularity and destroy what lies beyond. Therefore, they can shift the singularity slightly after you pass through it, delaying its destruction.": "希索普：你的祖先担心这门大炮会导致宇宙终结，所以设置了干扰它启动的机制。这门大炮利用回收的挪麦跃迁技术制造奇点，进而摧毁奇点之外的一切。因此，他们能在你穿过奇点后轻微移动它的位置，延缓毁灭的发生。",
+    "HYSSOP: We believe you were selected because you knew the target's coordinates. As mentioned earlier, the cannon uses Nomai warp technology, and needs the target's coordinates. And that's why you were retrieved to this system.": "希索普：我们认为你被选中是因为你知道目标的坐标。正如之前所说，这门大炮使用挪麦跃迁技术，必须要有目标坐标才能启动。这就是你被带到这个星系的原因。",
+    "HYSSOP: We don't know what lies ahead. We can no longer expect to discover the unknown in our Blackrock's system, and I envy you.": "希索普：我们不知道前方有什么。在我们的黑石星系已经再也没有未知的事物可供探索了，我真羡慕你。",
+    "HYSSOP: Our ancestors say it all begins when you touch that pedestal. This Nomai device can only delay the destruction for a short time. We hope to achieve our goal soon.": "希索普：我们的祖先说，当你触摸那个基座时，一切就会开始。这个挪麦装置只能短暂延缓毁灭，希望我们能尽快达成目标。",
+
+    // finis_ernesto.xml
+    "I'm Ernesto of the core! I'm a star, so it's okay to say here is the core of the star, right?": "我是核心的厄内斯托！我本身就是一颗恒星，所以说这里是恒星核心也没毛病吧？",
+    "Well, I used to be Nerine's pet, and I love it here so much I've been living here ever since. I love gravity!": "嗯，我以前是内琳的宠物，我太喜欢这里了，所以从那以后就一直住在这里。我超爱重力的！",
+    "Nerine had the theory that these crystals could even produce life, so she took the deadly material and left the core here. It's amazing how it has grown into a planet like this!": "内琳认为这些水晶甚至能孕育生命，所以她带走了里面的致命物质，把核心留了下来。真没想到它最后竟然长成了这样一颗行星，太神奇了！",
+    "She also liked the gravitational properties, and apparently brought some to the festival in the hopes that it might be used to manipulate black holes. That brings back memories!": "她也很喜欢这种引力特性，据说还带了一些去庆典，希望能用来操控黑洞。真是令人怀念啊！",
+    "I think I'll go after the core later too. See you!": "我想我之后也会去追寻核心的踪迹。再见啦！"
+  },
+  "ShipLogDictionary": {
+    "Finis Plateau": "终焉高地",
+    "Escape Pod": "逃生舱",
+    "An escape pod launched towards this planet from the Vessel that had malfunctioned in warp.": "一艘跃迁故障的飞船向这颗行星发射了一艘逃生舱。",
+    "It seems that the Nomai here were able to escape safely in the end.": "看来这里的挪麦人最终成功安全撤离了。",
+    "I found a cave behind the escape pod. It was suggested that the particularly bright crystal inside could not be used on its own.": "我在逃生舱后方发现了一个洞穴。有线索表明，里面那块格外明亮的水晶无法单独使用。",
+    "Mountaintop Cave": "山顶洞穴",
+    "Mountaintop": "山顶",
+    "Nomai exited the escape pod and began exploring the planet.": "挪麦人走出逃生舱，开始探索这颗行星。",
+    "Nomai entered through the gap at the top of the cave to avoid the invisible wall. There was a rod inside.": "挪麦人为避开隐形墙，从洞穴顶部的缝隙进入，里面有一根权杖。",
+    "The bodies of the planet's inhabitants were buried there, but there were signs that most of them had been taken elsewhere.": "这颗行星居民的尸体被埋葬在那里，但有迹象表明，大部分尸体已被转移到其他地方。",
+    "Crystal Palace": "水晶宫殿",
+    "Crash": "碰撞痕迹",
+    "The escape pod crashed once before crashing somewhere on this planet.": "这艘逃生舱在坠毁到这颗行星某处之前，曾发生过一次碰撞。",
+    "A Nomai named Cumin was in trouble because she was blocked by an invisible wall.": "一名叫库敏的挪麦人被隐形墙困住，陷入了麻烦。",
+    "A palace built with a substance that cannot be seen unless you are holding the rod.": "这座宫殿由特殊物质建造，只有手持权杖才能看见。",
+    "I found a central room that you can't enter unless you can see the red crystal.": "我发现了一个中央房间，只有能看见红色水晶的人才能进入。",
+    "Central Room": "中央房间",
+    "The bodies of the residents were used to create cannons and retrieve objects from remote locations.": "居民的尸体被用于制造大炮，还被用来回收偏远地区的物品。",
+    "The Nomai speculated that their warp technology had been retrieved.": "挪麦人推测他们的跃迁技术已被他人回收。",
+    "I found a symbol that seemed to be the Eye of the Universe. There was a diagram showing that this caused a large loop that caused repeated battles and deaths in the community.": "我发现了一个疑似宇宙之眼的符号。有图表显示，它引发了一个巨大的循环，导致社群内部战争与死亡不断重演。",
+    "Crystal Cave": "水晶洞穴",
+    "South Pole": "南极",
+    "A cave full of crystals.": "一个布满水晶的洞穴。",
+    "Traveling near the planet's core is extremely dangerous without a ship.": "没有飞船的情况下，在行星核心附近行动极度危险。",
+    "Battlefield": "战场遗迹",
+    "Plateau": "高地",
+    "The remains of a battlefield littered with the bodies and weapons of inhabitants.": "战场遗迹上散落着居民的尸体和武器。",
+    "There is a delay of about 1 second between picking up the rod and the effect taking place.": "拾取权杖到其生效之间，存在约一秒钟的延迟。",
+    "Crystal Cannon": "水晶大炮",
+    "Abyss": "深渊",
+    "A Nomai named Menth described something as an abyss.": "名叫门斯的挪麦人将某样事物描述为深渊。",
+    "Deep inside the Cave": "洞穴深处",
+    "It seems there is still more to this cave.": "这个洞穴似乎还隐藏着更多秘密。",
+    "Whereabouts of the King": "国王的下落",
+    "The king is trying to break the repetition by some means towards the Eye.": "国王正试图通过某种针对宇宙之眼的手段打破循环。",
+    "A cannon built to destroy the Eye of the Universe.": "为摧毁宇宙之眼而建造的大炮。",
+    "If you touch something like a pedestal under the cannon, something might happen.": "若触摸大炮下方类似基座的物体，或许会触发某些事件。",
+    "Red Moon": "红月",
+    "Sky": "天空异象",
+    "A Nomai named Cumin noticed something in the sky.": "名叫库敏的挪麦人发现了天空中的异常。",
+    "The relationships between various things centered around the eye are shown.": "图表展示了以宇宙之眼为核心的各类事物间的关联。",
+    "Quantum shards and ghost matter crystals were collected here.": "量子碎片与幽灵物质晶体在此处被收集。",
+    "Quantum shards and ghost matter crystals retrieved from our star system were present here.": "此处存在从我们星系回收的量子碎片与幽灵物质晶体。",
+    "Once a Nomai named Menth had been stabbed with the line, now it was stabbed with me.": "曾经被线条贯穿的是名叫门斯的挪麦人，如今被贯穿的是我。",
+    "The problem of the Collector was once solved, centered around a tribe led by a Nomai named Nerine.": "以名叫内琳的挪麦人为首的家族曾牵头解决了收集者引发的危机。",
+    "It was suggested that there was a relationship between the Collector and the Lingering Chime. The inhabitants learned that a similar event had occurred in the previous universe.": "有线索表明收集者与余音站之间存在关联。居民们得知，上一个宇宙中也曾发生过类似事件。"
+  }
+}
