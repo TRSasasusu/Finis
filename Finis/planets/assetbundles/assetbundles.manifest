@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 646236721
+CRC: 2214408638
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: finis
+      Dependencies: {}
+    Info_1:
+      Name: eye
       Dependencies: {}

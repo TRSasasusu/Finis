@@ -11,7 +11,8 @@ namespace Finis {
 
         public StateController _stateController;
         public FixOWObj _fixOWObj;
-        public ControllerForEye _controllerForEye;
+        //public ControllerForEye _controllerForEye;
+        public ControllerForEyeOnJam3System _controllerForEye;
 
         public static void Log(string text, MessageType messageType = MessageType.Message) {
             Instance.ModHelper.Console.WriteLine(text, messageType);
@@ -47,22 +48,25 @@ namespace Finis {
 
             // Example of accessing game code.
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) => {
-                if(loadScene != OWScene.SolarSystem || newHorizons.GetCurrentStarSystem() != "Jam3") {
-                    if(loadScene == OWScene.EyeOfTheUniverse) {
-                        if(_controllerForEye != null && _controllerForEye.ClonedShip) {
-                            initial = false;
-                            _controllerForEye.SpawnShip();
-                        }
-                        if(initial) {
-                            Log("initial fix is now worked");
-                            PlayerData._currentGameSave.warpedToTheEye = false;
-                            LoadManager.LoadScene(OWScene.SolarSystem, LoadManager.FadeType.ToBlack, 0.5f);
-                        }
-                    }
-                    return;
-                }
+                //if(loadScene != OWScene.SolarSystem || newHorizons.GetCurrentStarSystem() != "Jam3") {
+                //    if(loadScene == OWScene.EyeOfTheUniverse) {
+                //        if(_controllerForEye != null && _controllerForEye.ClonedShip) {
+                //            initial = false;
+                //            _controllerForEye.SpawnShip();
+                //        }
+                //        if(initial) {
+                //            Log("initial fix is now worked");
+                //            PlayerData._currentGameSave.warpedToTheEye = false;
+                //            LoadManager.LoadScene(OWScene.SolarSystem, LoadManager.FadeType.ToBlack, 0.5f);
+                //        }
+                //    }
+                //    return;
+                //}
                 ModHelper.Console.WriteLine("Loaded into Jam3 system!", MessageType.Success);
 
+                if (_stateController != null) {
+                    _stateController.DestroyResources();
+                }
                 _stateController = new StateController();
                 _stateController.Initialize();
 
@@ -72,13 +76,15 @@ namespace Finis {
                 _fixOWObj = new FixOWObj();
 
                 if(_controllerForEye != null) {
-                    if(_controllerForEye.ClonedShip) {
-                        return;
-                    }
+                    //if(_controllerForEye.ClonedShip) {
+                    //    return;
+                    //}
                     _controllerForEye.DestroyResources();
                 }
-                _controllerForEye = new ControllerForEye();
-                _controllerForEye.CloneShip();
+                _controllerForEye = new ControllerForEyeOnJam3System();
+                _controllerForEye.Initialize();
+                //_controllerForEye = new ControllerForEye();
+                //_controllerForEye.CloneShip();
             };
         }
     }

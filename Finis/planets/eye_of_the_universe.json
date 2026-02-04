@@ -1,22 +1,77 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Eye Of The Universe",
-  "starSystem": "EyeOfTheUniverse",
+//  //"starSystem": "EyeOfTheUniverse",
+  "starSystem": "Jam3",
+  "Base": {
+    //"centerOfSolarSystem": true,
+    "surfaceSize": 201,
+    "surfaceGravity": 20,
+  },
+  "Orbit": {
+    "isStatic": true,
+    "staticPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+    }
+  },
   "Volumes": {
+    "audioVolumes": [
+      {
+        "audio": "planets/assets/FlyIntoTheEye.wav",
+        "track": "music",
+        "radius": 60000,
+        "volume": 0.4,
+        "priority": 0
+      }
+    ],
     "creditsVolume": [
       {
-        "radius": 5000000,
-        "creditsType": "fast",
-        "gameOverText": "The universe has died forever.",
+        "radius": 1,
+        //"creditsType": "fast",
+        //"gameOverText": "The universe has died forever.",
         "deathType": "energy",
-        "rename": "destroy_credit_volume"
+        "rename": "destroy_credit_volume",
+        "gameOver": {
+          "text": "The universe has died forever.",
+          "creditsType": "fast"
+        }
       },
       {
-        "radius": 100000,
-        "creditsType": "final",
-        "gameOverText": "You arrived safely before the Eye of the Universe was destroyed.",
+        "shape": {
+          "type": "box",
+          "size": {
+            "x": 4000,
+            "y": 100,
+            "z": 4000
+          }
+        },
+        //"creditsType": "final",
+        //"gameOverText": "You arrived safely before the Eye of the Universe was destroyed.",
         "deathType": "bigBang",
-        "rename": "bigbang_credit_volume"
+        "rename": "bigbang_credit_volume",
+        "gameOver": {
+          "text": "You arrived safely before the Eye of the Universe was destroyed.",
+          "creditsType": "final"
+        },
+        "position": {
+          "x": 0,
+          "y": -1430.417,
+          "z": 0
+        }
+      }
+    ]
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "planets/assetbundles/eye",
+        "path": "Assets/orclecle/SixthPlanet_Root.prefab",
+        "keepLoaded": true,
+        "removeChildren": [
+          "Proxy_SixthPlanet/Quadsphere",
+        ]
       }
     ]
   }

@@ -25,6 +25,7 @@ namespace Finis {
         GameObject _finisPalaceFactReveal;
         End _end;
         Coroutine _runAfterExpandingRod;
+        Coroutine _initializeBody;
 
         readonly string[] ADDITIONAL_RED_OBJECT_PATHS = new string[] {
             "RedMoon_Body/Sector/Quantum States - moonGMGroup",
@@ -128,8 +129,15 @@ namespace Finis {
             _end.StartEnd();
         }
 
+        public void DestroyResources() {
+            if(_initializeBody != null) {
+                Finis.Instance.StopCoroutine( _initializeBody);
+                _initializeBody = null;
+            }
+        }
+
         public void Initialize() {
-            Finis.Instance.StartCoroutine(InitializeBody());
+            _initializeBody = Finis.Instance.StartCoroutine(InitializeBody());
         }
 
         IEnumerator RunAfterExpandingRod(Action action) {

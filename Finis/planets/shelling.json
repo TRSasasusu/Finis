@@ -1,7 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Shelling",
-  "starSystem": "EyeOfTheUniverse",
+  //"starSystem": "EyeOfTheUniverse",
+  "starSystem": "Jam3",
   "Base": {
     "gravityFallOff": "inverseSquared",
     "surfaceSize": 200,
