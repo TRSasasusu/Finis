@@ -18,6 +18,10 @@ namespace Finis {
             Instance.ModHelper.Console.WriteLine(text, messageType);
         }
 
+        public static bool ModExist(string mod) {
+            return Instance.ModHelper.Interaction.ModExists(mod);
+        }
+
         private void Awake() {
             Instance = this;
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());

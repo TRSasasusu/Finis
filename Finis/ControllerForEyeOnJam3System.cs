@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OWML.ModHelper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,12 +15,25 @@ namespace Finis {
         const string EYE_PATH = "EyeOfTheUniverse_Body";
         const string SHELLING_PATH = "Shelling_Body";
 
-        static readonly string[] OTHER_BODIES = new string[] {
-            "Jam3Sun_Body",
-            "StarshipCommunity_Body",
-            "FinisPlateau_Body",
-            "RedMoon_Body",
-            "FinisPlateauCore_Body",
+        static readonly (string, string)[] OTHER_BODIES = new (string, string)[] {
+            ("Jam3Sun_Body", null),
+            ("StarshipCommunity_Body", null),
+            ("FinisPlateau_Body", null),
+            ("RedMoon_Body", null),
+            ("FinisPlateauCore_Body", null),
+            ("Gravelrock_Body", "xen.UnofficialJam3Entry"),
+            ("GravelrockCommunicationSatellite_Body", "xen.UnofficialJam3Entry"),
+            ("TheBoiledEgg_Body", "Echatsum.CallisThesis"),
+            ("Aicale_Body", "MegaPiggy.Axiom"),
+            ("Axiom_Body", "MegaPiggy.Axiom"),
+            ("BrokenSatellite_Body", "MegaPiggy.Axiom"),
+            ("ALTTH_Body", "CrypticBird.Jam3"),
+            ("ModJamHub_Body", "coderCleric.JamHub"),
+            ("EggStar_Body", "Hawkbar.SolarRangers"),
+            ("EchoHike_Body", "Trifid.TrifidJam3"),
+            ("ForlornProject_Body", "TeamErnesto.OWJam3ModProject"),
+            ("FracturedHarmony_Body", "pikpik_carrot.BandTogether"),
+            ("MAGISTARIUM_Body", "GameWyrm.HearthsNeighbor2"),
         };
 
         GameObject _destroyCreditVolume;
@@ -96,7 +110,10 @@ namespace Finis {
             _otherBodies = new Dictionary<string, GameObject>();
             while(true) {
                 var hasRemain = false;
-                foreach(var path in OTHER_BODIES) {
+                foreach((var path, var mod) in OTHER_BODIES) {
+                    if(mod != null && !Finis.ModExist(mod)) {
+                        continue;
+                    }
                     if (_otherBodies.ContainsKey(path)) {
                         continue;
                     }
