@@ -3,6 +3,19 @@
   "name": "Eye Of The Universe",
 //  //"starSystem": "EyeOfTheUniverse",
   "starSystem": "Jam3",
+  "Spawn": {
+    "playerSpawnPoints": [
+      {
+        "position": {
+          "x": 0.5,
+          "y": 199.3824,
+          "z": 35.606
+        },
+        "rename": "PlayerSpawnPoint",
+        "id": "finis_eye_spawn"
+      }
+    ]
+  },
   "Base": {
     //"centerOfSolarSystem": true,
     "surfaceSize": 201,

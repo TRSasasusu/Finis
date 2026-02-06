@@ -119,8 +119,8 @@
         },
         "rename": "EndBH",
         "horizonRadius": 80.0,
-        "targetStarSystem": "EyeOfTheUniverse",
-        "spawnPointID": "finis_eye_spawn"
+        //"targetStarSystem": "EyeOfTheUniverse",
+        //"spawnPointID": "finis_eye_spawn"
       }
     ],
     "details": [
