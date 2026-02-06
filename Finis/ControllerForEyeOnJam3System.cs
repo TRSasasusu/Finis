@@ -14,13 +14,23 @@ namespace Finis {
         const string EYE_PATH = "EyeOfTheUniverse_Body";
         const string SHELLING_PATH = "Shelling_Body";
 
+        static readonly string[] OTHER_BODIES = new string[] {
+            "Jam3Sun_Body",
+            "StarshipCommunity_Body",
+            "FinisPlateau_Body",
+            "RedMoon_Body",
+            "FinisPlateauCore_Body",
+        };
+
         GameObject _destroyCreditVolume;
         GameObject _eye;
         GameObject _shelling;
         GameObject _playerSpawnPoint;
+        Dictionary<string, GameObject> _otherBodies;
 
         Coroutine _initializeBody;
         Coroutine _creditDestroyCoroutine;
+        Coroutine _setPlayerPos;
 
         public void Initialize() {
             _initializeBody = Finis.Instance.StartCoroutine(InitializeBody());
@@ -31,6 +41,14 @@ namespace Finis {
                 _destroyCreditVolume = GameObject.Find(DESTROY_CREADIT_VOLUME_PATH);
                 if(_destroyCreditVolume) {
                     _destroyCreditVolume.SetActive(false);
+                    break;
+                }
+                yield return null;
+            }
+
+            while (true) {
+                _playerSpawnPoint = GameObject.Find(PLAYER_SPAWN_POINT_PATH);
+                if(_playerSpawnPoint) {
                     break;
                 }
                 yield return null;
@@ -74,9 +92,22 @@ namespace Finis {
                 yield return null;
             }
 
-            while (true) {
-                _playerSpawnPoint = GameObject.Find(PLAYER_SPAWN_POINT_PATH);
-                if(_playerSpawnPoint) {
+            Finis.Log("most of final setup is done.");
+            _otherBodies = new Dictionary<string, GameObject>();
+            while(true) {
+                var hasRemain = false;
+                foreach(var path in OTHER_BODIES) {
+                    if (_otherBodies.ContainsKey(path)) {
+                        continue;
+                    }
+                    var obj = GameObject.Find(path);
+                    if(obj) {
+                        _otherBodies.Add(path, obj);
+                        continue;
+                    }
+                    hasRemain = true;
+                }
+                if(!hasRemain) {
                     break;
                 }
                 yield return null;
@@ -84,22 +115,34 @@ namespace Finis {
         }
 
         public void StartEye() {
+            Vector3 center = Vector3.zero;
+            foreach ((var path, var obj) in _otherBodies) {
+                if(obj) {
+                    if(path == "Jam3Sun_Body") {
+                        center = obj.transform.position;
+                        foreach(Transform child in obj.transform) {
+                            child.gameObject.SetActive(false);
+                        }
+                    }
+                    else {
+                        obj.SetActive(false);
+                    }
+                }
+            }
+
             _eye.SetActive(true);
+            _eye.transform.position = center;//Vector3.zero;
+            _eye.transform.rotation = Quaternion.identity;
             _shelling.SetActive(true);
+            _shelling.transform.position = center + new Vector3(0, 0, 1000);
+            _shelling.transform.rotation = Quaternion .identity;
             _creditDestroyCoroutine = Finis.Instance.StartCoroutine(DestroyCreditBody());
 
             if(PlayerState.IsInsideShip()) {
                 EscapeFromShip();
             }
 
-            var playerBody = Locator.GetPlayerBody();
-            playerBody.WarpToPositionRotation(_playerSpawnPoint.transform.position, _playerSpawnPoint.transform.rotation);
-            playerBody.SetVelocity(PointVelocity(_playerSpawnPoint.transform));
-            var shipSpawnPos = _playerSpawnPoint.transform.position + new Vector3(-11.1367f - 0.5f, 213.3824f - 199.3824f, 54.2352f - 35.606f);
-            var shipBody = Locator.GetShipBody();
-            if(shipBody) {
-                shipBody.transform.position = shipSpawnPos;
-            }
+            _setPlayerPos = Finis.Instance.StartCoroutine(SetPlayerPos());
         }
 
         void EscapeFromShip() {
@@ -126,6 +169,10 @@ namespace Finis {
                 Finis.Instance.StopCoroutine(_creditDestroyCoroutine);
                 _creditDestroyCoroutine = null;
             }
+            if (_setPlayerPos != null) {
+                Finis.Instance.StopCoroutine(_setPlayerPos);
+                _setPlayerPos = null;
+            }
         }
 
         IEnumerator DestroyCreditBody() {
@@ -140,6 +187,21 @@ namespace Finis {
             }
             yield return new WaitForSeconds(120);
             destroyCreditVolume.SetActive(true);
+        }
+
+        IEnumerator SetPlayerPos() {
+            for(int i = 0; i < 5; ++i) {
+                var playerBody = Locator.GetPlayerBody();
+                playerBody.WarpToPositionRotation(_playerSpawnPoint.transform.position, _playerSpawnPoint.transform.rotation);
+                playerBody.SetVelocity(PointVelocity(_playerSpawnPoint.transform));
+                var shipSpawnPos = _playerSpawnPoint.transform.position + new Vector3(-11.1367f - 0.5f, 213.3824f - 199.3824f, 54.2352f - 35.606f);
+                var shipBody = Locator.GetShipBody();
+                if(shipBody) {
+                    shipBody.transform.position = shipSpawnPos;
+                }
+                yield return null;
+                yield return new WaitForSeconds(0.2f);
+            }
         }
 
         static Vector3 PointVelocity(Transform point) {
