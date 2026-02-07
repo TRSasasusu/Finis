@@ -10,13 +10,16 @@ using IEnumerator = System.Collections.IEnumerator;
 namespace Finis {
     public class ControllerForEyeOnJam3System {
         const string END_BH_PATH = "FinisPlateau_Body/Sector/EndBH";
-        const string DESTROY_CREADIT_VOLUME_PATH = "EyeOfTheUniverse_Body/Sector/destroy_credit_volume";
+        const string DESTROY_CREDIT_VOLUME_PATH = "EyeOfTheUniverse_Body/Sector/destroy_credit_volume";
+        const string BIGBANG_CREDIT_VOLUME_PATH = "EyeOfTheUniverse_Body/Sector/bigbang_credit_volume";
         const string PLAYER_SPAWN_POINT_PATH = "EyeOfTheUniverse_Body/PlayerSpawnPoint";
+        const string QUANTUM_FOAM_PATH = "EyeOfTheUniverse_Body/Sector/SixthPlanet_Root/Effects_SixthPlanet/Sector_QuantumFoamLayer";
         const string EYE_PATH = "EyeOfTheUniverse_Body";
         const string SHELLING_PATH = "Shelling_Body";
 
         static readonly (string, string)[] OTHER_BODIES = new (string, string)[] {
             ("Jam3Sun_Body", null),
+            ("Jam 3 Sun_Proxy", null),
             ("StarshipCommunity_Body", null),
             ("FinisPlateau_Body", null),
             ("RedMoon_Body", null),
@@ -37,6 +40,7 @@ namespace Finis {
         };
 
         GameObject _destroyCreditVolume;
+        GameObject _quantumForm;
         GameObject _eye;
         GameObject _shelling;
         GameObject _playerSpawnPoint;
@@ -52,7 +56,7 @@ namespace Finis {
 
         IEnumerator InitializeBody() {
             while(true) {
-                _destroyCreditVolume = GameObject.Find(DESTROY_CREADIT_VOLUME_PATH);
+                _destroyCreditVolume = GameObject.Find(DESTROY_CREDIT_VOLUME_PATH);
                 if(_destroyCreditVolume) {
                     _destroyCreditVolume.SetActive(false);
                     break;
@@ -63,6 +67,32 @@ namespace Finis {
             while (true) {
                 _playerSpawnPoint = GameObject.Find(PLAYER_SPAWN_POINT_PATH);
                 if(_playerSpawnPoint) {
+                    break;
+                }
+                yield return null;
+            }
+
+            while (true) {
+                _quantumForm = GameObject.Find(QUANTUM_FOAM_PATH);
+                if (_quantumForm) {
+                    _quantumForm.SetActive(false);
+                    break;
+                }
+                yield return null;
+            }
+
+            while (true) {
+                var bigbang = GameObject.Find(BIGBANG_CREDIT_VOLUME_PATH);
+                if (bigbang) {
+                    var enableQuantumFoam = new GameObject("EnableQuantumFoam");
+                    enableQuantumFoam.transform.parent = bigbang.transform.parent;
+                    enableQuantumFoam.transform.localPosition = bigbang.transform.localPosition + new Vector3(0, 200, 0);
+                    enableQuantumFoam.transform.localRotation = bigbang.transform.localRotation;
+                    enableQuantumFoam.transform.localScale = bigbang.transform.localScale;
+                    var collider = enableQuantumFoam.AddComponent<BoxCollider>();
+                    collider.isTrigger = true;
+                    collider.size = new Vector3(8000, 400, 8000);
+                    enableQuantumFoam.AddComponent<EnableQuantumFoam>()._controller = this;
                     break;
                 }
                 yield return null;
@@ -154,6 +184,7 @@ namespace Finis {
             _shelling.SetActive(true);
             _shelling.transform.position = center + new Vector3(0, 0, 1000);
             _shelling.transform.rotation = Quaternion .identity;
+            _shelling.transform.Find("Sector/Star/PlanetDestructionVolume").GetComponent<DestructionVolume>()._onlyAffectsPlayerAndShip = true; // to avoid remove the Eye
             _creditDestroyCoroutine = Finis.Instance.StartCoroutine(DestroyCreditBody());
 
             if(PlayerState.IsInsideShip()) {
@@ -161,6 +192,8 @@ namespace Finis {
             }
 
             _setPlayerPos = Finis.Instance.StartCoroutine(SetPlayerPos());
+
+            Locator.GetGlobalMusicController().gameObject.SetActive(false);
         }
 
         void EscapeFromShip() {
@@ -176,6 +209,10 @@ namespace Finis {
                 cockpit.CompleteExitFlightConsole();
             }
             shipBody.GetComponentInChildren<HatchController>().OpenHatch();
+        }
+
+        public void EnableQuantumFoam() {
+            _quantumForm.SetActive(true);
         }
 
         public void DestroyResources() {
@@ -194,17 +231,11 @@ namespace Finis {
         }
 
         IEnumerator DestroyCreditBody() {
-            GameObject destroyCreditVolume;
-            while (true) {
-                destroyCreditVolume = GameObject.Find("destroy_credit_volume");
-                if(destroyCreditVolume) {
-                    destroyCreditVolume.SetActive(false);
-                    break;
-                }
-                yield return null;
-            }
-            yield return new WaitForSeconds(120);
-            destroyCreditVolume.SetActive(true);
+            Finis.Log("waiting destroy credit");
+            yield return new WaitForSeconds(80);
+            _destroyCreditVolume.SetActive(true);
+            _destroyCreditVolume.GetComponent<SphereShape>().radius = 1000000;
+            Finis.Log("destroy credit done");
         }
 
         IEnumerator SetPlayerPos() {

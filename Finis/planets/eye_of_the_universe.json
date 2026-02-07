@@ -34,7 +34,7 @@
       {
         "audio": "planets/assets/FlyIntoTheEye.wav",
         "track": "music",
-        "radius": 60000,
+        "radius": 1000000,
         "volume": 0.4,
         "priority": 0
       }
