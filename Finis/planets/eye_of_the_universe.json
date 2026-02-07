@@ -19,7 +19,7 @@
   "Base": {
     //"centerOfSolarSystem": true,
     "surfaceSize": 201,
-    "surfaceGravity": 20,
+    "surfaceGravity": 38,
   },
   "Orbit": {
     "isStatic": true,
@@ -73,6 +73,11 @@
           "y": -1430.417,
           "z": 0
         }
+      }
+    ],
+    "mapRestrictionVolumes": [
+      {
+        "radius": 60000,
       }
     ]
   },

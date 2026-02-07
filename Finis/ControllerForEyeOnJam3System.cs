@@ -129,6 +129,7 @@ namespace Finis {
                 }
                 yield return null;
             }
+            Finis.Log("all final setup is done.");
         }
 
         public void StartEye() {
@@ -207,17 +208,20 @@ namespace Finis {
         }
 
         IEnumerator SetPlayerPos() {
+            var shipBody = Locator.GetShipBody();
             for(int i = 0; i < 5; ++i) {
                 var playerBody = Locator.GetPlayerBody();
                 playerBody.WarpToPositionRotation(_playerSpawnPoint.transform.position, _playerSpawnPoint.transform.rotation);
                 playerBody.SetVelocity(PointVelocity(_playerSpawnPoint.transform));
                 var shipSpawnPos = _playerSpawnPoint.transform.position + new Vector3(-11.1367f - 0.5f, 213.3824f - 199.3824f, 54.2352f - 35.606f);
-                var shipBody = Locator.GetShipBody();
                 if(shipBody) {
                     shipBody.transform.position = shipSpawnPos;
                 }
                 yield return null;
                 yield return new WaitForSeconds(0.2f);
+            }
+            if(shipBody) {
+                shipBody.GetComponentInChildren<ShipTractorBeamSwitch>().ActivateTractorBeam();
             }
         }
 
