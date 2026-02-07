@@ -32,6 +32,9 @@ namespace Finis {
             "RedMoon_Body/Sector/Quantum States - moonQuantumGroup",
             "RedMoon_Body/Sector/AudioVolume",
         };
+        readonly string[] ADDITIONAL_GREEN_OBJECT_PATHS = new string[] {
+            "StarshipCommunity_Body/Sector/finis_ernesto_scroll/Props_NOM_Scroll/Props_NOM_Scroll_Geo",
+        };
 
         public StateController() {
             Instance = this;
@@ -262,6 +265,16 @@ namespace Finis {
                     var obj = GameObject.Find(path);
                     if(obj) {
                         _weakredObjs.Add(obj);
+                        break;
+                    }
+                    yield return null;
+                }
+            }
+            foreach(var path in ADDITIONAL_GREEN_OBJECT_PATHS) {
+                while(true) {
+                    var obj = GameObject.Find(path);
+                    if(obj) {
+                        _greenRenderers.Add(obj.GetComponent<Renderer>());
                         break;
                     }
                     yield return null;

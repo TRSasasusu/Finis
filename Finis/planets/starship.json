@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Starship Community",
+  "starSystem": "Jam3",
+  "Props": {
+    "translatorText": [
+      {
+        "type": "scroll",
+        "location": "unspecified",
+        "xmlFile": "planets/texts/finis_ernesto_scroll.xml",
+        "rename": "finis_ernesto_scroll",
+        "position": {
+          "x": 17.7293,
+          "y": 2.2992,
+          "z": 8.7635
+        }
+      }
+    ]
+  }
+}

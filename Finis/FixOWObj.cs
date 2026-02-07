@@ -30,11 +30,15 @@ namespace Finis {
         const string ESCAPE_POD_COMPUTER_PATH = "FinisPlateau_Body/Sector/EscapePod_Socket/Interactibles_EscapePod/Prefab_NOM_Vessel_Computer";
         const string MOON_ESCALL_WALL_PATH = "RedMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/finis_moon_escall_wall";
         const string MOON_INFINITE_WALL_PATH = "RedMoon_Body/Sector/finis_red_moon/weakred_crystal_moon/finis_moon_infinite_wall";
+        const string GREEN_MAT_OBJ_PATH = "FinisPlateau_Body/Sector/finis_plateau/green_crystal_topcave/Pillar";
+        const string ERNESTO_SCROLL = "StarshipCommunity_Body/Sector/finis_ernesto_scroll/Props_NOM_Scroll/Props_NOM_Scroll_Geo";
 
         Material _grayMat;
+        Material _greenMat;
 
         public void DestroyResources() {
             GameObject.Destroy(_grayMat);
+            GameObject.Destroy(_greenMat);
         }
 
         public FixOWObj() {
@@ -55,18 +59,17 @@ namespace Finis {
 
             Finis.Log("start: finding planetSphere");
             while (true) {
-                yield return null;
                 planetSphere = GameObject.Find(PLANET_SPHERE_PATH);
                 if(planetSphere) {
                     _grayMat = planetSphere.GetComponent<MeshRenderer>().materials[0];
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding planetSphere");
 
             Finis.Log("start: finding whiteboard");
             while(true) {
-                yield return null;
                 var whiteBoard = GameObject.Find(WHITE_BOARD_PATH);
                 if(whiteBoard) {
                     var stoneRenderer = whiteBoard.transform.Find("whiteboard_stone").GetComponent<MeshRenderer>();
@@ -79,12 +82,12 @@ namespace Finis {
                     brokenTilesRenderer.materials = brokenTilesMats;
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding whiteboard");
 
             Finis.Log("start: finding table");
             while(true) {
-                yield return null;
                 var table = GameObject.Find(TABLE_PATH);
                 if(table) {
                     var colliderObj = new GameObject("collider");
@@ -102,12 +105,12 @@ namespace Finis {
                     tableRenderer.materials = tableMats;
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding table");
 
             Finis.Log("start: finding shelf");
             while(true) {
-                yield return null;
                 var shelf = GameObject.Find(SHELF_PATH);
                 if(shelf) {
                     var colliderObj = new GameObject("collider");
@@ -124,13 +127,13 @@ namespace Finis {
                     shelfRenderer.materials = shelfMats;
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding shelf");
 
             Finis.Log("start: finding vase");
             foreach(var path in VASE_THICK_PATHS) {
                 while(true) {
-                    yield return null;
                     var vase = GameObject.Find(path);
                     if(vase) {
                         var colliderObj = new GameObject("collider");
@@ -146,6 +149,7 @@ namespace Finis {
                         vaseRenderer.materials = vaseMats;
                         break;
                     }
+                    yield return null;
                 }
             }
             Finis.Log("end: finding vase");
@@ -153,7 +157,6 @@ namespace Finis {
             Finis.Log("start: finding chair");
             foreach(var path in CHAIR_PATHS) {
                 while(true) {
-                    yield return null;
                     var chair = GameObject.Find(path);
                     if (chair) {
                         var colliderObj = new GameObject("collider");
@@ -169,13 +172,13 @@ namespace Finis {
                         chairRenderer.materials = chairMats;
                         break;
                     }
+                    yield return null;
                 }
             }
             Finis.Log("end: finding chair");
 
             Finis.Log("start: finding escape pod computer");
             while(true) {
-                yield return null;
                 var escape_pod_computer = GameObject.Find(ESCAPE_POD_COMPUTER_PATH);
                 if(escape_pod_computer) {
                     escape_pod_computer.GetComponent<CapsuleCollider>().enabled = false;
@@ -183,28 +186,29 @@ namespace Finis {
                     pillar.transform.localPosition = new Vector3(0, 3, 0);
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding escape pod computer");
 
             Finis.Log("start: finding escall wall");
             while (true) {
-                yield return null;
                 var moonEscallWall = GameObject.Find(MOON_ESCALL_WALL_PATH);
                 if(moonEscallWall) {
                     moonEscallWall.transform.localScale = new Vector3(0.78f, 0.78f, 0.78f);
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding escall wall");
 
             Finis.Log("start: finding infinite wall");
             while(true) {
-                yield return null;
                 var moonInfiniteWall = GameObject.Find(MOON_INFINITE_WALL_PATH);
                 if(moonInfiniteWall) {
                     moonInfiniteWall.transform.localScale = new Vector3(0.88f, 0.88f, 0.88f);
                     break;
                 }
+                yield return null;
             }
             Finis.Log("end: finding infinite wall");
 
@@ -218,6 +222,28 @@ namespace Finis {
             //ship.transform.Find("Module_Cabin/Lights_Cabin/Pointlight_HEA_ShipCabin").GetComponent<LightmapController>().UpdateLightmapSettings(camera.mainCamera);
             //ship.transform.Find("Module_Supplies/Lights_Supplies/Pointlight_HEA_ShipSupplies_Top").GetComponent<LightmapController>().UpdateLightmapSettings(camera.mainCamera);
             //Finis.Log("end: fixing ship light");
+
+            Finis.Log("start: finding green obj for mat");
+            while (true) {
+                var greenObj = GameObject.Find(GREEN_MAT_OBJ_PATH);
+                if (greenObj) {
+                    _greenMat = greenObj.GetComponent<MeshRenderer>().material;
+                    break;
+                }
+                yield return null;
+            }
+            Finis.Log("end: finding green obj for mat");
+
+            Finis.Log("start: finding that scroll");
+            while (true) {
+                var scroll = GameObject.Find(ERNESTO_SCROLL);
+                if (scroll) {
+                    scroll.GetComponent<MeshRenderer>().material = _greenMat;
+                    break;
+                }
+                yield return null;
+            }
+            Finis.Log("end: finding that scroll");
         }
     }
 }
